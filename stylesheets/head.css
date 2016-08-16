@@ -68,5 +68,7 @@
   .header-nav li a {
     font-size: 12px;
     color: #000; }
+    .header-nav li a:hover {
+      color: #237bab; }
 
 /*# sourceMappingURL=head.css.map */

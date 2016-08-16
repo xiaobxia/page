@@ -114,6 +114,9 @@
     a{
       font-size:12px;
       color: #000;
+      &:hover{
+        color: rgb(35,123,171);
+      }
     }
   }
 }

@@ -10,7 +10,7 @@
     overflow: hidden; }
   .scroll .slide-button {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     height: 380px; }
   .scroll .pic-index {
