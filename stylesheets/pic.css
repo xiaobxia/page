@@ -1,0 +1,99 @@
+.scroll {
+  position: relative;
+  width: 100%;
+  height: 400px; }
+  .scroll .display-frame {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    overflow: hidden; }
+  .scroll .slide-button {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 380px; }
+  .scroll .pic-index {
+    position: absolute;
+    top: 380px;
+    width: 100%;
+    height: 20px;
+    text-align: center; }
+    .scroll .pic-index ul {
+      height: 100%; }
+    .scroll .pic-index li {
+      display: inline;
+      padding: 0 20px; }
+      .scroll .pic-index li span {
+        display: inline-block;
+        background-color: #6e6e6e;
+        width: 6px;
+        height: 6px;
+        border: 2px solid #6e6e6e;
+        border-radius: 6px; }
+        .scroll .pic-index li span:hover {
+          background-color: #fff;
+          height: 8px;
+          width: 8px;
+          border: 2px solid #237bab; }
+    .scroll .pic-index .active span {
+      background-color: #fff;
+      height: 8px;
+      width: 8px;
+      border: 2px solid #237bab; }
+
+.display-frame .pic-collection {
+  height: 100%;
+  width: 400%;
+  position: absolute;
+  left: 0;
+  transition: left 1.5s ease; }
+  .display-frame .pic-collection ul {
+    width: 100%;
+    height: 100%; }
+    .display-frame .pic-collection ul:after {
+      content: "";
+      display: block;
+      visibility: hidden;
+      height: 0;
+      clear: both;
+      font-size: 0; }
+  .display-frame .pic-collection li {
+    float: left;
+    width: 25%;
+    height: 100%; }
+  .display-frame .pic-collection .scroll-pic {
+    width: 100%;
+    height: 100%; }
+    .display-frame .pic-collection .scroll-pic img {
+      width: 100%;
+      height: 100%; }
+
+.slide-button .left-slide-button {
+  left: 0; }
+.slide-button .right-slide-button {
+  right: 0; }
+.slide-button .left-slide-button, .slide-button .right-slide-button {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100px;
+  transition: background-color 1s ease; }
+  .slide-button .left-slide-button:hover, .slide-button .right-slide-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+    .slide-button .left-slide-button:hover img, .slide-button .right-slide-button:hover img {
+      display: block; }
+  .slide-button .left-slide-button img, .slide-button .right-slide-button img {
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 20px; }
+
+/*# sourceMappingURL=pic.css.map */
