@@ -534,6 +534,11 @@ th {
   margin: auto 0;
 
 }
+@media only screen and(min-width: 768px) and (max-width: 959px) {
+  body{
+    min-width: 800px;
+  }
+}
 body{
   font-family:  "Microsoft YaHei",Arial,Helvetica,sans-serif;
   width: 100%;
