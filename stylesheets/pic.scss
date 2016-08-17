@@ -99,7 +99,7 @@
     width: 400%;
     position: absolute;
     left: 0;
-    transition: left 1.5s ease;
+    transition: left 1.5s ease-out;
     ul{
       &:after{
         content: "";
