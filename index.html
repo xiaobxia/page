@@ -8,31 +8,43 @@
 
    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">-->
     <!--<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/head.css" media="screen">
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/header-footer.css" media="screen">
+    <link rel="shortcunt icon" href="images/icon.png"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pic.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/article.css">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/article-recently.css">
+
+    <script type="text/javascript" src="javascripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+
 
     <title>blog of xiaobxia</title>
 </head>
 
 <body>
 <div class="header">
+    <div class="header-date">
+        <p class="date-p" id="date-day"></p>
+        <p class="date-p" id="date-week"></p>
+        <p class="date-p" id="date-time"></p>
+    </div>
+    <div class="header-weather">
+        <p class="weather-p" id="weather-city"></p>
+        <p class="weather-p" id="weather-type"></p>
+        <p class="weather-p" id="weather-time"></p>
+    </div>
     <div class="header-content">
+
         <div class="my-blog">
             <div class="blog-name">
-                <h3>小b侠的博客</h3>
+                <a href="https://xiaobxia.github.io/blog/"><h3>小b侠的博客</h3></a>
             </div>
             <div class="date-update">
-                <span>最近更新:2016年8月16日</span>
+                <span>最近更新:</span>
             </div>
             <div class="my-pic">
                 <img src="images/mypic.jpg">
             </div>
+
 
 
         </div>
@@ -57,47 +69,11 @@
                     <a>随笔</a>
                 </li>
                 <li>
-                    <a>关于我</a>
+                    <a href="aboutme/about-me.html">关于我</a>
                 </li>
             </ul>
         </div>
 
-    </div>
-
-</div>
-<div class="scroll" id="scroll">
-    <div class="display-frame" id="display-frame">
-        <div class="pic-collection" id="pic-collection">
-            <ul>
-                <li>
-                    <div class="scroll-pic"><img src="images/pic1.jpg" alt=""></div>
-                </li>
-                <li>
-                    <div class="scroll-pic"><img src="images/pic2.jpg" alt=""></div>
-                </li>
-                <li>
-                    <div class="scroll-pic"><img src="images/pic3.jpg" alt=""></div>
-                </li>
-                <li>
-                    <div class="scroll-pic"><img src="images/pic4.jpg" alt=""></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="slide-button" id="slide-button">
-
-        <div class="left-slide-button"><img src="images/pic-left.png" alt=""></div>
-
-        <div class="right-slide-button"><img src="images/pic-right.png" alt=""></div>
-
-    </div>
-    <div class="pic-index" id="pic-index">
-        <ul>
-            <li class="active"><span class="pic-index-sub"></span></li>
-            <li><span class="pic-index-sub"></span></li>
-            <li><span class="pic-index-sub"></span></li>
-            <li><span class="pic-index-sub"></span></li>
-        </ul>
     </div>
 </div>
 <div class="recently-article">
@@ -120,8 +96,9 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -133,21 +110,23 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
 
                     </div>
                 </div>
                 <div class="sub-article-nav">
-                    <div class="art-date new-month">
-                        <div class="art-date-m"><span>Aug</span></div>
-                        <div class="art-date-d"><span>17</span></div>
+                    <div class="art-date">
+                        <div class="art-date-m"><span></span></div>
+                        <div class="art-date-d"><span></span></div>
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -158,8 +137,9 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -172,8 +152,9 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -184,8 +165,9 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -196,8 +178,9 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -208,8 +191,9 @@
                     </div>
                     <div class="art-introduction">
                         <a>
-                            <h5>[我的实验]</h5>
-                            <p>我刚才想通了 ，relitive属性元素坐标相对于的是它最原始的位置</p>
+                            <h5></h5>
+                            <span></span>
+                            <p></p>
                         </a>
                     </div>
                 </div>
@@ -223,10 +207,10 @@
 <div class="footer">
     <ul>
         <li><span>我的邮箱:673806687@qq.com</span></li>
-        <li><span>我的博客:https://xiaobxia.github.io/page/</span></li>
+        <li><span>我的博客:https://xiaobxia.github.io/blog/</span></li>
     </ul>
 </div>
-<script type="text/javascript" src="javascripts/main.js"></script>
-<script type="text/javascript" src="javascripts/pic.js"></script>
+<script type="text/javascript" src="javascripts/article-recently.js"></script>
+<script type="text/javascript" src="javascripts/for-header.js"></script>
 </body>
 </html>

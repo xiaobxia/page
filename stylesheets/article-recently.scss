@@ -192,17 +192,20 @@ $grey-four:rgb(160,160,160);
       &:hover{
         h5,p{
           color: $blue-one;
-
         }
-
       }
     }
     h5{
       color: $grey-three;
       font-size: 12px;
     }
+    span{
+      border-radius: 6px;
+      color: #fff;
+      font-size: 12px;
+      background-color: $blue-one;
+    }
     p{
-
       color: $grey-four;
       font-size: 12px;
     }

@@ -134,8 +134,13 @@
   .sub-article-nav .art-introduction h5 {
     color: #6e6e6e;
     font-size: 12px; }
+  .sub-article-nav .art-introduction span {
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #1978b4; }
   .sub-article-nav .art-introduction p {
     color: #a0a0a0;
     font-size: 12px; }
 
-/*# sourceMappingURL=article.css.map */
+/*# sourceMappingURL=article-recently.css.map */

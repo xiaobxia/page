@@ -49,11 +49,21 @@ var addEvent = function (elem, eventName, handler) {
         elem.attachEvent("on" + eventName, handler);
     }
 };
+//文章对象，以time排列
+var articleTimeObj = [
+    {
+        pageId:0,
+        writeDay: "2016年8月20日",
+        writeTime: "20160820",
+        title: "follow me",
+        path: "aboutme/about-me.html",
+        levelOnePath:"aboutme/about-me.html",
+        levelTwoPath:"",
+        levelOne: "关于我",
+        levelTwo: "",
+        description: "我的社区主页地址"
+    }
+];
 /**
  ----------------onload部分---------
  ***/
-window.onload = function () {
-
-    new AutoPlay(6000, 0, "slide-button", "scroll", "pic-index", "pic-collection");
-
-};

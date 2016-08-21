@@ -1,6 +1,26 @@
 .header {
+  position: relative;
   width: 100%;
   height: 110px; }
+  .header .header-date {
+    position: absolute;
+    left: 40px;
+    height: 60px;
+    width: 150px;
+    text-align: center; }
+    .header .header-date .date-p {
+      font-size: 12px;
+      color: #505050;
+      line-height: 20px; }
+  .header .header-weather {
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 150px; }
+    .header .header-weather .weather-p {
+      font-size: 12px;
+      color: #505050;
+      line-height: 20px; }
   .header .header-content {
     position: relative;
     margin: 0 auto;
@@ -68,7 +88,29 @@
   .header-nav li a {
     font-size: 12px;
     color: #000; }
+    .header-nav li a.active {
+      color: #1978b4; }
     .header-nav li a:hover {
-      color: #237bab; }
+      color: #1978b4; }
 
-/*# sourceMappingURL=head.css.map */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background-color: #323639; }
+  .footer ul {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
+    text-align: center; }
+    .footer ul li {
+      padding: 0 20px;
+      display: inline; }
+      .footer ul li span {
+        color: #c8c8c8;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 65px; }
+
+/*# sourceMappingURL=header-footer.cssooter.css.map */

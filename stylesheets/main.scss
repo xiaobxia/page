@@ -534,36 +534,9 @@ th {
   margin: auto 0;
 
 }
-@media only screen and(min-width: 768px) and (max-width: 959px) {
-  body{
-    min-width: 800px;
-  }
-}
 body{
   font-family:  "Microsoft YaHei",Arial,Helvetica,sans-serif;
   width: 100%;
-  min-width: 1024px;
+  min-width: 1120px;
   color: rgb(80,80,80);
-}
-.footer {
-  position: relative;
-  width: 100%;
-  height: 65px;
-  background-color: rgb(50, 54, 57);
-  ul {
-    @include relative-center;
-    width: 800px;
-    height: 100%;
-    text-align: center;
-    li {
-      padding: 0 20px;
-      display: inline;
-      span {
-        color: rgb(200, 200, 200);
-        font-size: 12px;
-        font-weight: 200;
-        line-height: 65px;
-      }
-    }
-  }
 }
