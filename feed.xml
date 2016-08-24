@@ -3,13 +3,13 @@
 
     <channel>
         <title>
-            <![CDATA[ blog of xiaobxia ]]>
+            <![CDATA[ 灵捷 ]]>
         </title>
         <link>https://xiaobxia.github.io/page</link>
         <description>
-            <![CDATA[ web study and life ]]>
+            <![CDATA[ 灵捷博客 ]]>
         </description>
-        <lastBuildDate>Mon, 22 Aug 2016 02:04:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Aug 2016 04:04:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
         <item>
@@ -23,7 +23,7 @@
             <author>
                 <![CDATA[ xiaobxia ]]>
             </author>
-            <pubDate>Mon, 22 Aug 2016 02:04:33 GMT</pubDate>
+            <pubDate>Mon, 22 Aug 2016 04:04:33 GMT</pubDate>
             <description>
                 <![CDATA[
 <span>我的github地址：</span>
