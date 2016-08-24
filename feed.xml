@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>
+            <![CDATA[ 小b侠的博客 ]]>
+        </title>
+        <link>https://xiaobxia.github.io/page/</link>
+        <description>
+            <![CDATA[ 小b侠的web学习和生活的一些简单分享 ]]>
+        </description>
+        <lastBuildDate>2016/8/20</lastBuildDate>
+        <generator>by xiaobixia</generator>
+        <ttl>3600</ttl>
+        <item>
+            <title>
+                <![CDATA[ follow me ]]>
+            </title>
+            <link>
+                https://xiaobxia.github.io/page/aboutme/follow%20me.html
+            </link>
+            <guid>
+                https://xiaobxia.github.io/page/aboutme/follow%20me.html
+            </guid>
+            <author>
+                <![CDATA[ 小b侠 ]]>
+            </author>
+            <pubDate>Sat, 20 Aug 2016 02:04:33 GMT</pubDate>
+            <description>
+                <![CDATA[
+<span>我的github地址：</span>
+<a>https://github.com/xiaobxia</a>
+]]>
+            </description>
+        </item>
+
+    </channel>
+
+</rss>
