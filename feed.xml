@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" >
 
     <channel>
@@ -7,7 +7,7 @@
         </title>
         <link>https://xiaobxia.github.io/page</link>
         <description>
-             小b侠的web学习和生活的一些简单分享
+            小b侠的web学习和生活的一些简单分享
         </description>
         <lastBuildDate>Mon, 22 Aug 2016 02:04:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
