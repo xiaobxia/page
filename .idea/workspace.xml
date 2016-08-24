@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="大改动使用了jade进行了完全的模块化开发">
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/for-time.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/for-time.css.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/for-time.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/aboutme-nav.html" afterPath="$PROJECT_DIR$/classify/aboutme-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/editor-nav.html" afterPath="$PROJECT_DIR$/classify/editor-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/essay-nav.html" afterPath="$PROJECT_DIR$/classify/essay-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="$PROJECT_DIR$/classify/language-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/library-nav.html" afterPath="$PROJECT_DIR$/classify/library-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/tool-nav.html" afterPath="$PROJECT_DIR$/classify/tool-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/nav-head.html" afterPath="$PROJECT_DIR$/jade-block/nav-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/nav-head.pug" afterPath="$PROJECT_DIR$/jade-block/nav-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css.map" afterPath="$PROJECT_DIR$/stylesheets/article-write.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.scss" afterPath="$PROJECT_DIR$/stylesheets/article-write.scss" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,17 +111,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="for-time.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="for-time.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/for-time.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+            <state relative-caret-position="63">
+              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article-write.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article-write.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -412,7 +401,7 @@
       <workItem from="1471961194188" duration="611000" />
       <workItem from="1471962285933" duration="1051000" />
       <workItem from="1472003840765" duration="1007000" />
-      <workItem from="1472004869777" duration="20763000" />
+      <workItem from="1472004869777" duration="20827000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1471268472324</created>
@@ -491,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472026470520</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修复css显示问题">
+      <created>1472027049046</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1472027049046</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75100000" />
+    <option name="totallyTimeSpent" value="75164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -535,7 +531,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="大改动" />
     <MESSAGE value="大改动使用了jade进行了完全的模块化开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="大改动使用了jade进行了完全的模块化开发" />
+    <MESSAGE value="修复css显示问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复css显示问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -934,18 +931,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/for-time.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/for-time.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
           <folding />
         </state>
       </provider>
