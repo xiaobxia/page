@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article-manage/muban.html" afterPath="$PROJECT_DIR$/article-manage/muban.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed.xml" afterPath="$PROJECT_DIR$/feed.xml" />
     </list>
     <ignored path="page.iws" />
@@ -33,8 +32,8 @@
       <file leaf-file-name="feed.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feed.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -314,7 +313,7 @@
       <workItem from="1472003840765" duration="1007000" />
       <workItem from="1472004869777" duration="21910000" />
       <workItem from="1472032793154" duration="5992000" />
-      <workItem from="1472045432309" duration="114000" />
+      <workItem from="1472045432309" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1471268472324</created>
@@ -435,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472043504622</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="test">
+      <created>1472045553948</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1472045553948</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82353000" />
+    <option name="totallyTimeSpent" value="82911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="33" width="1370" height="744" extended-state="0" />
@@ -812,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feed.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
           <folding />
         </state>
       </provider>
