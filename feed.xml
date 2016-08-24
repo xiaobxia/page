@@ -33,6 +33,27 @@
 ]]>
             </description>
         </item>
+        <item>
+            <title>
+                <![CDATA[ follow me ]]>
+            </title>
+            <link>
+                https://xiaobxia.github.io/page/aboutme/follow%20me.html
+            </link>
+            <guid>
+                https://xiaobxia.github.io/page/aboutme/follow%20me.html
+            </guid>
+            <author>
+                <![CDATA[ 小b侠 ]]>
+            </author>
+            <pubDate>Sat, 24 Aug 2016 20:04:33 GMT</pubDate>
+            <description>
+                <![CDATA[
+<span>我的github地址：</span>
+<a>https://github.com/xiaobxia</a>
+]]>
+            </description>
+        </item>
 
     </channel>
 
