@@ -9,7 +9,6 @@ $black-one:rgb(80,80,80);
   -ms-filter: blur($value);
   filter: blur($value);
 }
-
 @mixin grand-v($colorOne,$colorTwo) {
 
   background: -webkit-linear-gradient($colorOne, $colorTwo); /* Safari 5.1 - 6.0 */
@@ -63,25 +62,11 @@ $black-one:rgb(80,80,80);
   left: 0;
   right: 0;
 }
+
 .article-page{
   position: relative;
   width: 100%;
   height: auto;
-  #page-id{
-    display: none;
-  }
-  .article-tab{
-    z-index: 1000;
-    @include absolute-center;
-    width: 1000px;
-    height: 60px;
-    background-color: rgba(255,255,255,.8);
-    &.fix{
-      position: fixed;
-      width: 100%;
-      top: 0;
-    }
-  }
   .article-write{
     z-index: 10;
     @include relative-center;
@@ -124,137 +109,64 @@ $black-one:rgb(80,80,80);
 
   }
 }
-.article-tab{
-  .level-nav{
-    @include absolute-v-center;
-    left: 50px;
-    height: 20px;
-    line-height: 20px;
-    .level-a{
-      &:hover{
-        text-shadow: 0 0 2px $blue-one;
-      }
-      padding: 0 5px;
-      color: $blue-one;
-      font-size: 16px;
-      font-weight: 400;
-    }
-    .level-pic{
-      padding: 0 5px;
-      color: $grey-four;
-      font-size: 16px;
-      font-weight: 400;
-    }
-  }
-  .article-tab-sep{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $grey-two;
-  }
-}
+
 .article-content{
-  .article-content-title{
-    width: 100%;
-    height: 50px;
-    position: relative;
-    text-align: center;
-    h4{
-      line-height: 50px;
-      font-size: 20px;
-      font-weight: 600;
-    }
-  }
-  .article-content-editer{
-    position: relative;
-    width: 100%;
-    height: 40px;
-    .writer, .write-date, .write-recently{
-      position: absolute;
-      width: 150px;
-      height: 100%;
-      text-align: center;
-      span{
-        font-size: 12px;
-        font-weight: 200;
-        line-height: 40px;
-      }
-    }
-    .writer{
-      left: 125px;
-    }
-    .write-date{
-      left: 325px;
-    }
-    .write-recently{
-      left: 525px;
-    }
-  }
   .article-content-body{
     @include relative-center;
-    min-height: 310px;
+    min-height: 400px;
     width: 700px;
-    p{
-      color: $black-one;
-      text-indent: 2em;
-      font-size: 16px;
-    }
-    a{
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 25px;
-      color: $grey-three;
-      &:hover{
-        color: $blue-one;
-      }
-    }
-    span{
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 25px;
-      color: $grey-three;
-    }
-    code{
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 25px;
-      color: $grey-three;
-    }
-    .for-a{
-      margin: 0 0 10px 0;
-      padding: 10px 20px;
-      width: 100%;
-      border-radius: 10px;
-      background-color: $grey-two;
-    }
-    .for-code{
-      margin:  0 0 10px 0;
-      padding: 10px 20px;
-      width: 100%;
-      border-radius: 10px;
-      background-color: $grey-two;
 
-    }
-    .for-emphasis{
-      padding: 0 8px;
-      border-radius: 6px;
-      color: #fff;
-      background-color: $blue-one;
-    }
-    .for-img-show{
+    .article-inf{
       position: relative;
+      margin: 0 0 10px 0;
+      padding: 0 20px;
       width: 100%;
       border-radius: 10px;
-      margin: 0 0 10px 0;
-      padding: 20px;
       background-color: $grey-one;
-      img{
+      &:hover {
+        background-color: $grey-four;
+        h5,p{
+          color: $blue-one;
+        }
+        span{
+          color: #fff;
+        }
+      }
+      span{
+        position: absolute;
         display: block;
-        @include relative-center;
+        top:0;
+        right: 0;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 25px;
+        color: $grey-three;
+      }
+      a{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      h5{
+        display: inline;
+        color: $grey-three;
+        font-size: 12px;
+      }
+      em{
+        margin-left: 20px;
+        padding: 0 5px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 12px;
+        background-color: $blue-one;
+      }
+      p{
+        line-height: 25px;
+        color: $grey-four;
+        font-size: 12px;
       }
     }
-
   }
   .no-more{
     @include relative-center;
@@ -268,7 +180,6 @@ $black-one:rgb(80,80,80);
       background-color: $grey-two;
       a{
         color: $blue-one;
-
       }
     }
     a{
@@ -284,47 +195,16 @@ $black-one:rgb(80,80,80);
   .list-nav{
     position: absolute;
     width: 100%;
-
     height: 480px;
     overflow: hidden;
   }
-  .article-side-btn{
-    position: absolute;
-    top:480px;
-    width: 100%;
-    height: 20px;
-    .article-nav-btn{
-      position: absolute;
-      width: 20px;
-      height: 100%;
-      background-color: $grey-two;
-      text-align: center;
-      border-radius: 4px;
-      &:nth-of-type(1){
-        left: 0;
-      }
-      &:nth-of-type(2){
-        right: 0;
-      }
-      &:hover{
-        box-shadow: 0 0 6px $blue-one;
-      }
-      a{
-        display: block;
-        color: $blue-one;
-        line-height: 20px;
-        font-size: 12px;
-        font-weight: 300;
-      }
-    }
-  }
+}
+#level-one{
+  display: none;
 }
 .list-nav{
   ul{
-    display: none;
-    &.active{
       display: block;
-    }
   }
   li{
     margin-bottom: 4px;
@@ -337,24 +217,33 @@ $black-one:rgb(80,80,80);
       font-size: 14px;
       color: $blue-one;
     }
-    a{
-      font-size: 14px;
-      color: $grey-three;
+    em{
+      margin-left: 10px;
+      padding: 0 6px;
+      border-radius: 10px;
+      font-size: 12px;
+      color: $grey-four;
+      background-color: $grey-one;
     }
     &.active{
       padding: 0 50px;
       background-color: $blue-one;
-      a, span{
+      span{
         color: #fff;
+      }
+      em{
+        color: $blue-one;
       }
     }
     &:hover{
       padding: 0 50px;
       background-color: $blue-one;
-      a, span{
+      span{
         color: #fff;
       }
-
+      em{
+        color: $blue-one;
+      }
     }
   }
 }
