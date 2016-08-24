@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="gb2312" ?>
 <rss version="2.0" >
 
     <channel>
         <title>
-            <![CDATA[ å°bä¾ çš„åšå®¢ ]]>
+            <![CDATA[ Ğ¡bÏÀµÄ²©¿Í ]]>
         </title>
-        <link>https://xiaobxia.github.io/page/</link>
+        <link>https://xiaobxia.github.io/page</link>
         <description>
-            <![CDATA[ å°bä¾ çš„webå­¦ä¹ å’Œç”Ÿæ´»çš„ä¸€äº›ç®€å•åˆ†äº« ]]>
+            <![CDATA[ Ğ¡bÏÀµÄwebÑ§Ï°ºÍÉú»îµÄÒ»Ğ©¼òµ¥·ÖÏí ]]>
         </description>
         <lastBuildDate>Mon, 22 Aug 2016 02:04:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
@@ -21,12 +21,12 @@
             </link>
             <guid>https://xiaobxia.github.io/page/aboutme/follow%20me.html</guid>
             <author>
-                <![CDATA[ å°bä¾  ]]>
+                <![CDATA[ Ğ¡bÏÀ ]]>
             </author>
             <pubDate>Mon, 22 Aug 2016 02:04:33 GMT</pubDate>
             <description>
                 <![CDATA[
-<span>æˆ‘çš„githubåœ°å€ï¼š</span>
+<span>ÎÒµÄgithubµØÖ·£º</span>
 <a>https://github.com/xiaobxia</a>
 ]]>
             </description>
