@@ -48,6 +48,8 @@ jQuery.noConflict();
         }
         //article-tab部分
         $("#levelOne").text(levelOne).attr("href", "../"+levelOnePath);
+        //目前还没实现leveltwo的链接
+      //  $("#levelTwo").text(levelTwo);
         $("#levelTwo").text(levelTwo).attr("href", "../"+levelTwoPath);
 
         //article-side-nav部分

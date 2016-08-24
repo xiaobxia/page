@@ -214,6 +214,7 @@
   .list-nav ul.active {
     display: block; }
 .list-nav li {
+  margin-bottom: 4px;
   height: 20px;
   width: 100%;
   padding: 0 40px;

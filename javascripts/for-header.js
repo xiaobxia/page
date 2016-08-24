@@ -7,10 +7,14 @@ jQuery.noConflict();
 
 
     $(function () {
+        //对header中最近更新的实现
+        var newest = articleTimeObj[articleTimeObj.length - 1].writeDay;
+        $(".date-update span").text("最后更新：" + newest);
         function startTime() {
             var today = new Date();
             var year = today.getFullYear();
-            var month = today.getMonth();
+            //0表示一月
+            var month = today.getMonth() + 1;
             var day = today.getDate();
             var week = today.getDay();
             var hour = today.getHours();
@@ -87,25 +91,50 @@ jQuery.noConflict();
             $("#weather-city").text("城市：" + weatherObj.city);
             $("#weather-type").text("天气：" + weatherObj.weather);
             $("#weather-time").text("更新时间：" + weatherObj.time);
+            //$("#weather-time").text("更新时间：" + cityone);
         }
 
         $.ajax({
-                type: "GET",
-                url: "https://apis.baidu.com/apistore/weatherservice/weather",
-                dataType: "json",
-                data: {citypinyin: "hangzhou"},
-                headers: {
-                    apikey: "cfa3582ff1836c6a683adaa458cab144"
-                },
-                success: function (data) {
-                    var dataObjOne = new DataObj(data);
-                    headerWeather(dataObjOne);
+            //首先通过ip获得地址
+            type: "get",
+            url: "https://webapi.amap.com/maps/ipLocation?key=608d75903d29ad471362f8c58c550daf",
+            dataType: 'text',
+            success: function (data) {
+                //得到的是"({});",所以去括号还有分号
+                var jsono=data.replace('(', '').replace(')', '').replace(';', '');
+                //把json字符串，弄成obj
+                var jsonObj=JSON.parse(jsono);
+               // var jsonObj = eval("(" + data.replace('(', '').replace(')', '').replace(';', '') + ")");
+                //当前城市，因为得到的是例如杭州市，而我只需要杭州，所以把市剔除
+                var chengshi=jsonObj.city.slice(0,-1);
+                //放在回调中才能得到chengshi，放外面就是undefined
+                $.ajax({
+                        type: "GET",
+                        //根据拼音查
+                        // url: "https://apis.baidu.com/apistore/weatherservice/weather",
+                        //根据名称查
+                        url: "https://apis.baidu.com/apistore/weatherservice/cityname",
+                        dataType: "json",
+                        //根据名称
+                        data: {cityname: chengshi},
+                        //根据拼音
+                        //data: {citypinyin: "hangzhou"},
+                        headers: {
+                            apikey: "cfa3582ff1836c6a683adaa458cab144"
+                        },
+                        success: function (data) {
+                            var dataObjOne = new DataObj(data);
+                            headerWeather(dataObjOne);
 
-                }
+                        }
+                    }
+                );
             }
-        );
-    });
+        });
 
+
+
+    });
 
 
 })(jQuery);

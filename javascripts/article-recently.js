@@ -4,9 +4,6 @@
 jQuery.noConflict();
 (function ($) {
     $(function () {
-        //对header中最近更新的实现
-        var newest = articleTimeObj[articleTimeObj.length - 1].writeDay;
-        $(".date-update span").text("最后更新：" + newest);
         //最近文章部分
         //个数
         var tempMonth = null;

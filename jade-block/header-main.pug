@@ -1,0 +1,39 @@
+//
+   Created by Administrator on 2016/8/24.
+
+.header
+    .header-date
+        p#date-day.date-p
+        p#date-week.date-p
+        p#date-time.date-p
+    .header-weather
+        p#weather-city.weather-p
+        p#weather-type.weather-p
+        p#weather-time.weather-p
+    .header-content
+        .my-blog
+            .blog-name
+                a(href='https://xiaobxia.github.io/blog/')
+                    h3 小b侠的博客
+            .date-update
+                span 最近更新：
+            .my-pic
+                img(src='images/mypic.jpg')
+        .header-sep
+            span
+        .header-nav
+            ul
+                // li中a的地址需要手动修改，添加../或是删除
+                li
+                    a(href='classify/language-nav.html') 语言
+                li
+                    a(href='classify/language-nav.html') 库
+                li
+                    a(href='classify/tool-nav.html') 工具
+                li
+                    a(href='classify/editor-nav.html') 编辑器
+                li
+                    a(href='classify/essay-nav.html') 随笔
+                li
+                    a(href='classify/aboutme-nav.html') 关于我
+script(type='text/javascript', src='javascripts/for-header.js')

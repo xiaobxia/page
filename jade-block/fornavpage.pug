@@ -1,0 +1,24 @@
+//
+   Created by Administrator on 2016/8/24.
+//
+   Created by Administrator on 2016/8/24.
+doctype html
+html
+    head
+        include ../jade-block/nav-head
+    body
+        include ../jade-block/header
+        .article-page
+            block levelone
+            .article-write
+                .left-side-nav
+                    .list-nav
+                        ul
+                            block lileveltwo
+                    .left-side-nav-sep
+                .article-content
+                    .article-content-body
+                    #no-more.no-more
+                        a(href='') 没有更多
+        script(type='text/javascript', src='../javascripts/for-classify.js')
+        include ../jade-block/footer
