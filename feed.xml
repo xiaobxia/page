@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
     <channel>
         <title>
@@ -9,7 +9,7 @@
         <description>
             <![CDATA[ 小b侠的web学习和生活的一些简单分享 ]]>
         </description>
-        <lastBuildDate>2016/8/20</lastBuildDate>
+        <lastBuildDate>Mon, 22 Aug 2016 02:04:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
         <item>
@@ -19,34 +19,10 @@
             <link>
                 https://xiaobxia.github.io/page/aboutme/follow%20me.html
             </link>
-            <guid>
-                https://xiaobxia.github.io/page/aboutme/follow%20me.html
-            </guid>
             <author>
                 <![CDATA[ 小b侠 ]]>
             </author>
-            <pubDate>Sat, 20 Aug 2016 02:04:33 GMT</pubDate>
-            <description>
-                <![CDATA[
-<span>我的github地址：</span>
-<a>https://github.com/xiaobxia</a>
-]]>
-            </description>
-        </item>
-        <item>
-            <title>
-                <![CDATA[ follow me ]]>
-            </title>
-            <link>
-                https://xiaobxia.github.io/page/aboutme/follow%20me.html
-            </link>
-            <guid>
-                https://xiaobxia.github.io/page/aboutme/follow%20me.html
-            </guid>
-            <author>
-                <![CDATA[ 小b侠 ]]>
-            </author>
-            <pubDate>Sat, 24 Aug 2016 20:04:33 GMT</pubDate>
+            <pubDate>Mon, 22 Aug 2016 02:04:33 GMT</pubDate>
             <description>
                 <![CDATA[
 <span>我的github地址：</span>
@@ -55,6 +31,7 @@
             </description>
         </item>
 
+        <atom:link href="https://xiaobxia.github.io/page/feed.xml" rel="self" type="application/rss+xml" />
     </channel>
 
 </rss>
