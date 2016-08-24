@@ -2,9 +2,9 @@
 <rss version="2.0" >
 
     <channel>
-        <title>blog of xiaobxia</title>
+        <title><![CDATA[ blog of xiaobxia ]]></title>
         <link>https://xiaobxia.github.io/page</link>
-        <description>web study and life</description>
+        <description>web study and life<![CDATA[ web study and life ]]></description>
         <lastBuildDate>Mon, 22 Aug 2016 02:04:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
