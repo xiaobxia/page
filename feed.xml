@@ -3,15 +3,20 @@
 
     <channel>
         <title>
-            xiaobxia
+            blog of xiaobxia
         </title>
         <link>https://xiaobxia.github.io/page</link>
         <description>
             web study and life
         </description>
-        <lastBuildDate>Mon, 22 Aug 2016 02:04:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Aug 2016 02:04:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
+        <image>
+            <url>https://xiaobxia.github.io/page/images/mypic.jpg</url>
+            <title>blog of xiaobxia</title>
+            <link>https://xiaobxia.github.io/page</link>
+        </image>
         <item>
             <title>
                 <![CDATA[ follow me ]]>
@@ -23,12 +28,14 @@
             <author>
                 <![CDATA[ xiaobxia ]]>
             </author>
-            <pubDate>Mon, 22 Aug 2016 02:04:33 GMT</pubDate>
+            <pubDate>Sat, 20 Aug 2016 02:04:33 GMT</pubDate>
             <description>
                 <![CDATA[
-<span>我的github地址：</span>
-<a>https://github.com/xiaobxia</a>
-]]>
+                    <span>我的github地址：</span>
+                    <a>https://github.com/xiaobxia</a>
+                    <img src="https://xiaobxia.github.io/page/article-img/github-headpic.jpg">
+
+                ]]>
             </description>
         </item>
  </channel>
