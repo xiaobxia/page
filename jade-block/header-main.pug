@@ -2,32 +2,31 @@
    Created by Administrator on 2016/8/24.
 
 .header
-    .header-date
-        p#date-day.date-p
-        p#date-week.date-p
-        p#date-time.date-p
-    .header-weather
-        p#weather-city.weather-p
-        p#weather-type.weather-p
-        p#weather-time.weather-p
     .header-content
-        .my-blog
+        .blog-inf
             .blog-name
                 a(href='https://xiaobxia.github.io/blog/')
                     h3 小b侠的博客
-            .date-update
-                span 最近更新：
-            .my-pic
+            .blog-update
+                span
+            .blog-pic
                 img(src='images/mypic.jpg')
         .header-sep
-            span
         .header-nav
-            ul
+            .search-block
+                .search-inp-bar
+                    input(type="text" placeholder="搜索博客" id="search-inp")
+                    .search-button#search-btn
+                        a(href='search-result.html')
+                            img(src='images/searchpic.png')
+                .search-block-close#search-close
+                    img(src='images/closepic.png')
+            ul#header-ul
                 // li中a的地址需要手动修改，添加../或是删除
                 li
                     a(href='classify/language-nav.html') 语言
                 li
-                    a(href='classify/language-nav.html') 库
+                    a(href='classify/library-nav.html') 库
                 li
                     a(href='classify/tool-nav.html') 工具
                 li
@@ -36,4 +35,9 @@
                     a(href='classify/essay-nav.html') 随笔
                 li
                     a(href='classify/aboutme-nav.html') 关于我
-script(type='text/javascript', src='javascripts/for-header.js')
+                li
+                    a(href='classify/webApp-nav.html') webApp
+                li
+                    a(id="header-search" href='javascript:;')
+                        img(src='images/searchpic.png')
+script(type='text/javascript', src='javascripts/header-footer.js')

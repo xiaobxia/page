@@ -1,9 +1,9 @@
-
-@mixin filter-blur($value){
+@mixin filter-blur($value) {
   -webkit-filter: blur($value);
   -ms-filter: blur($value);
   filter: blur($value);
 }
+
 @mixin grand-v($colorOne,$colorTwo) {
 
   background: -webkit-linear-gradient($colorOne, $colorTwo); /* Safari 5.1 - 6.0 */
@@ -12,6 +12,7 @@
   background: linear-gradient($colorOne, $colorTwo); /*  */
 
 }
+
 @mixin grand-h($colorOne,$colorTwo) {
 
   background: -webkit-linear-gradient(left, $colorOne, $colorTwo); /* Safari 5.1 - 6.0 */
@@ -20,6 +21,7 @@
   background: linear-gradient(to right, $colorOne, $colorTwo); /* */
 
 }
+
 @mixin relative-center {
   position: relative;
   margin: 0 auto;
@@ -45,73 +47,22 @@
   margin: auto 0;
 
 }
-@mixin relative-hv-center{
+
+@mixin relative-hv-center {
   position: relative;
   margin: auto;
 }
-@mixin absolute-hv-center{
+
+@mixin absolute-hv-center {
   position: absolute;
-  margin: auto ;
+  margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
-
-.header{
-  position: relative;
-  width: 100%;
-  height: 110px;
-  .header-date{
-    position: absolute;
-    left: 40px;
-    height: 60px;
-    width: 150px;
-    text-align: center;
-    .date-p{
-      font-size: 12px;
-      color: rgb(80,80,80);
-      line-height: 20px;
-    }
-  }
-  .header-weather{
-    position: absolute;
-    right: 0;
-    height: 60px;
-    width: 150px;
-    .weather-p{
-      font-size: 12px;
-      color: rgb(80,80,80);
-      line-height: 20px;
-    }
-  }
-  .header-content{
-    @include relative-center;
-    width: 800px;
-  }
-}
-.header-content{
-
-  .my-blog{
-    position: relative;
-    height: 60px;
-  }
-  .header-sep{
-    span{
-      display: block;
-      height: 2px;
-      width: 800px;
-      background-color: rgb(236,236,236);
-    }
-  }
-  .header-nav{
-    height: 48px;
-    line-height: 48px;
-  }
-
-}
-.my-blog{
-  &:after{
+@mixin after {
+  &:after {
     content: "";
     display: block;
     visibility: hidden;
@@ -119,65 +70,186 @@
     clear: both;
     font-size: 0;
   }
+}
+@mixin font-12 {
+  font-size: 12px;
+  font-weight: lighter;
+}
+@mixin font-12-b {
+  font-size: 12px;
+  font-weight: bold;
+}
+@mixin font-12-n {
+  font-size: 12px;
+  font-weight: normal;
+}
+@mixin font-16 {
+  font-size: 16px;
+  font-weight: normal;
+}
+@mixin font-16-b {
+  font-size: 16px;
+  font-weight: bold;
+}
+@mixin font-20 {
+  font-size: 20px;
+  font-weight: bolder;
+}
 
-  .blog-name{
+$grey-50:rgb(50,50,50);
+$grey-80:rgb(80,80,80);
+$grey-110:rgb(110,110,110);
+$grey-160:rgb(160,160,160);
+$grey-200:rgb(200,200,200);
+$grey-230:rgb(230,230,230);
+$grey-236:rgb(236,236,236);
+$grey-245:rgb(245,245,245);
+$blue-25-120-180:rgb(25,120,180);
+
+$blog-inf-height:60px;
+$footer-pic-size:20px;
+$blog-pic-size:36px;
+$header-nav-height:48px;
+$search-block-pic-size:16px;
+@mixin header-small-text-style {
+  color: $grey-80;
+  @include font-12;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  line-height: 20px;
+  background-color: $grey-245;
+  .header-content {
+    @include relative-center;
+    width: 800px;
+  }
+}
+
+.header-content {
+  .blog-inf {
+    position: relative;
+    height: $blog-inf-height;
+  }
+  .header-sep {
+    height: 2px;
+    width: 800px;
+    background-color: $grey-236;
+  }
+  .header-nav {
+    height: $header-nav-height;
+    line-height: $header-nav-height;
+  }
+}
+
+.blog-inf {
+  @include after;
+  .blog-name {
     float: left;
     height: 100%;
-    line-height: 60px;
-    h3{
-      color: rgb(35,123,171);
-      font-size: 16px;
-      font-weight: 800;
+    line-height: $blog-inf-height;
+    h3 {
+      color: $blue-25-120-180;
+      @include font-16-b;
     }
   }
-  .my-pic{
+  .blog-pic {
     position: relative;
     top: 12px;
     float: right;
-    height: 36px;
-    width: 36px;
-    border-radius: 36px;
+    height: $blog-pic-size;
+    width: $blog-pic-size;
+    border-radius: $blog-pic-size;
     overflow: hidden;
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
   }
-  .date-update{
+  .blog-update {
     margin-left: 20px;
     float: right;
-    line-height: 60px;
-    span{
-      font-weight: 200;
-      font-size: 12px;
-      color: rgb(80,80,80);
+    line-height: $blog-inf-height;
+    span {
+      @include header-small-text-style;
     }
   }
 }
-.header-nav{
-  ul{
-    text-align: center;
-    &:after{
-      content: "";
-      display: block;
-      visibility: hidden;
-      height: 0;
-      clear: both;
-      font-size: 0;
+
+.header-nav {
+  .search-block{
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    height: $header-nav-height;
+    width: 100%;
+    .search-inp-bar{
+      position: absolute;
+      height: 100%;
+      width: 60%;
+      left: 20%;
+      input{
+        height: $search-block-pic-size+12px;
+        width: 70%;
+        @include font-12;
+        border: $grey-80;
+
+      }
+      .search-button{
+        @include absolute-v-center;
+        left: 75%;
+        height: $search-block-pic-size;
+        width: $search-block-pic-size;
+        cursor: pointer;
+        img{
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .search-block-close{
+      @include absolute-v-center;
+      height: $search-block-pic-size;
+      width: $search-block-pic-size;
+      cursor: pointer;
+      left: 80%;
+      img{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
-  li{
-    display: inline;
+  &.in-search{
+    li{
+      transform: scale(0);
+    }
+  }
+  ul {
+    z-index: 10;
+    text-align: center;
+    @include after;
+  }
+  li {
+    display: inline-block;
     padding: 0 20px;
-
-    a{
-      font-size:12px;
-      color: #000;
-      &.active{
-        color: rgb(25,120,180);
+    transition: all 1s ease-out;
+    a {
+      @include font-12-b;
+      color: $grey-80;
+      transition: all .5s ease-out;
+      &.active {
+        color: $blue-25-120-180;
       }
-      &:hover{
-        color: rgb(25,120,180);
+      &:hover {
+        text-shadow: 0 0 1.5px $blue-25-120-180;
+        color: $blue-25-120-180;
+      }
+      img{
+        height: 12px;
+        width: 12px;
       }
     }
   }
@@ -186,21 +258,49 @@
 .footer {
   position: relative;
   width: 100%;
-  height: 65px;
-  background-color: rgb(50, 54, 57);
-  ul {
+  background-color: $grey-50;
+
+
+  .footer-wrap{
     @include relative-center;
     width: 800px;
-    height: 100%;
+  }
+  .footer-text {
+    @include relative-center;
+    width: 400px;
+    height: 60px;
     text-align: center;
-    li {
-      padding: 0 20px;
-      display: inline;
-      span {
-        color: rgb(200, 200, 200);
-        font-size: 12px;
-        font-weight: 200;
-        line-height: 65px;
+    ul {
+      height: 100%;
+      li {
+        height: 20px;
+        line-height: 20px;
+        span, a{
+          color: $grey-200;
+
+          @include font-12-n;
+        }
+      }
+    }
+  }
+  .footer-pic {
+    @include relative-center;
+    padding: 15px 0 2px 0;
+    width: ($footer-pic-size+20)*3;
+    height: $footer-pic-size;
+    .footer-pic-sub {
+      float: left;
+      padding: 0 20px 0 0;
+      height: $footer-pic-size;
+      width: $footer-pic-size;
+      a {
+        display: block;
+        width: $footer-pic-size;
+        height: $footer-pic-size;
+      }
+      img {
+        width: $footer-pic-size;
+        height: $footer-pic-size;
       }
     }
   }

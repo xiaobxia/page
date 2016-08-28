@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        include jade-block/search-head
+    body
+        include jade-block/header-main
+        .search-page
+            .search-page-msg
+                h4 关于
+                    span
+                    |的结果
+            .search-page-content
+            #no-more.no-more
+                a(href='') 没有更多
+        script(type='text/javascript', src='javascripts/for-search.js')
+        include jade-block/footer-main

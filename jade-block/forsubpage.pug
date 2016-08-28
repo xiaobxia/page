@@ -5,6 +5,7 @@ doctype html
 html
     head
         include ../jade-block/page-head
+        block headExtend
     body
         include ../jade-block/header
         .article-page
@@ -28,22 +29,24 @@ html
                     .left-side-nav-sep
                 .article-content
                     .article-content-title
-                        h4
+                        block tittle
                     .article-content-editer
                         .writer
                             span 作者：
                             span xiaobxia
                         .write-date
                             span 发布日期：
-                            block fabutime
+                            block publishTime
                         .write-recently
                             span 最后编辑：
-                            block zuihoutime
+                            block lastTime
                     .article-content-body
                         block content
                     #no-more.no-more
                         a(href='') 没有更多
         script(type='text/javascript', src='../javascripts/article-write.js')
+
         include ../jade-block/footer
+        block jsExtend
 
 

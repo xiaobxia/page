@@ -1,8 +1,7 @@
 .recently-article {
   position: relative;
   width: 100%;
-  height: 400px;
-  background-color: whitesmoke; }
+  height: 400px; }
   .recently-article .article-nav {
     position: absolute;
     margin: 0 auto;
@@ -23,7 +22,7 @@
     height: 40px; }
   .article-nav .recently-title h4 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bolder;
     line-height: 40px;
     color: #000; }
 .article-nav .recently-sep {
@@ -34,7 +33,7 @@
     position: absolute;
     width: 800px;
     height: 2px;
-    background-color: #e3e3e3; }
+    background-color: #e6e6e6; }
   .article-nav .recently-sep .sep-now {
     position: absolute;
     margin: 0 auto;
@@ -64,15 +63,15 @@
     text-align: center;
     border-radius: 4px; }
     .article-nav .article-more .more-button:hover {
-      background-color: #e3e3e3; }
+      background-color: #e6e6e6; }
       .article-nav .article-more .more-button:hover a {
         color: #1978b4; }
     .article-nav .article-more .more-button a {
       display: block;
-      color: #e3e3e3;
+      color: #e6e6e6;
       line-height: 20px;
       font-size: 12px;
-      font-weight: 300; }
+      font-weight: lighter; }
 
 .main-nav .article-nav-content {
   position: absolute;
@@ -99,24 +98,25 @@
     position: relative;
     width: 100%;
     height: 50%;
-    background-color: #e3e3e3;
+    background-color: #e6e6e6;
     text-align: center; }
     .sub-article-nav .art-date .art-date-m span {
       line-height: 25px;
       display: block;
       font-size: 12px;
+      font-weight: lighter;
       color: #6e6e6e; }
   .sub-article-nav .art-date .art-date-d {
     position: relative;
     width: 100%;
     height: 50%;
     background-color: #fff;
-    text-align: center;
-    vertical-align: middle; }
+    text-align: center; }
     .sub-article-nav .art-date .art-date-d span {
       display: block;
       line-height: 25px;
       font-size: 16px;
+      font-weight: normal;
       color: #a0a0a0; }
 .sub-article-nav .art-date.new-month .art-date-m {
   background-color: #1978b4; }
@@ -132,15 +132,18 @@
   .sub-article-nav .art-introduction a:hover h5, .sub-article-nav .art-introduction a:hover p {
     color: #1978b4; }
   .sub-article-nav .art-introduction h5 {
-    color: #6e6e6e;
-    font-size: 12px; }
+    color: #505050;
+    font-size: 12px;
+    font-weight: bold; }
   .sub-article-nav .art-introduction span {
     border-radius: 6px;
     color: #fff;
     font-size: 12px;
+    font-weight: lighter;
     background-color: #1978b4; }
   .sub-article-nav .art-introduction p {
-    color: #a0a0a0;
-    font-size: 12px; }
+    color: #6e6e6e;
+    font-size: 12px;
+    font-weight: normal; }
 
 /*# sourceMappingURL=article-recently.css.map */

@@ -1,8 +1,28 @@
-$blue-one:rgb(25,120,180);
-$grey-one:rgb(245,245,245);
-$grey-two:rgb(227,227,227);
-$grey-three:rgb(110,110,110);
-$grey-four:rgb(160,160,160);
+
+@mixin filter-blur($value) {
+  -webkit-filter: blur($value);
+  -ms-filter: blur($value);
+  filter: blur($value);
+}
+
+@mixin grand-v($colorOne,$colorTwo) {
+
+  background: -webkit-linear-gradient($colorOne, $colorTwo); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient($colorOne, $colorTwo); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient($colorOne, $colorTwo); /* Firefox 3.6 - 15 */
+  background: linear-gradient($colorOne, $colorTwo); /*  */
+
+}
+
+@mixin grand-h($colorOne,$colorTwo) {
+
+  background: -webkit-linear-gradient(left, $colorOne, $colorTwo); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, $colorOne, $colorTwo); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, $colorOne, $colorTwo); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, $colorOne, $colorTwo); /* */
+
+}
+
 @mixin relative-center {
   position: relative;
   margin: 0 auto;
@@ -28,35 +48,88 @@ $grey-four:rgb(160,160,160);
   margin: auto 0;
 
 }
+
+@mixin relative-hv-center {
+  position: relative;
+  margin: auto;
+}
+
+@mixin absolute-hv-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@mixin after {
+  &:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    font-size: 0;
+  }
+}
+@mixin font-12 {
+  font-size: 12px;
+  font-weight: lighter;
+}
+@mixin font-12-b {
+  font-size: 12px;
+  font-weight: bold;
+}
+@mixin font-12-n {
+  font-size: 12px;
+  font-weight: normal;
+}
+@mixin font-16 {
+  font-size: 16px;
+  font-weight: normal;
+}
+@mixin font-20 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+$grey-50:rgb(50,50,50);
+$grey-80:rgb(80,80,80);
+$grey-110:rgb(110,110,110);
+$grey-160:rgb(160,160,160);
+$grey-200:rgb(200,200,200);
+$grey-230:rgb(230,230,230);
+$grey-236:rgb(236,236,236);
+$grey-245:rgb(245,245,245);
+$blue-25-120-180:rgb(25,120,180);
+
+$art-title-block-height:65px;
+$art-title-height:40px;
+$art-nav-item-height:50px;
 .recently-article{
   position: relative;
   width: 100%;
   height: 400px;
-  background-color: rgb(245,245,245);
   .article-nav{
     @include absolute-center;
     width: 800px;
     height: 100%;
   }
-
 }
 .article-nav{
   .recently-title{
     position:relative;
-    height: 65px;
+    height: $art-title-block-height;
     width: 100%;
     text-align: center;
     div{
       position: relative;
       display: inline-block;
-      top: 25px;
-      height: 40px;
-
+      top: $art-title-block-height - $art-title-height;
+      height: $art-title-height;
     }
     h4{
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 40px;
+      @include font-20;
+      line-height: $art-title-height;
       color: #000;
     }
   }
@@ -68,16 +141,14 @@ $grey-four:rgb(160,160,160);
         position: absolute;
         width: 800px;
         height: 2px;
-        background-color: $grey-two;
-
+        background-color: $grey-230;
     }
     .sep-now{
         @include absolute-center;
       top:-1px;
         width: 100px;
         height: 4px;
-        background-color: $grey-three;
-
+        background-color: $grey-110;
     }
   }
   .main-nav{
@@ -94,21 +165,20 @@ $grey-four:rgb(160,160,160);
       top: 5px;
       width: 80px;
       height: 20px;
-      background-color: $grey-three;
+      background-color: $grey-110;
       text-align: center;
       border-radius: 4px;
       &:hover{
-        background-color: $grey-two;
+        background-color: $grey-230;
         a{
-          color: $blue-one;
+          color: $blue-25-120-180;
         }
       }
       a{
         display: block;
-        color: $grey-two;
+        color: $grey-230;
         line-height: 20px;
-        font-size: 12px;
-        font-weight: 300;
+        @include font-12;
       }
     }
 
@@ -133,26 +203,26 @@ $grey-four:rgb(160,160,160);
     margin: 0 0 0 25px;
     padding: 15px 0 0 0;
     width: 350px;
-    height: 50px;
+    height: $art-nav-item-height;
   }
 }
 .sub-article-nav{
   .art-date{
     position: absolute;
     left: 0;
-    height: 50px;
+    height: $art-nav-item-height;
     width: 30px;
     .art-date-m{
       position: relative;
       width: 100%;
       height: 50%;
-      background-color: $grey-two;
+      background-color: $grey-230;
       text-align: center;
       span{
         line-height: 25px;
         display: block;
-        font-size: 12px;
-        color: $grey-three;
+        @include font-12;
+        color: $grey-110;
       }
     }
     .art-date-d{
@@ -161,25 +231,24 @@ $grey-four:rgb(160,160,160);
       height: 50%;
       background-color: #fff;
       text-align: center;
-      vertical-align: middle;
       span{
         display: block;
         line-height: 25px;
-        font-size: 16px;
-        color: $grey-four;
+        @include font-16;
+        color: $grey-160;
       }
     }
   }
   .art-date.new-month {
     .art-date-m{
-      background-color: $blue-one;
+      background-color: $blue-25-120-180;
       span{
         color: #fff;
       }
     }
     .art-date-d{
       span{
-        color: $blue-one;
+        color: $blue-25-120-180;
       }
     }
   }
@@ -187,27 +256,27 @@ $grey-four:rgb(160,160,160);
     position: absolute;
     left: 40px;
     width: 315px;
-    height: 50px;
+    height: $art-nav-item-height;
     a{
       &:hover{
         h5,p{
-          color: $blue-one;
+          color: $blue-25-120-180;
         }
       }
     }
     h5{
-      color: $grey-three;
-      font-size: 12px;
+      color: $grey-80;
+      @include font-12-b;
     }
     span{
       border-radius: 6px;
       color: #fff;
-      font-size: 12px;
-      background-color: $blue-one;
+      @include font-12;
+      background-color: $blue-25-120-180;
     }
     p{
-      color: $grey-four;
-      font-size: 12px;
+      color: $grey-110;
+      @include font-12-n;
     }
   }
 }

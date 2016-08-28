@@ -5,7 +5,7 @@
         <title>
             blog of xiaobxia
         </title>
-        <link>https://xiaobxia.github.io/page</link>
+        <link>https://xiaobxia.github.io/blog</link>
         <description>
             web study and life
         </description>
@@ -13,18 +13,18 @@
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
         <image>
-            <url>https://xiaobxia.github.io/page/images/mypic.jpg</url>
+            <url>https://xiaobxia.github.io/blog/images/mypic.jpg</url>
             <title>blog of xiaobxia</title>
-            <link>https://xiaobxia.github.io/page</link>
+            <link>https://xiaobxia.github.io/blog</link>
         </image>
         <item>
             <title>
                 <![CDATA[ follow me ]]>
             </title>
             <link>
-                https://xiaobxia.github.io/page/aboutme/follow-me.html
+                https://xiaobxia.github.io/blog/aboutme/follow-me.html
             </link>
-            <guid>https://xiaobxia.github.io/page/aboutme/follow-me.html</guid>
+            <guid>https://xiaobxia.github.io/blog/aboutme/follow-me.html</guid>
             <author>
                 <![CDATA[ xiaobxia ]]>
             </author>
@@ -33,7 +33,7 @@
                 <![CDATA[
                     <span>我的github地址：</span>
                     <a>https://github.com/xiaobxia</a>
-                    <img src="https://xiaobxia.github.io/page/article-img/github-headpic.jpg">
+                    <img src="https://xiaobxia.github.io/blog/article-img/github-headpic.jpg">
                 ]]>
             </description>
         </item>

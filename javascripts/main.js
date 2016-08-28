@@ -62,19 +62,7 @@ var articleTimeObj = [
         levelTwoPath:"",
         levelOne: "关于我",
         levelTwo: "社区地址",
-        description: "我的社区主页地址"
-    },
-    {
-        pageId:1,
-        writeDay: "2016年8月22日",
-        writeTime: "20160822",
-        title: "follow me",
-        path: "essay/essay-one.html",
-        levelOnePath:"classify/essay-nav.html",
-        levelTwoPath:"",
-        levelOne: "随笔",
-        levelTwo: "生活",
-        description: "随笔测试"
+        description: "我的社区主页地址，包括github，weibo"
     }
 ];
 /**

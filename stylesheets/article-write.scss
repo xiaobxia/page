@@ -1,9 +1,4 @@
-$blue-one:rgb(25,120,180);
-$grey-one:rgb(245,245,245);
-$grey-two:rgb(227,227,227);
-$grey-three:rgb(110,110,110);
-$grey-four:rgb(160,160,160);
-$black-one:rgb(80,80,80);
+
 @mixin filter-blur($value){
   -webkit-filter: blur($value);
   -ms-filter: blur($value);
@@ -63,6 +58,46 @@ $black-one:rgb(80,80,80);
   left: 0;
   right: 0;
 }
+@mixin after {
+  &:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    font-size: 0;
+  }
+}
+@mixin font-12 {
+  font-size: 12px;
+  font-weight: lighter;
+}
+@mixin font-14 {
+  font-size: 14px;
+  font-weight: normal;
+}
+@mixin font-16 {
+  font-size: 16px;
+  font-weight: normal;
+}
+@mixin font-20 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+$grey-50:rgb(50,50,50);
+$grey-80:rgb(80,80,80);
+$grey-110:rgb(110,110,110);
+$grey-160:rgb(160,160,160);
+$grey-200:rgb(200,200,200);
+$grey-230:rgb(230,230,230);
+$grey-236:rgb(236,236,236);
+$grey-245:rgb(245,245,245);
+$blue-25-120-180:rgb(25,120,180);
+
+$page-width:960px;
+$tab-height:60px;
+$nav-list-item-height:20px;
+
 .article-page{
   position: relative;
   width: 100%;
@@ -73,8 +108,8 @@ $black-one:rgb(80,80,80);
   .article-tab{
     z-index: 1000;
     @include absolute-center;
-    width: 1000px;
-    height: 60px;
+    width: $page-width;
+    height: $tab-height;
     background-color: rgba(255,255,255,.8);
     &.fix{
       position: fixed;
@@ -85,16 +120,9 @@ $black-one:rgb(80,80,80);
   .article-write{
     z-index: 10;
     @include relative-center;
-    width: 1000px;
-    padding: 60px 0 0 0;
-    &:after {
-      content: "";
-      display: block;
-      visibility: hidden;
-      height: 0;
-      clear: both;
-      font-size: 0;
-    }
+    width: $page-width;
+    padding: $tab-height 0 0 0;
+    @include after;
   }
 }
 
@@ -104,23 +132,22 @@ $black-one:rgb(80,80,80);
     position: relative;
     top:0;
     left: 0;
-    width: 200px;
+    width: 20%;
     height: 500px;
     .left-side-nav-sep{
       position: absolute;
       right: 0;
       height: 100%;
       width: 2px;
-      background-color: $grey-two;
+      background-color: $grey-230;
     }
 
   }
   .article-content{
     float: left;
     position: relative;
-
     top: 0;
-    width: 800px;
+    width: 80%;
 
   }
 }
@@ -132,18 +159,17 @@ $black-one:rgb(80,80,80);
     line-height: 20px;
     .level-a{
       &:hover{
-        text-shadow: 0 0 2px $blue-one;
+        text-shadow: 0 0 2px $blue-25-120-180;
       }
       padding: 0 5px;
-      color: $blue-one;
-      font-size: 16px;
-      font-weight: 400;
+      color: $blue-25-120-180;
+      @include font-16;
+      transition: text-shadow .5s ease-out;
     }
     .level-pic{
       padding: 0 5px;
-      color: $grey-four;
-      font-size: 16px;
-      font-weight: 400;
+      color: $grey-160;
+      @include font-16;
     }
   }
   .article-tab-sep{
@@ -151,7 +177,7 @@ $black-one:rgb(80,80,80);
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: $grey-two;
+    background-color: $grey-230;
   }
 }
 .article-content{
@@ -162,8 +188,7 @@ $black-one:rgb(80,80,80);
     text-align: center;
     h4{
       line-height: 50px;
-      font-size: 20px;
-      font-weight: 600;
+      @include font-20;
     }
   }
   .article-content-editer{
@@ -172,108 +197,95 @@ $black-one:rgb(80,80,80);
     height: 40px;
     .writer, .write-date, .write-recently{
       position: absolute;
-      width: 150px;
+      width: 20%;
       height: 100%;
       text-align: center;
       span{
-        font-size: 12px;
-        font-weight: 200;
+        @include font-12;
         line-height: 40px;
       }
     }
     .writer{
-      left: 125px;
+      left: 10%;
     }
     .write-date{
-      left: 325px;
+      left: 40%;
     }
     .write-recently{
-      left: 525px;
+      left: 70%;
     }
   }
   .article-content-body{
     @include relative-center;
     min-height: 310px;
-    width: 700px;
+    width: 90%;
     p{
-      color: $black-one;
+      color: $grey-80;
       text-indent: 2em;
-      font-size: 16px;
+      @include font-16;
     }
     a{
-      font-size: 16px;
-      font-weight: 800;
+      @include font-16;
       line-height: 25px;
-      color: $grey-three;
+      color: $grey-110;
       &:hover{
-        color: $blue-one;
+        color: $blue-25-120-180;
       }
     }
     span{
-      font-size: 16px;
-      font-weight: 800;
+      @include font-16;
       line-height: 25px;
-      color: $grey-three;
+      color: $grey-110;
     }
     code{
-      font-size: 16px;
-      font-weight: 800;
+      @include font-16;
       line-height: 25px;
-      color: $grey-three;
+      color: $grey-110;
     }
-    .for-a{
+    .for-a, .for-code{
       margin: 0 0 10px 0;
-      padding: 10px 20px;
-      width: 100%;
+      padding: 10px 5%;
+      width: 90%;
       border-radius: 10px;
-      background-color: $grey-two;
-    }
-    .for-code{
-      margin:  0 0 10px 0;
-      padding: 10px 20px;
-      width: 100%;
-      border-radius: 10px;
-      background-color: $grey-two;
-
+      background-color: $grey-230;
     }
     .for-emphasis{
       padding: 0 8px;
       border-radius: 6px;
       color: #fff;
-      background-color: $blue-one;
+      background-color: $blue-25-120-180;
     }
     .for-img-show{
       position: relative;
-      width: 100%;
+      width: 90%;
       border-radius: 10px;
       margin: 0 0 10px 0;
-      padding: 20px;
-      background-color: $grey-one;
+      padding: 20px 5%;
+      background-color: $grey-245;
       img{
         display: block;
         @include relative-center;
       }
     }
-
   }
   .no-more{
     @include relative-center;
     margin: 40px auto;
     width: 80px;
     height: 20px;
-    background-color: $grey-three;
+    background-color: $grey-110;
     text-align: center;
     border-radius: 4px;
     &:hover{
-      background-color: $grey-two;
+      background-color: $grey-230;
       a{
-        color: $blue-one;
+        color: $blue-25-120-180;
 
       }
     }
     a{
       display: block;
-      color: $grey-two;
+      color: $grey-230;
       line-height: 20px;
       font-size: 12px;
       font-weight: 300;
@@ -292,12 +304,12 @@ $black-one:rgb(80,80,80);
     position: absolute;
     top:480px;
     width: 100%;
-    height: 20px;
+    height: $nav-list-item-height;
     .article-nav-btn{
       position: absolute;
-      width: 20px;
+      width: $nav-list-item-height;
       height: 100%;
-      background-color: $grey-two;
+      background-color: $grey-230;
       text-align: center;
       border-radius: 4px;
       &:nth-of-type(1){
@@ -307,14 +319,13 @@ $black-one:rgb(80,80,80);
         right: 0;
       }
       &:hover{
-        box-shadow: 0 0 6px $blue-one;
+        box-shadow: 0 0 6px $blue-25-120-180;
       }
       a{
         display: block;
-        color: $blue-one;
-        line-height: 20px;
-        font-size: 12px;
-        font-weight: 300;
+        color: $blue-25-120-180;
+        line-height: $nav-list-item-height;
+        @include font-12;
       }
     }
   }
@@ -328,33 +339,24 @@ $black-one:rgb(80,80,80);
   }
   li{
     margin-bottom: 4px;
-    height: 20px;
+    border-radius: 5px;
+    height: $nav-list-item-height;
     width: 100%;
     padding: 0 40px;
-    line-height: 20px;
-    transition: padding .5s ease;
+    line-height: $nav-list-item-height;
     span{
-      font-size: 14px;
-      color: $blue-one;
+      @include font-14;
+      color: $blue-25-120-180;
     }
     a{
-      font-size: 14px;
-      color: $grey-three;
+      @include font-14;
+      color: $grey-110;
     }
-    &.active{
-      padding: 0 50px;
-      background-color: $blue-one;
+    &.active, &:hover{
+      background-color: $blue-25-120-180;
       a, span{
         color: #fff;
       }
-    }
-    &:hover{
-      padding: 0 50px;
-      background-color: $blue-one;
-      a, span{
-        color: #fff;
-      }
-
     }
   }
 }

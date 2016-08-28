@@ -6,7 +6,7 @@
     z-index: 10;
     position: relative;
     margin: 0 auto;
-    width: 1000px;
+    width: 960px;
     padding: 60px 0 0 0; }
     .article-page .article-write:after {
       content: "";
@@ -21,37 +21,36 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 20%;
   height: 500px; }
   .article-write .left-side-nav .left-side-nav-sep {
     position: absolute;
     right: 0;
     height: 100%;
     width: 2px;
-    background-color: #e3e3e3; }
+    background-color: #e6e6e6; }
 .article-write .article-content {
   float: left;
   position: relative;
   top: 0;
-  width: 800px; }
+  width: 80%; }
 
 .article-content .article-content-body {
   position: relative;
   margin: 0 auto;
   min-height: 400px;
-  width: 700px; }
+  width: 90%; }
   .article-content .article-content-body .article-inf {
     position: relative;
     margin: 0 0 10px 0;
-    padding: 0 20px;
-    width: 100%;
+    padding: 0 5%;
+    width: 90%;
     border-radius: 10px;
-    background-color: whitesmoke; }
+    background-color: whitesmoke;
+    transition: background-color .5s ease-out; }
     .article-content .article-content-body .article-inf:hover {
       background-color: #a0a0a0; }
-      .article-content .article-content-body .article-inf:hover h5, .article-content .article-content-body .article-inf:hover p {
-        color: #1978b4; }
-      .article-content .article-content-body .article-inf:hover span {
+      .article-content .article-content-body .article-inf:hover h5, .article-content .article-content-body .article-inf:hover p, .article-content .article-content-body .article-inf:hover span {
         color: #fff; }
     .article-content .article-content-body .article-inf span {
       position: absolute;
@@ -59,7 +58,7 @@
       top: 0;
       right: 0;
       font-size: 12px;
-      font-weight: 800;
+      font-weight: bold;
       line-height: 25px;
       color: #6e6e6e; }
     .article-content .article-content-body .article-inf a {
@@ -70,18 +69,21 @@
     .article-content .article-content-body .article-inf h5 {
       display: inline;
       color: #6e6e6e;
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: bold; }
     .article-content .article-content-body .article-inf em {
       margin-left: 20px;
       padding: 0 5px;
       border-radius: 6px;
       color: #fff;
       font-size: 12px;
+      font-weight: lighter;
       background-color: #1978b4; }
     .article-content .article-content-body .article-inf p {
       line-height: 25px;
       color: #a0a0a0;
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: lighter; }
 .article-content .no-more {
   position: relative;
   margin: 0 auto;
@@ -92,15 +94,15 @@
   text-align: center;
   border-radius: 4px; }
   .article-content .no-more:hover {
-    background-color: #e3e3e3; }
+    background-color: #e6e6e6; }
     .article-content .no-more:hover a {
       color: #1978b4; }
   .article-content .no-more a {
     display: block;
-    color: #e3e3e3;
+    color: #e6e6e6;
     line-height: 20px;
     font-size: 12px;
-    font-weight: 300; }
+    font-weight: lighter; }
 
 .left-side-nav .list-nav {
   position: absolute;
@@ -115,34 +117,28 @@
   display: block; }
 .list-nav li {
   margin-bottom: 4px;
+  border-radius: 5px;
   height: 20px;
   width: 100%;
   padding: 0 40px;
-  line-height: 20px;
-  transition: padding .5s ease; }
+  line-height: 20px; }
   .list-nav li span {
     font-size: 14px;
+    font-weight: normal;
     color: #1978b4; }
   .list-nav li em {
     margin-left: 10px;
     padding: 0 6px;
     border-radius: 10px;
     font-size: 12px;
+    font-weight: lighter;
     color: #a0a0a0;
     background-color: whitesmoke; }
-  .list-nav li.active {
-    padding: 0 50px;
+  .list-nav li.active, .list-nav li:hover {
     background-color: #1978b4; }
-    .list-nav li.active span {
+    .list-nav li.active span, .list-nav li:hover span {
       color: #fff; }
-    .list-nav li.active em {
-      color: #1978b4; }
-  .list-nav li:hover {
-    padding: 0 50px;
-    background-color: #1978b4; }
-    .list-nav li:hover span {
-      color: #fff; }
-    .list-nav li:hover em {
+    .list-nav li.active em, .list-nav li:hover em {
       color: #1978b4; }
 
 /*# sourceMappingURL=for-time.css.map */

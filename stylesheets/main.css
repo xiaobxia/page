@@ -408,7 +408,13 @@ th {
 body {
   font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
   width: 100%;
-  min-width: 1120px;
+  min-width: 960px;
   color: #505050; }
+
+.is-block {
+  display: block !important; }
+
+.is-none {
+  display: none !important; }
 
 /*# sourceMappingURL=main.css.map */
