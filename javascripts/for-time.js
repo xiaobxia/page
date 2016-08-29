@@ -67,7 +67,7 @@ jQuery.noConflict();
                 if ($(".list-nav ul li").eq(a).hasClass("active")) {
                     var yuansu = "";
                     for (var c = 0; c < artintime[a].length; c++) {
-                        yuansu += "<div class='article-inf'> <a href='" +
+                        yuansu += "<div class='article-inf'> <a href='" +"../"+
                             artintime[a][c].path + "'> <h5>" +
                             artintime[a][c].title + "</h5> <em>" +
                             artintime[a][c].levelOne + "</em> <p>" +
