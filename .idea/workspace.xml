@@ -1,78 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="修改了一下结构">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/for-time-and-nav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/for-time-and-nav.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/for-time-and-nav.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jade-block/for-comment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jade-block/for-comment.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jade-block/formainpage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jade-block/formainpage.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/article-recently.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/article-write.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/for-test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/for-time.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/header-footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/motto-part.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/part/pic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/for-time.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/for-time.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/for-time.scss" afterPath="" />
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="小错误">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/follow-me.html" afterPath="$PROJECT_DIR$/aboutme/follow-me.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/follow-me.pug" afterPath="$PROJECT_DIR$/aboutme/follow-me.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/aboutme-nav.html" afterPath="$PROJECT_DIR$/classify/aboutme-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/editor-nav.html" afterPath="$PROJECT_DIR$/classify/editor-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/essay-nav.html" afterPath="$PROJECT_DIR$/classify/essay-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="$PROJECT_DIR$/classify/language-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/library-nav.html" afterPath="$PROJECT_DIR$/classify/library-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/tool-nav.html" afterPath="$PROJECT_DIR$/classify/tool-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/webApp-nav.html" afterPath="$PROJECT_DIR$/classify/webApp-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.pug" afterPath="$PROJECT_DIR$/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/article-recently.pug" afterPath="$PROJECT_DIR$/jade-block/article-recently.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/footer.pug" afterPath="$PROJECT_DIR$/jade-block/footer.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/for-nav.html" afterPath="$PROJECT_DIR$/jade-block/for-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/for-nav.pug" afterPath="$PROJECT_DIR$/jade-block/for-nav.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/for-time.html" afterPath="$PROJECT_DIR$/jade-block/for-time.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/for-time.pug" afterPath="$PROJECT_DIR$/jade-block/for-time.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.pug" afterPath="$PROJECT_DIR$/jade-block/forsubpage.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/main-head.html" afterPath="$PROJECT_DIR$/jade-block/main-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/main-head.pug" afterPath="$PROJECT_DIR$/jade-block/main-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/nav-head.html" afterPath="$PROJECT_DIR$/jade-block/nav-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/nav-head.pug" afterPath="$PROJECT_DIR$/jade-block/nav-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/page-head.html" afterPath="$PROJECT_DIR$/jade-block/page-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/page-head.pug" afterPath="$PROJECT_DIR$/jade-block/page-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/search-head.html" afterPath="$PROJECT_DIR$/jade-block/search-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/search-head.pug" afterPath="$PROJECT_DIR$/jade-block/search-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/time-head.html" afterPath="$PROJECT_DIR$/jade-block/time-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/time-head.pug" afterPath="$PROJECT_DIR$/jade-block/time-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/article-recently.js" afterPath="$PROJECT_DIR$/javascripts/article-recently.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/article-write.js" afterPath="$PROJECT_DIR$/javascripts/article-write.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/for-classify.js" afterPath="$PROJECT_DIR$/javascripts/for-classify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/for-search.js" afterPath="$PROJECT_DIR$/javascripts/for-search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/for-time.js" afterPath="$PROJECT_DIR$/javascripts/for-time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.pug" afterPath="$PROJECT_DIR$/jade-block/example-sub.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search-result.html" afterPath="$PROJECT_DIR$/search-result.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search-result.pug" afterPath="$PROJECT_DIR$/search-result.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-recently.css" afterPath="$PROJECT_DIR$/stylesheets/article-recently.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-recently.css.map" afterPath="$PROJECT_DIR$/stylesheets/article-recently.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-recently.scss" afterPath="$PROJECT_DIR$/stylesheets/article-recently.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css" afterPath="$PROJECT_DIR$/stylesheets/article-write.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css.map" afterPath="$PROJECT_DIR$/stylesheets/article-write.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.scss" afterPath="$PROJECT_DIR$/stylesheets/article-write.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/cssTemplate.scss" afterPath="$PROJECT_DIR$/stylesheets/cssTemplate.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css.map" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.scss" afterPath="$PROJECT_DIR$/stylesheets/header-footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/search-result.css" afterPath="$PROJECT_DIR$/stylesheets/search-result.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/search-result.css.map" afterPath="$PROJECT_DIR$/stylesheets/search-result.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/search-result.scss" afterPath="$PROJECT_DIR$/stylesheets/search-result.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time-line.html" afterPath="$PROJECT_DIR$/time-line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time-line.pug" afterPath="$PROJECT_DIR$/time-line.pug" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,11 +37,21 @@
       <file leaf-file-name="follow-me.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aboutme/follow-me.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="182">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
-                <marker date="1472461068770" expanded="true" signature="38:39" ph="..." />
+                <marker date="1472468625145" expanded="true" signature="38:39" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example-sub.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,26 +61,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
               <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="for-search.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javascripts/for-search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search-result.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search-result.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -158,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jade-block/time-nav.pug" />
         <option value="$PROJECT_DIR$/jade-block/main-nav.pug" />
         <option value="$PROJECT_DIR$/jade-block/header-main.pug" />
         <option value="$PROJECT_DIR$/jade-block/forsubpage.html" />
@@ -197,18 +122,19 @@
         <option value="$PROJECT_DIR$/jade-block/nav-head.pug" />
         <option value="$PROJECT_DIR$/jade-block/time-head.pug" />
         <option value="$PROJECT_DIR$/index.pug" />
-        <option value="$PROJECT_DIR$/jade-block/example-sub.pug" />
         <option value="$PROJECT_DIR$/javascripts/for-classify.js" />
         <option value="$PROJECT_DIR$/javascripts/for-time.js" />
-        <option value="$PROJECT_DIR$/aboutme/follow-me.pug" />
         <option value="$PROJECT_DIR$/stylesheets/cssTemplate.scss" />
         <option value="$PROJECT_DIR$/stylesheets/header-footer.scss" />
         <option value="$PROJECT_DIR$/stylesheets/article-write.scss" />
         <option value="$PROJECT_DIR$/stylesheets/article-recently.scss" />
         <option value="$PROJECT_DIR$/stylesheets/for-time-and-nav.scss" />
         <option value="$PROJECT_DIR$/stylesheets/search-result.scss" />
-        <option value="$PROJECT_DIR$/search-result.pug" />
         <option value="$PROJECT_DIR$/javascripts/for-search.js" />
+        <option value="$PROJECT_DIR$/search-result.html" />
+        <option value="$PROJECT_DIR$/search-result.pug" />
+        <option value="$PROJECT_DIR$/aboutme/follow-me.pug" />
+        <option value="$PROJECT_DIR$/jade-block/example-sub.pug" />
       </list>
     </option>
   </component>
@@ -279,21 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="jade-block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,7 +317,7 @@
       <workItem from="1472383333382" duration="3709000" />
       <workItem from="1472391388867" duration="9345000" />
       <workItem from="1472434849087" duration="1867000" />
-      <workItem from="1472458662703" duration="5887000" />
+      <workItem from="1472458662703" duration="7484000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1471268472324</created>
@@ -624,11 +536,25 @@
       <option name="project" value="LOCAL" />
       <updated>1472376457645</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="大修改">
+      <created>1472464614463</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1472464614463</updated>
+    </task>
+    <task id="LOCAL-00033" summary="小错误">
+      <created>1472464936956</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1472464936956</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112606000" />
+    <option name="totallyTimeSpent" value="114203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -670,14 +596,15 @@
     <MESSAGE value="修复css显示问题" />
     <MESSAGE value="test" />
     <MESSAGE value="从blog来的，在这改进，编译完以后再放入blog，减少blog的空间使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="从blog来的，在这改进，编译完以后再放入blog，减少blog的空间使用" />
+    <MESSAGE value="大修改" />
+    <MESSAGE value="小错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="小错误" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jade-block/for-comment.pug" />
     <entry file="file://$PROJECT_DIR$/jade-block/footer-main.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,13 +789,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,6 +873,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/search-result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/for-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search-result.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/search-result.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -962,26 +907,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aboutme/follow-me.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="182">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
-            <marker date="1472461068770" expanded="true" signature="38:39" ph="..." />
+            <marker date="1472468625145" expanded="true" signature="38:39" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search-result.pug">
+    <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/for-search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+        <state relative-caret-position="224">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding />
         </state>
       </provider>
