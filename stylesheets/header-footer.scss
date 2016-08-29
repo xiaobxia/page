@@ -71,6 +71,14 @@
     font-size: 0;
   }
 }
+@mixin after-p {
+  &:after{
+    content: ' ';
+    display: block;
+    height: 1em;
+
+  }
+}
 @mixin font-12 {
   font-size: 12px;
   font-weight: lighter;
@@ -95,7 +103,9 @@
   font-size: 20px;
   font-weight: bolder;
 }
-
+@mixin color-sep{
+  background-color: $grey-230;
+}
 $grey-50:rgb(50,50,50);
 $grey-80:rgb(80,80,80);
 $grey-110:rgb(110,110,110);
@@ -135,7 +145,7 @@ $search-block-pic-size:16px;
   .header-sep {
     height: 2px;
     width: 800px;
-    background-color: $grey-236;
+    @include color-sep;
   }
   .header-nav {
     height: $header-nav-height;
@@ -259,8 +269,6 @@ $search-block-pic-size:16px;
   position: relative;
   width: 100%;
   background-color: $grey-50;
-
-
   .footer-wrap{
     @include relative-center;
     width: 800px;

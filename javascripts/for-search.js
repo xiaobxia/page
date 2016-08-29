@@ -23,7 +23,7 @@ jQuery.noConflict();
             }
             return n;
         }
-        $(".search-page-msg h4").text("关于"+searchText+"的结果");
+        $(".search-page-msg span").text(searchText);
         for (var i = 0; i < articleTimeObj.length; i++) {
             //对应的倒过来的对象
             var obj = articleTimeObj[articleTimeObj.length - 1 - i];
@@ -58,6 +58,10 @@ jQuery.noConflict();
                     youguanart[x].writeDay+"</span> </a> </div>";
             }
         }
+        if(youguanart.length==0){
+            $("#no-result").addClass("is-block");
+        }
+
         /*for(var d=textArray.length;d>0;d--)
         {
             for(var x=0; x<youguanart.length;x++){

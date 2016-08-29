@@ -1,0 +1,48 @@
+extends ../jade-block/forsubpage
+block headExtend
+    //额外需要的head
+block jsExtend
+    //额外需要的js
+block page-id
+    //文章的page-id
+    #page-id 0
+block tittle
+    //文章的title
+    h4 follow me
+block publishTime
+    //文章的发表日期
+    span 2016/8/20
+block lastTime
+    //文章的最后修改日期
+    span 2016/8/20
+block content
+    //文章的内容
+        1.专门的用于a标签的写法
+        <div class="for-a"><a href=""></a></div>
+        2.段落的写法
+        <p></p>
+        3.强调部分的写法，加入class="for-emphasis"
+        <em class="for-emphasis"></em>
+        4.专门显示代码的写法
+        <div class="for-code">
+        <code>
+        this.sunrise=data.retData.sunrise;//日出时间
+        <br>
+        this.sunset=data.retData.sunset;//日落时间
+        </code>
+        </div>
+        5.专门显示图片的写法，需在标签里声明宽和高
+        <div class="for-img-show">
+        <img src="../images/pic4.jpg" style="width: 400px; height: 400px;">
+        <div class="img-msg"><p></p></div>
+        </div>-->
+        6.文章的子标题的写法
+        <div class="for-subtitle">
+        <h4></h4>
+        <div class=".subtitle-sep"></div>
+        </div>
+    .for-a
+        span.for-emphasis github:
+        a(href='https://github.com/xiaobxia') https://github.com/xiaobxia
+    .for-img-show
+        img(src='../article-img/github-headpic.jpg', alt='github头像', style='height: 224px; width: 137px;')

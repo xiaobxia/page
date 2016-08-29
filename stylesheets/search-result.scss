@@ -67,6 +67,14 @@
     font-size: 0;
   }
 }
+@mixin after-p {
+  &:after{
+    content: ' ';
+    display: block;
+    height: 1em;
+
+  }
+}
 @mixin font-12 {
   font-size: 12px;
   font-weight: lighter;
@@ -82,6 +90,10 @@
 @mixin font-16 {
   font-size: 16px;
   font-weight: normal;
+}
+@mixin font-16-b {
+  font-size: 16px;
+  font-weight: bold;
 }
 @mixin font-20 {
   font-size: 20px;
@@ -143,9 +155,9 @@ $blue-25-120-180:rgb(25,120,180);
       }
       a{
         position: relative;
+        display: block;
         width: 100%;
         height: 100%;
-        display: block;
       }
       h5{
         display: inline;
@@ -154,16 +166,45 @@ $blue-25-120-180:rgb(25,120,180);
       }
       em{
         margin-left: 20px;
-        padding: 0 5px;
-        border-radius: 6px;
+        padding: 0 .5em;
         color: #fff;
         @include font-12;
+        border-radius: .5em;
         background-color: $blue-25-120-180;
       }
       p{
         line-height: 25px;
         color: $grey-160;
         @include font-12;
+        @include after-p;
+      }
+    }
+    .no-result{
+      display: none;
+      @include relative-center;
+      width: 800px;
+      padding:60px 0 0 0;
+      @include after;
+      float: left;
+      .no-result-img
+      {
+        float: left;
+        width: 50%;
+        text-align: center;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .no-result-msg{
+        float: left;
+        width: 50%;
+        p{
+          line-height: 25px;
+          color: $grey-80;
+          @include font-16-b;
+          @include after-p;
+        }
       }
     }
   }
@@ -172,8 +213,8 @@ $blue-25-120-180:rgb(25,120,180);
     margin: 40px auto;
     width: 80px;
     height: 20px;
-    background-color: $grey-110;
     text-align: center;
+    background-color: $grey-110;
     border-radius: 4px;
     &:hover{
       background-color: $grey-230;

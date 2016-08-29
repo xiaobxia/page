@@ -59,8 +59,8 @@
     top: 5px;
     width: 80px;
     height: 20px;
-    background-color: #6e6e6e;
     text-align: center;
+    background-color: #6e6e6e;
     border-radius: 4px; }
     .article-nav .article-more .more-button:hover {
       background-color: #e6e6e6; }
@@ -98,11 +98,11 @@
     position: relative;
     width: 100%;
     height: 50%;
-    background-color: #e6e6e6;
-    text-align: center; }
+    text-align: center;
+    background-color: whitesmoke; }
     .sub-article-nav .art-date .art-date-m span {
-      line-height: 25px;
       display: block;
+      line-height: 25px;
       font-size: 12px;
       font-weight: lighter;
       color: #6e6e6e; }
@@ -110,8 +110,8 @@
     position: relative;
     width: 100%;
     height: 50%;
-    background-color: #fff;
-    text-align: center; }
+    text-align: center;
+    background-color: #fff; }
     .sub-article-nav .art-date .art-date-d span {
       display: block;
       line-height: 25px;
@@ -136,7 +136,7 @@
     font-size: 12px;
     font-weight: bold; }
   .sub-article-nav .art-introduction span {
-    border-radius: 6px;
+    border-radius: .5em;
     color: #fff;
     font-size: 12px;
     font-weight: lighter;
@@ -145,5 +145,9 @@
     color: #6e6e6e;
     font-size: 12px;
     font-weight: normal; }
+    .sub-article-nav .art-introduction p:after {
+      content: ' ';
+      display: block;
+      height: 1em; }
 
 /*# sourceMappingURL=article-recently.css.map */

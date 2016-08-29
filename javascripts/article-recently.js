@@ -9,15 +9,14 @@ jQuery.noConflict();
         var tempMonth = null;
         for (var i = 0; i < $(".sub-article-nav").length; i++) {
             //对应的倒过来的对象
-            var obj = articleTimeObj[articleTimeObj.length - 1 - i];
-            var path = null;
-            var title = null;
-            var levelOne = null;
-            var description = null;
-            var writeTime = null;
-            var month = null;
-            var day = null;
-
+            var obj = articleTimeObj[articleTimeObj.length - 1 - i],
+                path = null,
+                title = null,
+                levelOne = null,
+                description = null,
+                writeTime = null,
+                month = null,
+                day = null;
 
             //对于文章不多的时候，等文章多了就不会需要这个判断了
             if (obj == undefined) {
@@ -45,8 +44,6 @@ jQuery.noConflict();
                 $(".art-date-d:eq(" + i + ") span").text(day);
             }
         }
-
-
         function transMonth(num) {
             switch (num) {
                 case "01":
@@ -85,7 +82,6 @@ jQuery.noConflict();
                 case "12":
                     return "Dec";
                     break;
-
             }
         }
     });

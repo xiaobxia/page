@@ -1,1 +1,16 @@
-extends jade-block/formainpage
+doctype html
+html
+    head
+        include jade-block/main-head
+    body
+        include jade-block/header-main
+        .motto
+            .motto-content
+                .motto-pic
+                    img(src='images/mottopic.jpg', alt='')
+                .motto-master
+                .motto-text
+                    span web study
+                    span and life
+        include jade-block/article-recently
+        include jade-block/footer-main

@@ -72,6 +72,14 @@
     font-size: 0;
   }
 }
+@mixin after-p {
+  &:after{
+    content: ' ';
+    display: block;
+    height: 1em;
+
+  }
+}
 @mixin font-12 {
   font-size: 12px;
   font-weight: lighter;
@@ -91,6 +99,9 @@
 @mixin font-20 {
   font-size: 20px;
   font-weight: bolder;
+}
+@mixin color-sep{
+  background-color: $grey-230;
 }
 $grey-50:rgb(50,50,50);
 $grey-80:rgb(80,80,80);
@@ -141,11 +152,11 @@ $art-nav-item-height:50px;
         position: absolute;
         width: 800px;
         height: 2px;
-        background-color: $grey-230;
+        @include color-sep;
     }
     .sep-now{
         @include absolute-center;
-      top:-1px;
+        top:-1px;
         width: 100px;
         height: 4px;
         background-color: $grey-110;
@@ -165,8 +176,8 @@ $art-nav-item-height:50px;
       top: 5px;
       width: 80px;
       height: 20px;
-      background-color: $grey-110;
       text-align: center;
+      background-color: $grey-110;
       border-radius: 4px;
       &:hover{
         background-color: $grey-230;
@@ -216,11 +227,11 @@ $art-nav-item-height:50px;
       position: relative;
       width: 100%;
       height: 50%;
-      background-color: $grey-230;
       text-align: center;
+      background-color: $grey-245;
       span{
-        line-height: 25px;
         display: block;
+        line-height: 25px;
         @include font-12;
         color: $grey-110;
       }
@@ -229,8 +240,8 @@ $art-nav-item-height:50px;
       position: relative;
       width: 100%;
       height: 50%;
-      background-color: #fff;
       text-align: center;
+      background-color: #fff;
       span{
         display: block;
         line-height: 25px;
@@ -269,7 +280,7 @@ $art-nav-item-height:50px;
       @include font-12-b;
     }
     span{
-      border-radius: 6px;
+      border-radius: .5em;
       color: #fff;
       @include font-12;
       background-color: $blue-25-120-180;
@@ -277,6 +288,7 @@ $art-nav-item-height:50px;
     p{
       color: $grey-110;
       @include font-12-n;
+      @include after-p;
     }
   }
 }

@@ -71,6 +71,14 @@
     font-size: 0;
   }
 }
+@mixin after-p {
+  &:after{
+    content: ' ';
+    display: block;
+    height: 1em;
+
+  }
+}
 @mixin font-12 {
   font-size: 12px;
   font-weight: lighter;
@@ -90,6 +98,9 @@
 @mixin font-20 {
   font-size: 20px;
   font-weight: bolder;
+}
+@mixin color-sep{
+  background-color: $grey-230;
 }
 $grey-50:rgb(50,50,50);
 $grey-80:rgb(80,80,80);
