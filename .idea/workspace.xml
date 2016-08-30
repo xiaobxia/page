@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="修复小bug&#10;1.文件路径">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pic1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pic2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pic3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pic4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jade-block/article-write.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/closepic.png" afterPath="$PROJECT_DIR$/images/closepic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/crypic.png" afterPath="$PROJECT_DIR$/images/crypic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/emaipic.png" afterPath="$PROJECT_DIR$/images/emaipic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/githubpic.png" afterPath="$PROJECT_DIR$/images/githubpic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/icon.png" afterPath="$PROJECT_DIR$/images/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mottopic.jpg" afterPath="$PROJECT_DIR$/images/mottopic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mypic.jpg" afterPath="$PROJECT_DIR$/images/mypic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/pic-left.png" afterPath="$PROJECT_DIR$/images/pic-left.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/pic-right.png" afterPath="$PROJECT_DIR$/images/pic-right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/rsspic.png" afterPath="$PROJECT_DIR$/images/rsspic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/searchpic.png" afterPath="$PROJECT_DIR$/images/searchpic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/twitterpic.png" afterPath="$PROJECT_DIR$/images/twitterpic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/weibopic.png" afterPath="$PROJECT_DIR$/images/weibopic.png" />
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/jumppic.png" afterPath="$PROJECT_DIR$/images/jumppic.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/follow-me.html" afterPath="$PROJECT_DIR$/aboutme/follow-me.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="$PROJECT_DIR$/classify/language-nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.pug" afterPath="$PROJECT_DIR$/classify/language-nav.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed.xml" afterPath="$PROJECT_DIR$/feed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.pug" afterPath="$PROJECT_DIR$/jade-block/example-sub.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.pug" afterPath="$PROJECT_DIR$/jade-block/forsubpage.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/article-write.js" afterPath="$PROJECT_DIR$/javascripts/article-write.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css" afterPath="$PROJECT_DIR$/stylesheets/article-write.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css.map" afterPath="$PROJECT_DIR$/stylesheets/article-write.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.scss" afterPath="$PROJECT_DIR$/stylesheets/article-write.scss" />
@@ -56,53 +38,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="follow-me.pug" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aboutme/follow-me.pug">
+      <file leaf-file-name="feed.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feed.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="44" />
-              <folding>
-                <marker date="1472473171026" expanded="true" signature="38:39" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example-sub.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="777">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article-write.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
+      <file leaf-file-name="display-1.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/language/display-1.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="220" column="25" selection-start-line="220" selection-start-column="25" selection-end-line="220" selection-end-column="25" />
+            <state relative-caret-position="-21">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forsubpage.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jade-block/forsubpage.pug">
+      <file leaf-file-name="display-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/language/display-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article-write.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/article-write.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+            <state relative-caret-position="-156">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -126,14 +86,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jade-block/editor-nav.pug" />
-        <option value="$PROJECT_DIR$/jade-block/tool-nav.pug" />
         <option value="$PROJECT_DIR$/jade-block/essay-nav.pug" />
         <option value="$PROJECT_DIR$/classify/tool-nav.pug" />
         <option value="$PROJECT_DIR$/classify/library-nav.pug" />
         <option value="$PROJECT_DIR$/classify/editor-nav.pug" />
         <option value="$PROJECT_DIR$/classify/essay-nav.pug" />
-        <option value="$PROJECT_DIR$/classify/language-nav.pug" />
         <option value="$PROJECT_DIR$/aboutme/index.pug" />
         <option value="$PROJECT_DIR$/classify/aboutme-nav.html" />
         <option value="$PROJECT_DIR$/stylesheets/for-time.scss" />
@@ -147,7 +104,6 @@
         <option value="$PROJECT_DIR$/jade-block/search-head.pug" />
         <option value="$PROJECT_DIR$/jade-block/page-head.pug" />
         <option value="$PROJECT_DIR$/javascripts/article-recently.js" />
-        <option value="$PROJECT_DIR$/javascripts/main.js" />
         <option value="$PROJECT_DIR$/stylesheets/for-time-and-nav .scss" />
         <option value="$PROJECT_DIR$/jade-block/nav-head.pug" />
         <option value="$PROJECT_DIR$/jade-block/time-head.pug" />
@@ -172,11 +128,15 @@
         <option value="$PROJECT_DIR$/index.pug" />
         <option value="$PROJECT_DIR$/javascripts/for-time.js" />
         <option value="$PROJECT_DIR$/javascripts/for-search.js" />
-        <option value="$PROJECT_DIR$/feed.xml" />
-        <option value="$PROJECT_DIR$/stylesheets/article-write.scss" />
         <option value="$PROJECT_DIR$/jade-block/forsubpage.pug" />
         <option value="$PROJECT_DIR$/javascripts/article-write.js" />
+        <option value="$PROJECT_DIR$/classify/language-nav.pug" />
         <option value="$PROJECT_DIR$/jade-block/example-sub.pug" />
+        <option value="$PROJECT_DIR$/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/stylesheets/article-write.scss" />
+        <option value="$PROJECT_DIR$/language/display-1.pug" />
+        <option value="$PROJECT_DIR$/language/display-1.html" />
+        <option value="$PROJECT_DIR$/feed.xml" />
       </list>
     </option>
   </component>
@@ -187,9 +147,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="x" value="200" />
+    <option name="y" value="35" />
+    <option name="width" value="1178" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -217,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,7 +199,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,7 +313,10 @@
       <workItem from="1472472797646" duration="6868000" />
       <workItem from="1472479805794" duration="1223000" />
       <workItem from="1472520455457" duration="4957000" />
-      <workItem from="1472527573747" duration="8806000" />
+      <workItem from="1472527573747" duration="9348000" />
+      <workItem from="1472540275499" duration="906000" />
+      <workItem from="1472542358623" duration="4704000" />
+      <workItem from="1472547874253" duration="8051000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1471268472324</created>
@@ -607,17 +570,24 @@
       <option name="project" value="LOCAL" />
       <updated>1472479170888</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="V1.20&#10;1.增加了subtitle的导航方式">
+      <created>1472539463208</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1472539463209</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137060000" />
+    <option name="totallyTimeSpent" value="151263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="200" y="35" width="1178" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18898809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2622807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -658,16 +628,14 @@
     <MESSAGE value="小修改" />
     <MESSAGE value="优化了模块的结构，更加模块化了" />
     <MESSAGE value="修复小bug&#10;1.文件路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复小bug&#10;1.文件路径" />
+    <MESSAGE value="V1.20&#10;1.增加了subtitle的导航方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.20&#10;1.增加了subtitle的导航方式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/part/motto-part.html" />
-    <entry file="file://$USER_HOME$/Desktop/part/for-test.html" />
-    <entry file="file://$USER_HOME$/Desktop/part/article-write.html" />
     <entry file="file://$PROJECT_DIR$/jade-block/search-head.html" />
     <entry file="file://$PROJECT_DIR$/stylesheets/for-time-and-nav.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -750,13 +718,6 @@
     <entry file="file://$PROJECT_DIR$/jade-block/search-head.pug" />
     <entry file="file://$PROJECT_DIR$/jade-block/for-nav.pug" />
     <entry file="file://$PROJECT_DIR$/jade-block/article-write.pug" />
-    <entry file="file://$PROJECT_DIR$/jade-block/article-recently.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature-page/search-result.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -768,13 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classify/aboutme-nav.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -813,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature-page/time-line.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -855,19 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="37" column="89" selection-start-line="37" selection-start-column="89" selection-end-line="37" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/for-search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,15 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-315">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-973">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,23 +827,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="60" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
+    <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="220" column="25" selection-start-line="220" selection-start-column="25" selection-end-line="220" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="756">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/article-write.js">
+    <entry file="file://$PROJECT_DIR$/aboutme/follow-me.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="147">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -923,25 +848,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classify/aboutme-nav.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/article-recently.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/article-write.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="84">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aboutme/follow-me.pug">
+    <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <marker date="1472473171026" expanded="true" signature="38:39" ph="..." />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="287" column="0" selection-start-line="287" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classify/language-nav.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/display-1.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/display-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

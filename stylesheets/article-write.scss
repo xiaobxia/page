@@ -96,6 +96,10 @@
   font-size: 16px;
   font-weight: normal;
 }
+@mixin font-16-l {
+  font-size: 16px;
+  font-weight: lighter;
+}
 @mixin font-16-b {
   font-size: 16px;
   font-weight: bold;
@@ -271,10 +275,17 @@ $nav-list-item-height:20px;
     @include relative-center;
     min-height: 310px;
     width: 90%;
-    span, code, a, p{
+    span, code, a, p, dt{
       @include font-16;
       line-height: 25px;
       color: $grey-80;
+    }
+    dl{
+      margin-bottom: 20px;
+    }
+    dd{
+      @include font-16-l;
+      padding: 0 0 0 2em;
     }
     p{
       text-indent: 2em;

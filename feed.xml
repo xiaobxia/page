@@ -19,6 +19,133 @@
         </image>
         <item>
             <title>
+                <![CDATA[ Display属性的一些见解 ]]>
+            </title>
+            <link>
+                https://xiaobxia.github.io/blog/language/display-1.html
+            </link>
+            <guid>https://xiaobxia.github.io/blog/language/display-1.html</guid>
+            <author>
+                <![CDATA[ xiaobxia ]]>
+            </author>
+            <pubDate>Tue, 20 Aug 2016 12:44:33 GMT</pubDate>
+            <description>
+                <![CDATA[
+                    <h4>一般元素的dsiplay</h4>
+                    <table border="1">
+                        <caption>各标签的默认display</caption>
+                        <colgroup>
+                            <col style="width: 20%">
+                            <col style="width: 80%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <td><p>display类型</p></td>
+                            <td><p>标签</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>display:block</p></td>
+                            <td><p>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;body&gt;&lt;dd&gt;&lt;details&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;&lt;header&gt;&lt;hgroup&gt;&lt;hr&gt;&lt;html&gt;&lt;legend&gt;&lt;menu&gt;(所有浏览器都不支持)&lt;menuitem&gt;(只有firefox支持)&lt;nav&gt;&lt;ol&gt;&lt;optgroup&gt;&lt;option&gt;&lt;p&gt;&lt;section&gt;&lt;summary&gt;&lt;ul&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>display:inline</p></td>
+                            <td><p>&lt;a&gt;&lt;abbr&gt;&lt;area&gt;&lt;b&gt;&lt;bdi&gt;&lt;bdo&gt;&lt;br&gt;&lt;cite&gt;&lt;code&gt;&lt;del&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;ins&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;mark&gt;&lt;output&gt;&lt;pre&gt;&lt;q&gt;&lt;rp&gt;&lt;rt&gt;&lt;ruby&gt;&lt;s&gt;&lt;smap&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;time&gt;&lt;track&gt;(所有浏览器都不支持)&lt;u&gt;&lt;var&gt;&lt;wbr&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>display:inline-block</p></td>
+                            <td><p>&lt;audio&gt;&lt;button&gt;&lt;canvas&gt;&lt;embed&gt;&lt;iframe&gt;&lt;img&gt;&lt;input&gt;&lt;keygen&gt;&lt;meter&gt;&lt;object&gt;&lt;progress&gt;&lt;select&gt;&lt;textarea&gt;&lt;video&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>display:none</p></td>
+                            <td><p>&lt;base&gt;&lt;link&gt;&lt;meta&gt;&lt;title&gt;&lt;datalist&gt;&lt;dialog&gt;&lt;param&gt;&lt;script&gt;&lt;source&gt;&lt;style&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>display:list-item</p></td>
+                            <td><p>&lt;li&gt;</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                <h4>表格元素的display</h4>
+
+                <dl>
+                    <dt>表格元素的display</dt>
+                    <dd>table{display: table;}</dd>
+                    <dd>thead{display: table-header-group;}</dd>
+                    <dd>tbody{display: table-row-group;}</dd>
+                    <dd>tfoot{display: table-footer-group;}</dd>
+                    <dd>tr{display: table-row;}</dd>
+                    <dd>td,th{display: table-cell;}</dd>
+                    <dd>col{display: table-column;}</dd>
+                    <dd>colgroup{display: table-column-group;}</dd>
+                    <dd>caption{display: table-caption;}</dd>
+                </dl>
+                <p>表格类元素的display共有以上几种，&lt;thead&gt;&lt;tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;col&gt;&lt;colgroup&gt;因为无法设置margin和padding用的较少，下面将着重介绍下&lt;table&gt;、&lt;td&gt;、&lt;th&gt;、&lt;caption&gt;这四个标签对应的display属性。</p>
+                <h4>display属性各个值的表现</h4>
+
+                <dl>
+                    <dt>display:block</dt>
+                    <dd>[1] 不设置宽度时，宽度撑满一行</dd>
+                    <dd>[2] 独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                    <dt>display:block</dt>
+                    <dd>[1] 不设置宽度时，宽度撑满一行</dd>
+                    <dd>[2] 独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                    <dt>display:inline</dt>
+                    <dd>[1] 内容撑开宽度</dd>
+                    <dd>[2] 非独占一行</dd>
+                    <dd>[3] 不支持宽高</dd>
+                    <dd>[4] 代码换行被解析成空格</dd>
+                    <dt>display:inline-block</dt>
+                    <dd>[1] 不设置宽度时，内容撑开宽度</dd>
+                    <dd>[2] 非独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                    <dd>[4] 代码换行被解析成空格</dd>
+                </dl>
+                <dl>
+                    <dt>display:table</dt>
+                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                    <dd>[2]独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                    <dd>[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性</dd>
+                    <dt>display:inline-table</dt>
+                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                    <dd>[2] 非独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                    <dd>[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性</dd>
+                    <dt>display:table-cell</dt>
+                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                    <dd>[2] 非独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                    <dd>[4] 垂直对齐</dd>
+                    <dd>[5] 同级等高</dd>
+                    <dt>display:table-caption</dt>
+                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                    <dd>[2] 独占一行</dd>
+                    <dd>[3] 支持宽高</dd>
+                </dl>
+                <h4>display属性各个值的实战技巧</h4>
+
+                <dl>
+                    <dt>display:inline</dt>
+                    <dd>[1]
+                        因为a标签display:inline，所以如果用display:block来当子元素，就需要把a设置为display:block，然后设置width和height,不然a标签不能完全包裹子标签而且子标签的位置也会出现偏差。
+                    </dd>
+                    <dd>[2] display:inline元素的padding使用em来做单位更好，使页面更具适应性。</dd>
+                    <dd>[3] display:inline的元素可以通过设置line-height很容易得实现水平居中。</dd>
+                </dl>
+                ]]>
+            </description>
+        </item>
+        <item>
+            <title>
                 <![CDATA[ follow me ]]>
             </title>
             <link>
