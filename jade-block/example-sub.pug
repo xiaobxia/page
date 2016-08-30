@@ -35,7 +35,7 @@ block content
         <div class="for-img-show">
         <img src="../images/pic4.jpg" style="width: 400px; height: 400px;">
         <div class="img-msg"><p>关于图片的说明</p></div>
-        </div>-->
+        </div>
         6.文章的子标题的写法
         <div class="for-subtitle">
         <h4></h4>
@@ -43,8 +43,62 @@ block content
         </div>
         7.文章文字p中如果有需要强调的
         <p>我的<em>强调</em>部分</p>
+        8.警告和特别提醒部分
+        <div class="for-warn">
+        <span>提醒的类型</span>
+        <p>提醒的内容</p>
+        </div>
+        9.表格的使用
+        <div class="for-table">
+        <table border="1">
+        <caption>这里写表单的标题</caption>
+        <colgroup>这里是通过列来定义css
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+        </colgroup>
+        <thead>
+        <tr>
+        <th>这里写第一列的标题</th>
+        <th>这里写第二列的标题</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+        <td>第一列的底部内容</td>
+        <td>第二列的底部内容</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+        <td>第一列的主体内容</td>
+        <td>第二列的主体内容</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+        .for-table
+                table(border="1")
+                    caption 这里写表单的标题
+                    colgroup
+                        col(style="width: 20%;")
+                        col(style="width: 80%;")
+                    thead
+                        tr
+                            th th会自动居中
+                                p
+                            th
+                    tfoot
+                        tr
+                            td
+                            td
+                    tbody
+                        tr
+                            td
+                            td
     .for-a
         span.for-emphasis github:
         a(href='https://github.com/xiaobxia') https://github.com/xiaobxia
     .for-img-show
         img(src='../article-img/github-headpic.jpg', alt='github头像', style='height: 224px; width: 137px;')
+

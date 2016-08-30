@@ -18,6 +18,26 @@ jQuery.noConflict();
             }
         }, 3);
     });
+    $(function () {
+        //article-tab在滚动时的效果
+        var $subtitle=$(".for-subtitle"),
+            titleOp="",
+            titlePosi=[];
+        if ($subtitle!=undefined){
+            for(var a=0;a<$subtitle.length;a++){
+                var subtitleText=$subtitle.eq(a).text();
+                titlePosi[a]=$subtitle.eq(a).offset().top;
+                titleOp += "<option>"+subtitleText+"</option>"
+            }
+            $("#subtitle-sel").append(titleOp);
+
+            $("#jump-btn").bind("click", function () {
+                var subindex =$(".subtitle-sel option:selected").index();
+                var subposi=titlePosi[subindex];
+                window.scrollTo(0, subposi);
+            });
+        }
+    });
 
     $(function () {
         //得到页面的pageid，然后通过id得到文章的对象

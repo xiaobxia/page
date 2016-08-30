@@ -9,7 +9,7 @@
         <description>
             web study and life
         </description>
-        <lastBuildDate>Sat, 20 Aug 2016 02:04:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Aug 2016 14:34:33 GMT</lastBuildDate>
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
         <image>
@@ -28,12 +28,14 @@
             <author>
                 <![CDATA[ xiaobxia ]]>
             </author>
-            <pubDate>Sat, 20 Aug 2016 02:04:33 GMT</pubDate>
+            <pubDate>Mon, 29 Aug 2016 14:34:33 GMT</pubDate>
             <description>
                 <![CDATA[
                     <span>我的github地址：</span>
-                    <a>https://github.com/xiaobxia</a>
+                    <a href='https://github.com/xiaobxia'>https://github.com/xiaobxia</a>
                     <img src="https://xiaobxia.github.io/blog/article-img/github-headpic.jpg">
+                    <span>我的weibo地址：</span>
+                    <a href='http://weibo.com/5989486288'>http://weibo.com/5989486288</a>
                 ]]>
             </description>
         </item>

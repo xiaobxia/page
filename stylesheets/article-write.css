@@ -71,6 +71,30 @@
     color: #a0a0a0;
     font-size: 16px;
     font-weight: normal; }
+.article-tab .jump-block {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  height: 30px;
+  right: 50px; }
+  .article-tab .jump-block .subtitle-sel {
+    float: left;
+    display: block;
+    border: 2px solid #e6e6e6;
+    border-radius: .5em;
+    height: 26px;
+    width: 100px; }
+  .article-tab .jump-block .jump-btn {
+    float: left;
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/jumppic.png");
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px; }
 .article-tab .article-tab-sep {
   position: absolute;
   bottom: 0;
@@ -126,7 +150,7 @@
     padding: 0 .5em; }
     .article-content .article-content-body a:hover {
       color: #1978b4; }
-  .article-content .article-content-body .for-a, .article-content .article-content-body .for-code {
+  .article-content .article-content-body .for-a, .article-content .article-content-body .for-code, .article-content .article-content-body .for-warn {
     margin: 0 0 10px 0;
     padding: 10px 5%;
     width: 90%;
@@ -142,6 +166,8 @@
     font-size: 20px;
     font-weight: bolder;
     color: #505050; }
+  .article-content .article-content-body .for-warn span {
+    color: #d5000d; }
   .article-content .article-content-body .for-subtitle {
     position: relative;
     margin: 10px 0; }
@@ -176,6 +202,52 @@
     .article-content .article-content-body .for-img-show img {
       display: inline-block;
       margin: 0 20px; }
+  .article-content .article-content-body .for-table {
+    position: relative;
+    width: 90%;
+    padding: 20px 5%;
+    margin: 0 0 10px 0; }
+    .article-content .article-content-body .for-table table {
+      border: 1px solid #c8c8c8;
+      width: 100%; }
+      .article-content .article-content-body .for-table table tr td {
+        padding: 0 1em;
+        color: #505050; }
+        .article-content .article-content-body .for-table table tr td p {
+          font-size: 12px;
+          font-weight: normal;
+          text-indent: 0; }
+          .article-content .article-content-body .for-table table tr td p:after {
+            content: "";
+            display: block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+            font-size: 0; }
+      .article-content .article-content-body .for-table table caption {
+        font-size: 16px;
+        font-weight: normal;
+        color: #505050; }
+      .article-content .article-content-body .for-table table colgroup col:nth-child(odd) {
+        background-color: whitesmoke; }
+      .article-content .article-content-body .for-table table colgroup col:nth-child(even) {
+        background-color: #fff; }
+      .article-content .article-content-body .for-table table thead {
+        background-color: #6e6e6e; }
+        .article-content .article-content-body .for-table table thead td {
+          padding: 0 1em; }
+          .article-content .article-content-body .for-table table thead td p {
+            font-size: 16px;
+            font-weight: normal;
+            color: #fff;
+            text-indent: 0; }
+            .article-content .article-content-body .for-table table thead td p:after {
+              content: "";
+              display: block;
+              visibility: hidden;
+              height: 0;
+              clear: both;
+              font-size: 0; }
 .article-content .no-more {
   position: relative;
   margin: 0 auto;

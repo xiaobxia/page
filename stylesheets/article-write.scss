@@ -80,6 +80,10 @@
   font-size: 12px;
   font-weight: lighter;
 }
+@mixin font-12-n {
+  font-size: 12px;
+  font-weight: normal;
+}
 @mixin font-12-b {
   font-size: 12px;
   font-weight: bold;
@@ -193,6 +197,33 @@ $nav-list-item-height:20px;
       @include font-16;
     }
   }
+  .jump-block{
+    @include absolute-v-center;
+    height: 30px;
+    right: 50px;
+    .subtitle-sel{
+      float: left;
+      display: block;
+      border: 2px solid $grey-230;
+      border-radius: .5em;
+      height: 26px;
+      width: 100px;
+    }
+    .jump-btn{
+      float: left;
+      display: block;
+      cursor: pointer;
+      margin-left: 20px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/jumppic.png");
+      -webkit-background-size: 30px 30px;
+      background-size: 30px 30px;
+    }
+
+
+  }
+
   .article-tab-sep{
     position: absolute;
     bottom: 0;
@@ -255,7 +286,7 @@ $nav-list-item-height:20px;
         color: $blue-25-120-180;
       }
     }
-    .for-a, .for-code{
+    .for-a, .for-code,.for-warn{
       margin: 0 0 10px 0;
       padding: 10px 5%;
       width: 90%;
@@ -272,6 +303,11 @@ $nav-list-item-height:20px;
       padding: 0 .5em;
       @include font-20;
       color: $grey-80;
+    }
+    .for-warn{
+      span{
+        color: #d5000d;
+      }
     }
     .for-subtitle{
       position: relative;
@@ -307,6 +343,59 @@ $nav-list-item-height:20px;
       img{
         display: inline-block;
         margin: 0 20px;
+      }
+    }
+    .for-table{
+      position: relative;
+      width: 90%;
+      padding: 20px 5%;
+      margin: 0 0 10px 0;
+      table{
+        border: 1px solid $grey-200;
+        width: 100%;
+        tr{
+          td{
+            padding: 0 1em;
+            color: $grey-80;
+            p{
+              @include font-12-n;
+              @include after;
+              text-indent: 0;
+            }
+          }
+        }
+        caption{
+          @include font-16;
+          color: $grey-80;
+        }
+        colgroup{
+          col{
+            &:nth-child(odd){
+              background-color: $grey-245;
+            }
+            &:nth-child(even){
+              background-color: #fff;
+            }
+          }
+        }
+        thead{
+          background-color: $grey-110;
+          td {
+            padding: 0 1em;
+            p {
+              @include font-16;
+              color: #fff;
+              @include after;
+              text-indent: 0;
+            }
+          }
+        }
+        tbody{
+
+        }
+        tfoot{
+
+        }
       }
     }
   }
