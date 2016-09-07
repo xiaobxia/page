@@ -1,19 +1,5 @@
 extends ../jade-block/forsubpage
-mixin tableuse(a,b)
-    tr
-        td
-            p=a
-        td
-            p=b
-
-mixin dtdduse(a, ...items)
-    dt=a
-    each item in items
-        dd= item
-mixin subtitleuse(a)
-    .for-subtitle
-        h4=a
-        .subtitle-sep
+include ../jade-block/mixin-use
 
 block headExtend
     //额外需要的head
@@ -63,7 +49,7 @@ block content
         +dtdduse("display:inline-block","[1] 不设置宽度时，内容撑开宽度","[2] 非独占一行","[3] 支持宽高","[4] 代码换行被解析成空格")
 
     dl
-        +dtdduse("display:table","[1] 不设置宽度时，宽度由内容撑开","[2]独占一行","[3] 支持宽高","[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性")
+        +dtdduse("display:table","[1] 不设置宽度时，宽度由内容撑开","[2] 独占一行","[3] 支持宽高","[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性")
         +dtdduse("display:inline-table","[1] 不设置宽度时，宽度由内容撑开","[2] 非独占一行","[3] 支持宽高","[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性")
         +dtdduse("display:table-cell","[1] 不设置宽度时，宽度由内容撑开","[2] 非独占一行","[3] 支持宽高","[4] 垂直对齐","[5] 同级等高")
         +dtdduse("display:table-caption","[1] 不设置宽度时，宽度由内容撑开","[2] 独占一行","[3] 支持宽高")

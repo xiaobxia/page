@@ -1,18 +1,5 @@
 extends ../jade-block/forsubpage
-mixin tableuse(a,b)
-    tr
-        td
-            p=a
-        td
-            p=b
-mixin dtdduse(a, ...items)
-    dt=a
-    each item in items
-        dd= item
-mixin subtitleuse(a)
-    .for-subtitle
-        h4=a
-        .subtitle-sep
+include ../jade-block/mixin-use
 
 block headExtend
     //额外需要的head
@@ -31,101 +18,56 @@ block lastTime
     //文章的最后修改日期
     span 2016/8/20
 block content
-    //文章的内容
-        1.专门的用于a标签的写法
-        <div class="for-a"><a href=""></a></div>
-                2.段落的写法
-                <p></p>
-                3.强调部分的写法，加入class="for-emphasis"
-                <em class="for-emphasis"></em>
-                4.专门显示代码的写法
-                <div class="for-code">
-                <code>
-                this.sunrise=data.retData.sunrise;//日出时间
-                <br>
-                this.sunset=data.retData.sunset;//日落时间
-                </code>
-                </div>
-                5.专门显示图片的写法，需在标签里声明宽和高
-                <div class="for-img-show">
-                <img src="../images/pic4.jpg" style="width: 400px; height: 400px;">
-                <div class="img-msg"><p>关于图片的说明</p></div>
-                </div>
-                6.文章的子标题的写法
-                <div class="for-subtitle">
-                <h4></h4>
-                <div class=".subtitle-sep"></div>
-                </div>
-                .for-subtitle
-                    h4
-                    .subtitle-sep
-                7.文章文字p中如果有需要强调的
-                <p>我的<em>强调</em>部分</p>
-                8.警告和特别提醒部分
-                <div class="for-warn">
-                <span>提醒的类型</span>
-                <p>提醒的内容</p>
-                </div>
-                9.表格的使用
-                <div class="for-table">
-                <table border="1">
-                <caption>这里写表单的标题</caption>
-                <colgroup>这里是通过列来定义css
-                <col span="2" style="background-color:red">
-                <col style="background-color:yellow">
-                </colgroup>
-                <thead>
-                <tr>
-                <th>这里写第一列的标题</th>
-                <th>这里写第二列的标题</th>
-                </tr>
-                </thead>
-                <tfoot>
-                <tr>
-                <td>第一列的底部内容</td>
-                <td>第二列的底部内容</td>
-                </tr>
-                </tfoot>
-                <tbody>
-                <tr>
-                <td>第一列的主体内容</td>
-                <td>第二列的主体内容</td>
-                </tr>
-                </tbody>
-                </table>
-                </div>
+        //文章的内容
+                1.专门的用于a标签的写法
+                .for-a
+                    span.for-emphasis
+                    a(href="")
 
+                2.段落的写法
+                p
+
+                3.强调部分的写法，加入class="for-emphasis"
+                em.for-emphasis
+
+                4.专门显示代码的写法
+                .for-code
+                    code
+                        this.sunrise=data.retData.sunrise;//日出时间
+                        br
+                        this.sunset=data.retData.sunset;//日落时间
+
+                5.专门显示图片的写法，需在标签里声明宽和高
+                .for-img-show
+                    img(src='',style='')
+                    .img-msg
+                        p
+
+                6.文章的子标题的写法
+                +subtitleuse("")
+
+                7.文章文字p中如果有需要强调的
+                p 一
+                    em.strongword 二
+                    |三
+
+                8.警告和特别提醒部分
+                +warnuse(leixing,b)
+
+                9.表格的使用
                 .for-table
-                        table(border="1")
-                            caption 这里写表单的标题
-                            colgroup
-                                col(style="width: 20%;")
-                                col(style="width: 80%;")
-                            thead
-                                tr
-                                    th th会自动居中
-                                        p
-                                    th
-                            tfoot
-                                tr
-                                    td
-                                    td
-                            tbody
-                                tr
-                                    td
+                    table(border="1")
+                        caption 这里写表单的标题
+                        colgroup
+                            col(style="width: 20%;")
+                            col(style="width: 80%;")
+                        thead
+                            +tableuse("","")
+                        tfoot
+                            +tableuse("","")
+                        tbody
+                            +tableuse("","")
                 10.列表的使用
-                    <dl>
-                      <dt>Coffee</dt>
-                        <dd>Black hot drink</dd>
-                      <dt>Milk</dt>
-                        <dd>White cold drink</dd>
-                    </dl>
                     dl
-                        dt
-                        dd
-    .for-a
-        span.for-emphasis github:
-        a(href='https://github.com/xiaobxia') https://github.com/xiaobxia
-    .for-img-show
-        img(src='../article-img/github-headpic.jpg', alt='github头像', style='height: 224px; width: 137px;')
+                        +dtdduse("","")
 

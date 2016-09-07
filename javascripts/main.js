@@ -25,6 +25,19 @@ var articleTimeObj = [
         levelOne: "语言",
         levelTwo: "Css",
         description: "元素的dsiplay，display属性各个值的表现"
+    },
+    {
+        pageId:2,
+        writeDay: "2016年8月30日",
+        writeTime: "20160830",
+        writeWeek: "Tue",
+        title: "Class的规范",
+        path: "language/class-1.html",
+        levelOnePath:"classify/language-nav.html",
+        levelTwoPath:"",
+        levelOne: "语言",
+        levelTwo: "Css",
+        description: "选择器的优先级,属性的书写顺序,属性的书写规范,Class命名参考"
     }
 ];
 

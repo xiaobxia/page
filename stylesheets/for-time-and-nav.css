@@ -126,7 +126,8 @@
   width: 80%;
   line-height: 20px;
   border-radius: 5px;
-  transition: all .5s ease-out; }
+  transition: all .5s ease-out;
+  overflow: hidden; }
   .list-nav li span {
     font-size: 14px;
     font-weight: normal;

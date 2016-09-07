@@ -1,0 +1,19 @@
+mixin tableuse(a,...items)
+    tr
+        td
+            p=a
+        td
+            each item in items
+                p= item
+mixin dtdduse(a, ...items)
+    dt=a
+    each item in items
+        dd= item
+mixin subtitleuse(a)
+    .for-subtitle
+        h4=a
+        .subtitle-sep
+mixin warnuse(leixing,b)
+    .for-warn
+        span=leixing
+        p=b
