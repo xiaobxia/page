@@ -4,28 +4,10 @@
     <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/follow-me.html" afterPath="$PROJECT_DIR$/aboutme/follow-me.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/aboutme-nav.html" afterPath="$PROJECT_DIR$/classify/aboutme-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/editor-nav.html" afterPath="$PROJECT_DIR$/classify/editor-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/essay-nav.html" afterPath="$PROJECT_DIR$/classify/essay-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="$PROJECT_DIR$/classify/language-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/library-nav.html" afterPath="$PROJECT_DIR$/classify/library-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/tool-nav.html" afterPath="$PROJECT_DIR$/classify/tool-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/webApp-nav.html" afterPath="$PROJECT_DIR$/classify/webApp-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/search-result.html" afterPath="$PROJECT_DIR$/feature-page/search-result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/time-line.html" afterPath="$PROJECT_DIR$/feature-page/time-line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed.xml" afterPath="$PROJECT_DIR$/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/footer.pug" afterPath="$PROJECT_DIR$/jade-block/footer.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.pug" afterPath="$PROJECT_DIR$/jade-block/forsubpage.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/head-css-js.html" afterPath="$PROJECT_DIR$/jade-block/head-css-js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/meta-head.html" afterPath="$PROJECT_DIR$/jade-block/meta-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/meta-head.pug" afterPath="$PROJECT_DIR$/jade-block/meta-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/class-1.html" afterPath="$PROJECT_DIR$/language/class-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/class-1.pug" afterPath="$PROJECT_DIR$/language/class-1.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/display-1.html" afterPath="$PROJECT_DIR$/language/display-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/position-1.html" afterPath="$PROJECT_DIR$/language/position-1.html" />
     </list>
@@ -147,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/jade-block/forsubpage.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="52" column="514" selection-start-line="52" selection-start-column="514" selection-end-line="52" selection-end-column="514" />
+              <caret line="52" column="516" selection-start-line="52" selection-start-column="516" selection-end-line="52" selection-end-column="516" />
               <folding />
             </state>
           </provider>
@@ -427,7 +409,7 @@
       <workItem from="1473234389753" duration="354000" />
       <workItem from="1473235114176" duration="2070000" />
       <workItem from="1473249660917" duration="1664000" />
-      <workItem from="1473251909633" duration="230000" />
+      <workItem from="1473251909633" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1471268472324</created>
@@ -702,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473232642064</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="V1.22&#10;1.添加统计和分享">
+      <created>1473252175286</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1473252175286</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168515000" />
+    <option name="totallyTimeSpent" value="168884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -755,7 +744,8 @@
     <MESSAGE value="修复小bug&#10;1.文件路径" />
     <MESSAGE value="V1.20&#10;1.增加了subtitle的导航方式" />
     <MESSAGE value="V1.20&#10;1.添加了文章" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.20&#10;1.添加了文章" />
+    <MESSAGE value="V1.22&#10;1.添加统计和分享" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.22&#10;1.添加统计和分享" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -979,6 +969,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -986,6 +977,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1056,7 @@
     <entry file="file://$PROJECT_DIR$/jade-block/forsubpage.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="52" column="514" selection-start-line="52" selection-start-column="514" selection-end-line="52" selection-end-column="514" />
+          <caret line="52" column="516" selection-start-line="52" selection-start-column="516" selection-end-line="52" selection-end-column="516" />
           <folding />
         </state>
       </provider>
