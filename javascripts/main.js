@@ -28,8 +28,8 @@ var articleTimeObj = [
     },
     {
         pageId:2,
-        writeDay: "2016年8月30日",
-        writeTime: "20160830",
+        writeDay: "2016年9月7日",
+        writeTime: "20160907",
         writeWeek: "Tue",
         title: "Class的规范",
         path: "language/class-1.html",

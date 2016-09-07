@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" >
+<rss version="2.0">
 
     <channel>
         <title>
@@ -9,7 +9,9 @@
         <description>
             web study and life
         </description>
-        <lastBuildDate>Mon, 29 Aug 2016 14:34:33 GMT</lastBuildDate>
+        <!--需要编辑-->
+        <lastBuildDate>Tue, 07 Sep 2016 07:30:33 GMT</lastBuildDate>
+
         <generator>by xiaobixia</generator>
         <ttl>3600</ttl>
         <image>
@@ -17,6 +19,187 @@
             <title>blog of xiaobxia</title>
             <link>https://xiaobxia.github.io/blog</link>
         </image>
+        <!--<item>
+            <title>
+                <![CDATA[ 标题1111 ]]>
+            </title>
+            <link>
+                https://xiaobxia.github.io/blog/文件1111
+            </link>
+            <guid>https://xiaobxia.github.io/blog/文件1111</guid>
+            <author>
+                <![CDATA[ xiaobxia ]]>
+            </author>
+            <pubDate>Mon, 29 Aug 20时间111116 14:34:33 GMT</pubDate>
+            <description>
+                <![CDATA[
+
+                ]]>
+            </description>
+        </item>-->
+        <item>
+            <title>
+                <![CDATA[ Class的规范 ]]>
+            </title>
+            <link>
+                https://xiaobxia.github.io/blog/language/class—1.html
+            </link>
+            <guid>https://xiaobxia.github.io/blog/language/class—1.html</guid>
+            <author>
+                <![CDATA[ xiaobxia ]]>
+            </author>
+            <pubDate>Tue, 07 Sep 2016 07:30:33 GMT</pubDate>
+            <description>
+                <![CDATA[
+                    <h4>选择器的优先级</h4>
+
+                    <p>
+                    要解决以上问题，我们需要引入一个概念——特指度（specificity）。特指度表示一个css选择器表达式的重要程度，可以通过一个公式来计算出一个数值，数越大，越重要。这个计算叫做“I-C-E”计算公式，遇到一个id就往特指度数值中加100，遇到一个class就往特指度数值中加10，遇到一个element就往特指度数值中加1。还有一个重点要注意：<em
+                        >!important优先级最高，高于一切。* 选择器最低，低于一切。</em></p>
+
+                    <table border="1">
+                        <caption>特指度计算示例</caption>
+                        <colgroup>
+                            <col style="width: 50%">
+                            <col style="width: 50%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <td><p>CSS选择器表达式</p></td>
+                            <td><p>特指度计算结果</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>p</p></td>
+                            <td><p>1</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>p.large</p></td>
+                            <td><p>11</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>P#large</p></td>
+                            <td><p>101</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>div p#large</p></td>
+                            <td><p>102</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>div p#large ul.list</p></td>
+                            <td><p>113</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>div p#large ul.list li</p></td>
+                            <td><p>114</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>属性的书写顺序</h4>
+
+
+                    <table border="1">
+                        <caption>书写顺序表</caption>
+                        <colgroup>
+                            <col style="width: 20%">
+                            <col style="width: 80%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <td><p>书写顺序</p></td>
+                            <td><p>举例</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>1.位置属性</p></td>
+                            <td><p>position, top, right, z-index, display, float等</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>2.大小</p></td>
+                            <td><p>width, height, padding, margin</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>3.文字系列</p></td>
+                            <td><p>font, line-height, letter-spacing, color- text-align等</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>4.背景</p></td>
+                            <td><p>background, border等</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>5.其他</p></td>
+                            <td><p>animation, transition等</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>属性的书写规范</h4>
+
+                    <dl>
+                        <dt>(一) 属性</dt>
+                        <dd>1.使用CSS缩写属性，CSS有些属性是可以缩写的，比如padding,margin,font等等，这样精简代码同时又能提高用户的阅读体验。</dd>
+                        <dd>2.去掉小数点前的“0”</dd>
+                        <dd>3.16进制颜色代码缩写</dd>
+                        <dd>4.避免不必要的重复,你可以进一步合并不同类里的重复的规则。</dd>
+                        <dt>(二) 选择器</dt>
+                        <dd>1.长名称或词组可以使用中横线来为选择器命名。</dd>
+                        <dd>2.不要随意使用id</dd>
+                        <dd>3.为选择器添加状态前缀</dd>
+                        <dd>4.避免不必要的命名空间</dd>
+                    </dl>
+                    <h4>Class命名参考</h4>
+
+                    <table border="1">
+                        <caption>Class参考表</caption>
+                        <colgroup>
+                            <col style="width: 20%">
+                            <col style="width: 80%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <td><p>分类</p></td>
+                            <td><p>举例</p></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><p>(1)头部:header</p></td>
+                            <td><p>标志:logo 导航:nav 主导航:mainnav 子导航:subnav 搜索:search 用户:user 登陆:login 注册:regsiter</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>(2)主体:main</p></td>
+                            <td><p>内容:content 标题:title 文章列表:list 摘要:summary 菜单:menu 栏目:column 指南:guild 服务:service 热点:hot
+                                新闻:news</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>(3)脚本footer</p></td>
+                            <td><p>合作伙伴:partner 信息:info 友情链接:link 版权:copyright 加入:joinus 作者:author</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>(4)其他导航</p></td>
+                            <td><p>标签页:tab 分页:pagination 顶导航:topnav 边导航:sidebar 左导航:leftsidebar 右导航:rightsidebar</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>(5)状态</p></td>
+                            <td><p>block状态:is-block 当前的:current</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>(6)小标签</p></td>
+                            <td><p>图标:icon 注释:note 提示信息:msg 按钮:btn 分隔:sep 框:frame 集合:collection 二维码:code</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>(7)功能</p></td>
+                            <td><p>下载:download 投票:vote 滚动:scroll 广告:advertisement 索引:index 演示说明:demo 包裹:wrap</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                ]]>
+            </description>
+        </item>
         <item>
             <title>
                 <![CDATA[ Display属性的一些见解 ]]>
@@ -72,75 +255,76 @@
                         </tbody>
                     </table>
 
-                <h4>表格元素的display</h4>
+                    <h4>表格元素的display</h4>
+                    <dl>
+                        <dt>表格元素的display</dt>
+                        <dd>table{display: table;}</dd>
+                        <dd>thead{display: table-header-group;}</dd>
+                        <dd>tbody{display: table-row-group;}</dd>
+                        <dd>tfoot{display: table-footer-group;}</dd>
+                        <dd>tr{display: table-row;}</dd>
+                        <dd>td,th{display: table-cell;}</dd>
+                        <dd>col{display: table-column;}</dd>
+                        <dd>colgroup{display: table-column-group;}</dd>
+                        <dd>caption{display: table-caption;}</dd>
+                    </dl>
 
-                <dl>
-                    <dt>表格元素的display</dt>
-                    <dd>table{display: table;}</dd>
-                    <dd>thead{display: table-header-group;}</dd>
-                    <dd>tbody{display: table-row-group;}</dd>
-                    <dd>tfoot{display: table-footer-group;}</dd>
-                    <dd>tr{display: table-row;}</dd>
-                    <dd>td,th{display: table-cell;}</dd>
-                    <dd>col{display: table-column;}</dd>
-                    <dd>colgroup{display: table-column-group;}</dd>
-                    <dd>caption{display: table-caption;}</dd>
-                </dl>
-                <p>表格类元素的display共有以上几种，&lt;thead&gt;&lt;tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;col&gt;&lt;colgroup&gt;因为无法设置margin和padding用的较少，下面将着重介绍下&lt;table&gt;、&lt;td&gt;、&lt;th&gt;、&lt;caption&gt;这四个标签对应的display属性。</p>
-                <h4>display属性各个值的表现</h4>
+                    <p>表格类元素的display共有以上几种，&lt;thead&gt;&lt;tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;col&gt;&lt;colgroup&gt;因为无法设置margin和padding用的较少，下面将着重介绍下&lt;table&gt;、&lt;td&gt;、&lt;th&gt;、&lt;caption&gt;这四个标签对应的display属性。</p>
 
-                <dl>
-                    <dt>display:block</dt>
-                    <dd>[1] 不设置宽度时，宽度撑满一行</dd>
-                    <dd>[2] 独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                    <dt>display:block</dt>
-                    <dd>[1] 不设置宽度时，宽度撑满一行</dd>
-                    <dd>[2] 独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                    <dt>display:inline</dt>
-                    <dd>[1] 内容撑开宽度</dd>
-                    <dd>[2] 非独占一行</dd>
-                    <dd>[3] 不支持宽高</dd>
-                    <dd>[4] 代码换行被解析成空格</dd>
-                    <dt>display:inline-block</dt>
-                    <dd>[1] 不设置宽度时，内容撑开宽度</dd>
-                    <dd>[2] 非独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                    <dd>[4] 代码换行被解析成空格</dd>
-                </dl>
-                <dl>
-                    <dt>display:table</dt>
-                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
-                    <dd>[2]独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                    <dd>[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性</dd>
-                    <dt>display:inline-table</dt>
-                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
-                    <dd>[2] 非独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                    <dd>[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性</dd>
-                    <dt>display:table-cell</dt>
-                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
-                    <dd>[2] 非独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                    <dd>[4] 垂直对齐</dd>
-                    <dd>[5] 同级等高</dd>
-                    <dt>display:table-caption</dt>
-                    <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
-                    <dd>[2] 独占一行</dd>
-                    <dd>[3] 支持宽高</dd>
-                </dl>
-                <h4>display属性各个值的实战技巧</h4>
+                    <h4>display属性各个值的表现</h4>
+                    <dl>
+                        <dt>display:block</dt>
+                        <dd>[1] 不设置宽度时，宽度撑满一行</dd>
+                        <dd>[2] 独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                        <dt>display:block</dt>
+                        <dd>[1] 不设置宽度时，宽度撑满一行</dd>
+                        <dd>[2] 独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                        <dt>display:inline</dt>
+                        <dd>[1] 内容撑开宽度</dd>
+                        <dd>[2] 非独占一行</dd>
+                        <dd>[3] 不支持宽高</dd>
+                        <dd>[4] 代码换行被解析成空格</dd>
+                        <dt>display:inline-block</dt>
+                        <dd>[1] 不设置宽度时，内容撑开宽度</dd>
+                        <dd>[2] 非独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                        <dd>[4] 代码换行被解析成空格</dd>
+                    </dl>
 
-                <dl>
-                    <dt>display:inline</dt>
-                    <dd>[1]
-                        因为a标签display:inline，所以如果用display:block来当子元素，就需要把a设置为display:block，然后设置width和height,不然a标签不能完全包裹子标签而且子标签的位置也会出现偏差。
-                    </dd>
-                    <dd>[2] display:inline元素的padding使用em来做单位更好，使页面更具适应性。</dd>
-                    <dd>[3] display:inline的元素可以通过设置line-height很容易得实现水平居中。</dd>
-                </dl>
+                    <dl>
+                        <dt>display:table</dt>
+                        <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                        <dd>[2]独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                        <dd>[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性</dd>
+                        <dt>display:inline-table</dt>
+                        <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                        <dd>[2] 非独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                        <dd>[4] 默认具有表格特征，可设置table-layout、border-collapse、border-spacing等表格专有属性</dd>
+                        <dt>display:table-cell</dt>
+                        <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                        <dd>[2] 非独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                        <dd>[4] 垂直对齐</dd>
+                        <dd>[5] 同级等高</dd>
+                        <dt>display:table-caption</dt>
+                        <dd>[1] 不设置宽度时，宽度由内容撑开</dd>
+                        <dd>[2] 独占一行</dd>
+                        <dd>[3] 支持宽高</dd>
+                    </dl>
+
+                    <h4>display属性各个值的实战技巧</h4>
+                    <dl>
+                        <dt>display:inline</dt>
+                        <dd>[1]
+                            因为a标签display:inline，所以如果用display:block来当子元素，就需要把a设置为display:block，然后设置width和height,不然a标签不能完全包裹子标签而且子标签的位置也会出现偏差。
+                        </dd>
+                        <dd>[2] display:inline元素的padding使用em来做单位更好，使页面更具适应性。</dd>
+                        <dd>[3] display:inline的元素可以通过设置line-height很容易得实现水平居中。</dd>
+                    </dl>
                 ]]>
             </description>
         </item>
@@ -166,6 +350,6 @@
                 ]]>
             </description>
         </item>
- </channel>
+    </channel>
 
 </rss>
