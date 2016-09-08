@@ -2,8 +2,8 @@ mixin tableuse(a,...items)
     tr
         td
             p=a
-        td
-            each item in items
+        each item in items
+            td
                 p= item
 mixin dtdduse(a, ...items)
     dt=a
@@ -17,3 +17,6 @@ mixin warnuse(leixing,b)
     .for-warn
         span=leixing
         p=b
+mixin codeuse(ab)
+    =ab
+    br

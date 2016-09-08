@@ -1,0 +1,161 @@
+extends ../jade-block/forsubpage
+include ../jade-block/mixin-use
+
+block headExtend
+    //额外需要的head
+block jsExtend
+    //额外需要的js
+block page-id
+    //文章的page-id
+    #page-id 0
+block tittle
+    //文章的title
+    h4 follow me
+block publishTime
+    //文章的发表日期
+    span 2016/8/20
+block lastTime
+    //文章的最后修改日期
+    span 2016/8/20
+block content
+    //文章的内容
+            1.专门的用于a标签的写法
+            .for-a
+                span.for-emphasis
+                a(href="")
+
+            2.段落的写法
+            p
+
+            3.强调部分的写法，加入class="for-emphasis"
+            em.for-emphasis
+
+            4.专门显示代码的写法
+            .for-code
+                code
+                    this.sunrise=data.retData.sunrise;//日出时间
+                    br
+                    this.sunset=data.retData.sunset;//日落时间
+
+            5.专门显示图片的写法，需在标签里声明宽和高
+            .for-img-show
+                img(src='',style='')
+                .img-msg
+                    p
+
+            6.文章的子标题的写法
+            +subtitleuse("")
+
+            7.文章文字p中如果有需要强调的
+            p 一
+                em.strongword 二
+                |三
+
+            8.警告和特别提醒部分
+            +warnuse(leixing,b)
+
+            9.表格的使用
+            .for-table
+                table(border="1")
+                    caption 这里写表单的标题
+                    colgroup
+                        col(style="width: 20%;")
+                        col(style="width: 80%;")
+                    thead
+                        +tableuse("","")
+                    tbody
+                        +tableuse("","")
+                    tfoot
+                        +tableuse("","")
+            10.列表的使用
+                dl
+                    +dtdduse("","")
+
+    .for-table
+        table(border="1")
+            caption 文本格式化标签
+            colgroup
+                col(style="width: 20%;")
+                col(style="width: 40%;")
+                col(style="width: 40%;")
+            thead
+                +tableuse("标签","描述","示例")
+            tbody
+                +tableuse("<em>","定义着重文字","<em>强调文本</em>")
+                +tableuse("<small>","定义小号字","<small> Copyright 1999-2050 by Refsnes Data.</small>")
+                +tableuse("<strong>","在 HTML 5 中，<strong> 标签定义重要的文本。","<strong>加粗重要文本</strong>")
+                +tableuse("<sub>","定义下标字","<p>这个文本包含 <sub>下标</sub>文本。</p>")
+                +tableuse("<sup>","定义上标字","<p>这个文本包含 <sup>上标</sup> 文本。</p>")
+                +tableuse("<ins>","定义插入字,在新插入文本下添加一条下划线","<ins>red</ins>")
+                +tableuse("<del>","定义删除字,览器通常会在已删除文本上添加一条删除线","<del>blue</del>")
+    .for-table
+        table(border="1")
+            caption "计算机输出" 标签
+            colgroup
+                col(style="width: 20%;")
+                col(style="width: 40%;")
+                col(style="width: 40%;")
+            thead
+                +tableuse("标签","描述","示例")
+            tbody
+                +tableuse("<code>","定义计算机代码","<code>一段电脑代码</code>")
+                +tableuse("<samp>","定义计算机代码样本","<samp>计算机样本</samp>")
+                +tableuse("<var>","定义变量","<var>变量</var>")
+                +tableuse("<pre>","定义预格式文本","<pre>此例演示如何使用 pre 标签对空行和 空格进行控制</pre>")
+    .for-table
+        table(border="1")
+            caption 引文, 引用, 及标签定义
+            colgroup
+                col(style="width: 20%;")
+                col(style="width: 40%;")
+                col(style="width: 40%;")
+            thead
+                +tableuse("标签","描述","示例")
+            tbody
+                +tableuse("<abbr>","定义缩写,表示一个缩写词或者首字母缩略词","<abbr title='World Health Organization'>WHO</abbr>")
+                +tableuse("<address>","定义地址,如果 < address > 元素位于 < body > 元素内部，则它表示该文档作者/所有者的联系信息。如果 <address> 元素位于 <article> 元素内部，则它表示该文章作者/所有者的联系信息。","<address>Written by < a href='mailto:webmaster@example.com'' > Jon Doe</a>.<br>Visit us at:<br>Example.com<br>Box 564, Disneyland<br>USA</address>")
+                +tableuse("<blockquote>","标签定义摘自另一个源的块引用。","<blockquote> < p > Here is a long quotation here is a long quotation.</p></blockquote>")
+                +tableuse("<q>","定义短的引用语,浏览器经常会在这种引用的周围插入引号。","<q>Build a future where people live in harmony with nature.</q>")
+                +tableuse("<cite>","<cite> 标签定义作品的标题。","<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>")
+                +tableuse("<dfn>","定义一个定义项目。","<dfn>定义项目</dfn>")
+
+    +subtitleuse("HTML5 新元素")
+    .for-table
+        table(border="1")
+            caption 新多媒体元素
+            colgroup
+                col(style="width: 20%;")
+                col(style="width: 40%;")
+                col(style="width: 40%;")
+            thead
+                +tableuse("标签","描述","示例")
+            tbody
+                +tableuse("<audio>","定义音频内容,可以在 <audio> 和 </audio> 之间放置文本内容，这些文本信息将会被显示在那些不支持 <audio> 标签的浏览器中。","<audio controls > < source src='horse.ogg' type='audio/ogg' >< source src='horse.mp3' type='audio/mpeg' >您的浏览器不支持 audio 元素。</audio>")
+                +tableuse("<video>","定义视频（video 或者 movie）","<video width='320' height='240' controls > < source src='movie.mp4' type='video/mp4' >< source src='movie.ogg' type='video/ogg' >您的浏览器不支持 video 标签。</video>")
+                +tableuse("<source>","定义多媒体资源 <video> 和 <audio>","<audio controls > < source src='horse.ogg' type='audio/ogg' >< source src='horse.mp3' type='audio/mpeg' >您的浏览器不支持 audio 元素。</audio>")
+                +tableuse("<embed>","定义嵌入的内容，比如插件。","<embed src='helloworld.swf'>")
+                +tableuse("<track>","为诸如 <video> 和 <audio> 元素之类的媒介规定外部文本轨道。如字幕。","")
+
+    .for-table
+        table(border="1")
+            caption 新的语义元素
+            colgroup
+                col(style="width: 20%;")
+                col(style="width: 40%;")
+                col(style="width: 40%;")
+            thead
+                +tableuse("标签","描述","示例")
+            tbody
+                +tableuse("<header>","<header> 标签定义文档或者文档的一部分区域的页眉。 < header > 元素应该作为介绍内容或者导航链接栏的容器。<header> 标签不能被放在 <footer>、<address> 或者另一个 <header> 元素内部。","<article> < header > < h1 > Internet Explorer 9</h1><p><time pubdate datetime=‘2011-03-15’ > < / time > < / p >< / header >< p > Windows Internet Explorer 9(缩写为 IE9 )是在2011年3月14日21:00发布的</p></article>")
+                +tableuse("<nav>","<nav> 标签定义导航链接的部分。并不是所有的 HTML 文档都要使用到 <nav> 元素。<nav> 元素只是作为标注一个导航链接的区域。","<nav> < a href=‘/html/’>HTML</a> |<a href=‘/css/’>CSS</a> |<a href=‘/js/’>JavaScript</a> |<a href=‘/jquery/’>jQuery</a></nav>")
+                +tableuse("<section>","<section> 标签定义了文档的某个区域。比如章节、头部、底部或者文档的其他区域。","<section> < h1 > WWF < / h1 > < p > The World Wide Fund for Nature(WWF) is....</p></section>")
+                +tableuse("<article>","<article> 标签定义的内容本身必须是有意义的且必须是独立于文档的其余部分。","<article> < h1 > Internet Explorer 9</h1><p> Windows Internet Explorer 9(缩写为 IE9 )在2011年3月14日21:00 发布。</p></article>")
+                +tableuse("<aside>","aside 的内容应该与附近的内容相关。","<aside> < h4 > Epcot Center < / h4 > < p > The Epcot Center is a theme park in Disney World, Florida.</p></aside>")
+                +tableuse("<figcaption>","<figcaption> 标签为 <figure> 元素定义标题。 < figcaption > 元素应该被置于 < figure > 元素的第一个或最后一个子元素的位置。","<figure> < img src=‘img_pulpit.jpg’ alt=‘The Pulpit Rock’ width=‘304’ height=‘228’><figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption></figure>")
+                +tableuse("<figure>","<figure> 标签规定独立的流内容（图像、图表、照片、代码等等）。 < figure > 元素的内容应该与主内容相关，同时元素的位置相对于主内容是独立的。如果被删除，则不应对文档流产生影响。","<figure> < img src=‘img_pulpit.jpg’ alt=‘The Pulpit Rock’ width=‘304’ height=‘228’></figure>")
+                +tableuse("<footer>","<footer> 标签定义文档或者文档的一部分区域的页脚。在典型情况下，该元素会包含文档创作者的姓名、文档的版权信息、使用条款的链接、联系信息等等。","<footer> < p > Posted by: Hege Refsnes < / p > < p > < time pubdate datetime=‘2012-03-01’></time></p></footer>")
+
+
+
+
+
