@@ -13,21 +13,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/webApp-nav.html" afterPath="$PROJECT_DIR$/classify/webApp-nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/search-result.html" afterPath="$PROJECT_DIR$/feature-page/search-result.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/time-line.html" afterPath="$PROJECT_DIR$/feature-page/time-line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.pug" afterPath="$PROJECT_DIR$/index.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.pug" afterPath="$PROJECT_DIR$/jade-block/example-sub.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.pug" afterPath="$PROJECT_DIR$/jade-block/forsubpage.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/head-css-js.html" afterPath="$PROJECT_DIR$/jade-block/head-css-js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/meta-head.html" afterPath="$PROJECT_DIR$/jade-block/meta-head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/meta-head.pug" afterPath="$PROJECT_DIR$/jade-block/meta-head.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/mixin-use.pug" afterPath="$PROJECT_DIR$/jade-block/mixin-use.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/header.html" afterPath="$PROJECT_DIR$/jade-block/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/header.pug" afterPath="$PROJECT_DIR$/jade-block/header.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/class-1.html" afterPath="$PROJECT_DIR$/language/class-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/display-1.html" afterPath="$PROJECT_DIR$/language/display-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/meta-1.html" afterPath="$PROJECT_DIR$/language/meta-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/position-1.html" afterPath="$PROJECT_DIR$/language/position-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/position-1.pug" afterPath="$PROJECT_DIR$/language/position-1.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/tag-1.html" afterPath="$PROJECT_DIR$/language/tag-1.html" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/index.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -103,6 +98,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="header.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jade-block/header.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mixin-use.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jade-block/mixin-use.pug">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forsubpage.pug" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forsubpage.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jade-block/forsubpage.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
@@ -184,7 +189,6 @@
         <option value="$PROJECT_DIR$/javascripts/for-search.js" />
         <option value="$PROJECT_DIR$/classify/language-nav.pug" />
         <option value="$PROJECT_DIR$/language/display-1.html" />
-        <option value="$PROJECT_DIR$/jade-block/header.pug" />
         <option value="$PROJECT_DIR$/javascripts/article-write.js" />
         <option value="$PROJECT_DIR$/stylesheets/for-time-and-nav.scss" />
         <option value="$PROJECT_DIR$/stylesheets/article-write.scss" />
@@ -202,6 +206,7 @@
         <option value="$PROJECT_DIR$/language/tag-1.pug" />
         <option value="$PROJECT_DIR$/index.pug" />
         <option value="$PROJECT_DIR$/jade-block/forsubpage.pug" />
+        <option value="$PROJECT_DIR$/jade-block/header.pug" />
       </list>
     </option>
   </component>
@@ -408,7 +413,7 @@
       <workItem from="1473235114176" duration="2070000" />
       <workItem from="1473249660917" duration="1664000" />
       <workItem from="1473251909633" duration="1207000" />
-      <workItem from="1473295443809" duration="23243000" />
+      <workItem from="1473295443809" duration="23510000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1471268472324</created>
@@ -697,17 +702,24 @@
       <option name="project" value="LOCAL" />
       <updated>1473252519719</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="V1.23&#10;1.seo初步优化">
+      <created>1473328719157</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1473328719157</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192735000" />
+    <option name="totallyTimeSpent" value="193002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2217262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2217262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -751,7 +763,8 @@
     <MESSAGE value="V1.20&#10;1.增加了subtitle的导航方式" />
     <MESSAGE value="V1.20&#10;1.添加了文章" />
     <MESSAGE value="V1.22&#10;1.添加统计和分享" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.22&#10;1.添加统计和分享" />
+    <MESSAGE value="V1.23&#10;1.seo初步优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.23&#10;1.seo初步优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -951,14 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature-page/time-line.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1047,14 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/footer.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1063,18 +1060,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/forsubpage.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="52" column="519" selection-start-line="52" selection-start-column="519" selection-end-line="52" selection-end-column="519" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>
