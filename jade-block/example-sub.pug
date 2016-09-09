@@ -3,8 +3,24 @@ include ../jade-block/mixin-use
 
 block headExtend
     //额外需要的head
+        //使用代码插件时
+        script(type='text/javascript', src='../codehl/scripts/shCore.js')
+            link(rel='stylesheet', type='text/css', href='../codehl/styles/shCore.css')
+            link(rel='stylesheet', type='text/css', href='../codehl/styles/shCoreRDark.css')
+            script(type='text/javascript', src='../codehl/scripts/shAutoloader.js')
 block jsExtend
     //额外需要的js
+        //使用代码插件时
+        script(type="text/javascript").
+                SyntaxHighlighter.autoloader(
+                        ['js', 'jscript', 'javascript', '../codehl/scripts/shBrushJScript.js'],
+                        ['bash', 'shell', '../codehl/scripts/shBrushBash.js'],
+                        ['css', '../codehl/scripts/shBrushCss.js'],
+                        ['xml', 'html', '../codehl/scripts/shBrushXml.js'],
+                        ['sql', '../codehl/scripts/shBrushSql.js'],
+                        ['php', '../codehl/scripts/shBrushPhp.js']
+                );
+                SyntaxHighlighter.all();
 block page-id
     //文章的page-id
     #page-id 0
@@ -17,8 +33,11 @@ block publishTime
 block lastTime
     //文章的最后修改日期
     span 2016/8/20
+block commentblock
+    .ds-thread(data-thread-key="aid" data-title="atittle" data-url="ahtml")
+
 block content
-        //文章的内容
+    //文章的内容
                 1.专门的用于a标签的写法
                 .for-a
                     span.for-emphasis
@@ -30,12 +49,10 @@ block content
                 3.强调部分的写法，加入class="for-emphasis"
                 em.for-emphasis
 
-                4.专门显示代码的写法
-                .for-code
-                    code
-                        this.sunrise=data.retData.sunrise;//日出时间
-                        br
-                        this.sunset=data.retData.sunset;//日落时间
+                4.专门显示代码的写法，js可修改
+                pre(class='brush:js;').
+                    代码
+
 
                 5.专门显示图片的写法，需在标签里声明宽和高
                 .for-img-show
@@ -70,4 +87,3 @@ block content
                 10.列表的使用
                     dl
                         +dtdduse("","")
-
