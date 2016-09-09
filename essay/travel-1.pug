@@ -1,0 +1,108 @@
+extends ../jade-block/forsubpage
+include ../jade-block/mixin-use
+
+block headExtend
+
+block jsExtend
+
+block page-id
+    //文章的page-id
+    #page-id 3
+block tittle
+    //文章的title
+    h4 回乡记(一)
+block publishTime
+    //文章的发表日期
+    span 2016/9/09
+block lastTime
+    //文章的最后修改日期
+    span 2016/9/09
+block commentblock
+    .ds-thread(data-thread-key="3" data-title="回乡记(一)" data-url="http://xiaobxia.win/essay/travel.html")
+
+block content
+    //文章的内容
+                1.专门的用于a标签的写法
+                .for-a
+                    span.for-emphasis
+                    a(href="")
+
+                2.段落的写法
+                p
+
+                3.强调部分的写法，加入class="for-emphasis"
+                em.for-emphasis
+
+                4.专门显示代码的写法，js可修改
+                pre(class='brush:js;').
+                    代码
+
+
+                5.专门显示图片的写法，需在标签里声明宽和高
+                .for-img-show
+                    img(src='',style='')
+                    .img-msg
+                        p
+
+                6.文章的子标题的写法
+                +subtitleuse("")
+
+                7.文章文字p中如果有需要强调的
+                p 一
+                    em.strongword 二
+                    |三
+
+                8.警告和特别提醒部分
+                +warnuse(leixing,b)
+
+                9.表格的使用
+                .for-table
+                    table(border="1")
+                        caption 这里写表单的标题
+                        colgroup
+                            col(style="width: 20%;")
+                            col(style="width: 80%;")
+                        thead
+                            +tableuse("","")
+                        tbody
+                            +tableuse("","")
+                        tfoot
+                            +tableuse("","")
+                10.列表的使用
+                    dl
+                        +dtdduse("","")
+    +subtitleuse("千佛山")
+    .for-img-show
+        img(src='../article-img/travel-1-pic/travel-1-q-1.jpg',style='',alt='千佛山')
+        .img-msg
+            p 山是一尊佛，佛是一座山
+    .for-img-show
+        img(src='../article-img/travel-1-pic/travel-1-q-2.jpg',style='width: 600px; height: 320px',alt='千佛山')
+        .img-msg
+            p 山间楼阁
+    .for-img-show
+        img(src='../article-img/travel-1-pic/travel-1-q-3.jpg',style='width: 600px; height: 320px',alt='千佛山')
+        .img-msg
+            p 焚香
+    .for-img-show
+        img(src='../article-img/travel-1-pic/travel-1-q-4.jpg',style='width: 600px; height: 320px',alt='千佛山')
+        .img-msg
+            p 假山
+
+
+    +subtitleuse("水库")
+    .for-img-show
+        img(src='../article-img/travel-1-pic/travel-1-s-1.jpg',style='width: 600px; height: 320px',alt='水库')
+        .img-msg
+            p 水库风景比AAAA风景区还壮阔，可惜没有文化底蕴
+
+
+    +subtitleuse("花")
+    .for-img-show
+        img(src='../article-img/travel-1-pic/travel-1-f-1.jpg',style='width: 600px; height: 320px',alt='花')
+        .img-msg
+            p 外婆家门口的花，也不知是什么花
+    +warnuse("下载","高清的未压缩图片，还有一些没在文中出现的图片。提取码：03ca")
+    .for-a
+        span.for-emphasis 地址
+        a(href="https://yunpan.cn/ckgMRFme8enTE") https://yunpan.cn/ckgMRFme8enTE
