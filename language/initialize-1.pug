@@ -1,0 +1,542 @@
+extends ../jade-block/forsubpage
+include ../jade-block/mixin-use
+
+block headExtend
+    //额外需要的head
+    script(type='text/javascript', src='../codehl/scripts/shCore.js')
+    link(rel='stylesheet', type='text/css', href='../codehl/styles/shCore.css')
+    link(rel='stylesheet', type='text/css', href='../codehl/styles/shCoreDefault.css')
+    script(type='text/javascript', src='../codehl/scripts/shAutoloader.js')
+
+block jsExtend
+    //额外需要的js
+    script(type="text/javascript").
+        SyntaxHighlighter.autoloader(
+                ['js', 'jscript', 'javascript', '../codehl/scripts/shBrushJScript.js'],
+                ['bash', 'shell', '../codehl/scripts/shBrushBash.js'],
+                ['css', '../codehl/scripts/shBrushCss.js'],
+                ['xml', 'html', '../codehl/scripts/shBrushXml.js'],
+                ['sql', '../codehl/scripts/shBrushSql.js'],
+                ['php', '../codehl/scripts/shBrushPhp.js']
+        );
+        SyntaxHighlighter.all();
+block page-id
+    //文章的page-id
+    #page-id 0
+block tittle
+    //文章的title
+    h4 Meta标签详解
+block publishTime
+    //文章的发表日期
+    span 2016/8/20
+block lastTime
+    //文章的最后修改日期
+    span 2016/8/20
+
+block content
+    //文章的内容
+            1.专门的用于a标签的写法
+            .for-a
+                span.for-emphasis
+                a(href="")
+
+            2.段落的写法
+            p
+
+            3.强调部分的写法，加入class="for-emphasis"
+            em.for-emphasis
+
+            4.专门显示代码的写法，js可修改
+                            pre(class='brush:js;').
+                                代码
+
+
+            5.专门显示图片的写法，需在标签里声明宽和高
+            .for-img-show
+                img(src='',style='')
+                .img-msg
+                    p
+
+            6.文章的子标题的写法
+            +subtitleuse("")
+
+            7.文章文字p中如果有需要强调的
+            p 一
+                em.strongword 二
+                |三
+
+            8.警告和特别提醒部分
+            +warnuse(leixing,b)
+
+            9.表格的使用
+            .for-table
+                table(border="1")
+                    caption 这里写表单的标题
+                    colgroup
+                        col(style="width: 20%;")
+                        col(style="width: 80%;")
+                    thead
+                        +tableuse("","")
+                    tfoot
+                        +tableuse("","")
+                    tbody
+                        +tableuse("","")
+            10.列表的使用
+                dl
+                    +dtdduse("","")
+
+    +subtitleuse("知名站点的样式初始化")
+    span.strongword 淘宝的样式初始化
+    pre(class='brush: css;').
+        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+        body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+        h1, h2, h3, h4, h5, h6{ font-size:100%; }
+        address, cite, dfn, em, var { font-style:normal; }
+        code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+        small{ font-size:12px; }
+        ul, ol { list-style:none; }
+        a { text-decoration:none; }
+        a:hover { text-decoration:underline; }
+        sup { vertical-align:text-top; }
+        sub{ vertical-align:text-bottom; }
+        legend { color:#000; }
+        fieldset, img { border:0; }
+        button, input, select, textarea { font-size:100%; }
+        table { border-collapse:collapse; border-spacing:0; }
+
+    span.strongword github初始化
+        pre(class='brush: css;').
+            /**
+             * 1. 把默认字体设置为无衬线字体。
+             * 2. 防止当方向改变时iOS文本大小自适应，在没有禁用用户变焦的情况下。
+             */
+            html {
+              font-family: sans-serif; /* 1 */
+              -webkit-text-size-adjust: 100%; /* 2 */
+              -ms-text-size-adjust: 100%; /* 2 */
+            }
+            /**
+             * 移除默认的margin。
+             */
+            body {
+              margin: 0;
+            }
+            /* HTML5 display 定义
+               ========================================================================== */
+            /**
+             * 改正在IE 8/9中没有为任何HTML5的元素定义display的"block"。
+             * 改正在IE 10/11和Firefox中没有为"details"和"summary"元素定义display的"block"
+             * 改正在IE 11中没有为"main"元素定义display的"block"
+             */
+            article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+              display: block;
+            }
+            /**
+             * 1. 改正在IE 8/9中没有为为元素定义display的"inline-block"
+             * 2. 使Chrome, Firefox, and Opera中的"progress"元素的垂直对齐标准化。
+             */
+            audio,canvas,progress,video {
+              display: inline-block; /* 1 */
+              vertical-align: baseline; /* 2 */
+            }
+            /**
+             * 防止现代浏览器在没有控制的情况下显示"audio"元素。
+             * 移除在iOS 5的设备中多出来的height。
+             */
+            audio:not([controls]) {
+              display: none;
+              height: 0;
+            }
+            /**
+             * 处理hidden样式不呈现，在IE 8/9/10中。
+             * 隐藏"template"元素，在IE 8/9/11, Safari, and Firefox < 22中。
+             */
+
+            [hidden],
+            template {
+              display: none;
+            }
+
+            /* Links
+               ========================================================================== */
+
+            /**
+                移除active links的灰色背景色，在IE 10中。
+             * Remove the gray background color from active links in IE 10.
+             */
+
+            a {
+              background-color: transparent;
+            }
+
+            /**
+             * Improve readability when focused and also mouse hovered in all browsers.
+             */
+
+            a:active,
+            a:hover {
+              outline: 0;
+            }
+
+            /* Text-level semantics
+               ========================================================================== */
+
+            /**
+             * 处理样式不呈现，在IE 8/9/10/11, Safari, and Chrome中。
+             */
+
+            abbr[title] {
+              border-bottom: 1px dotted;
+            }
+
+            /**
+             * 处理把样式设置成bolder，在Firefox 4+, Safari, and Chrome中。
+             */
+            b,strong {
+              font-weight: bold;
+            }
+            /**
+             * 处理样式不呈现，在Safari and Chrome中。
+             */
+
+            dfn {
+              font-style: italic;
+            }
+
+            /**
+             * Address variable `h1` font-size and margin within `section` and `article`
+             * contexts in Firefox 4+, Safari, and Chrome.
+             */
+
+            h1 {
+              margin: 0.67em 0;
+              font-size: 2em;
+            }
+
+            /**
+             * Address styling not present in IE 8/9.
+             */
+
+            mark {
+              color: #000;
+              background: #ff0;
+            }
+
+            /**
+             * Address inconsistent and variable font size in all browsers.
+             */
+
+            small {
+              font-size: 80%;
+            }
+
+            /**
+             * 防止"sub"和"sup"影响line-height，在所有浏览器中。
+             */
+            sub,sup {
+              position: relative;
+              font-size: 75%;
+              line-height: 0;
+              vertical-align: baseline;
+            }
+            sup {
+              top: -0.5em;
+            }
+            sub {
+              bottom: -0.25em;
+            }
+            /* 嵌入内容
+               ========================================================================== */
+            /**
+             * 移除border当嵌a元素中在IE 8/9/10下。
+             */
+            img {
+              border: 0;
+            }
+            /**
+             * 改正在IE 9/10/11中overflow属性不是"hidden"。
+             */
+            svg:not(:root) {
+              overflow: hidden;
+            }
+
+            /* 群组元素(Grouping content)
+               ========================================================================== */
+
+            /**
+             * Address margin not present in IE 8/9 and Safari.
+             */
+
+            figure {
+              margin: 1em 40px;
+            }
+
+            /**
+             * Address differences between Firefox and other browsers.
+             */
+
+            hr {
+              height: 0;
+              -moz-box-sizing: content-box;
+              box-sizing: content-box;
+            }
+
+            /**
+             * 在所有浏览器中拥有overflow属性。
+             */
+            pre {
+              overflow: auto;
+            }
+
+            /**
+             * Address odd `em`-unit font size rendering in all browsers.
+             */
+            code,kbd,pre,samp {
+              font-family: monospace, monospace;
+              font-size: 1em;
+            }
+            /* Forms
+               ========================================================================== */
+
+            /**
+             * Known limitation: by default, Chrome and Safari on OS X allow very limited
+             * styling of `select`, unless a `border` property is set.
+             */
+
+            /**
+             * 1. Correct color not being inherited.
+             *    Known issue: affects color of disabled elements.
+             * 2. Correct font properties not being inherited.
+             * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+             */
+
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+              margin: 0; /* 3 */
+              font: inherit; /* 2 */
+              color: inherit; /* 1 */
+            }
+
+            /**
+             * Address `overflow` set to `hidden` in IE 8/9/10/11.
+             */
+
+            button {
+              overflow: visible;
+            }
+
+            /**
+             * Address inconsistent `text-transform` inheritance for `button` and `select`.
+             * All other form control elements do not inherit `text-transform` values.
+             * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+             * Correct `select` style inheritance in Firefox.
+             */
+
+            button,
+            select {
+              text-transform: none;
+            }
+
+            /**
+             * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+             *    and `video` controls.
+             * 2. Correct inability to style clickable `input` types in iOS.
+             * 3. Improve usability and consistency of cursor style between image-type
+             *    `input` and others.
+             */
+
+            button,
+            html input[type="button"], /* 1 */
+            input[type="reset"],
+            input[type="submit"] {
+              -webkit-appearance: button; /* 2 */
+              cursor: pointer; /* 3 */
+            }
+
+            /**
+             * Re-set default cursor for disabled elements.
+             */
+
+            button[disabled],
+            html input[disabled] {
+              cursor: default;
+            }
+
+            /**
+             * Remove inner padding and border in Firefox 4+.
+             */
+
+            button::-moz-focus-inner,
+            input::-moz-focus-inner {
+              padding: 0;
+              border: 0;
+            }
+
+            /**
+             * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+             * the UA stylesheet.
+             */
+
+            input {
+              line-height: normal;
+            }
+
+            /**
+             * It's recommended that you don't attempt to style these elements.
+             * Firefox's implementation doesn't respect box-sizing, padding, or width.
+             *
+             * 1. Address box sizing set to `content-box` in IE 8/9/10.
+             * 2. Remove excess padding in IE 8/9/10.
+             */
+
+            input[type="checkbox"],
+            input[type="radio"] {
+              box-sizing: border-box; /* 1 */
+              padding: 0; /* 2 */
+            }
+
+            /**
+             * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+             * `font-size` values of the `input`, it causes the cursor style of the
+             * decrement button to change from `default` to `text`.
+             */
+
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+              height: auto;
+            }
+
+            /**
+             * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+             * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+             *    (include `-moz` to future-proof).
+             */
+
+            input[type="search"] {
+              -webkit-box-sizing: content-box; /* 2 */
+              -moz-box-sizing: content-box;
+              box-sizing: content-box;
+              -webkit-appearance: textfield; /* 1 */
+            }
+
+            /**
+             * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+             * Safari (but not Chrome) clips the cancel button when the search input has
+             * padding (and `textfield` appearance).
+             */
+            input[type="search"]::-webkit-search-cancel-button,
+            input[type="search"]::-webkit-search-decoration {
+              -webkit-appearance: none;
+            }
+            /**
+             * 定义始终如一的border, margin, 和 padding。
+             */
+            fieldset {
+              padding: 0.35em 0.625em 0.75em;
+              margin: 0 2px;
+              border: 1px solid #c0c0c0;
+            }
+            /**
+             * 1. 改正IE 8/9/10/11在中color属性不被继承。
+             * 2. 移除padding，这样当人们归零字段(fieldsets)时不会大跌眼镜。
+             */
+            legend {
+              padding: 0; /* 2 */
+              border: 0; /* 1 */
+            }
+            /**
+             * 移除在IE 8/9/10/11中默认的垂直滚动条。
+             */
+            textarea {
+              overflow: auto;
+            }
+            /**
+             * 不要继承"font-weight"(应用的规则)。
+             * 注意：在Chrome and Safari on OS X中默认属性不能被安全地改变。
+             */
+            optgroup {
+              font-weight: bold;
+            }
+            /* 表格元素
+               ========================================================================== */
+            /**
+             * 移除表格中单元格之间的大多数的间距
+             */
+            table {
+              border-spacing: 0;
+              border-collapse: collapse;
+            }
+            td,th {
+              padding: 0;
+            }
+
+    +subtitleuse("我的样式初始化")
+    pre(class='brush: css;').
+        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+          margin: 0;
+          padding: 0;
+        }
+
+        body, button, input, select, textarea {
+          font: 12px/1.5tahoma, arial, \5b8b\4f53;
+        }
+        input, button, select, textarea {
+          outline: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-size: 100%;
+        }
+
+        address, caption, cite, code, dfn, em, i, th, var {
+          font-style: normal;
+          font-weight: normal;
+        }
+
+        code, kbd, pre, samp {
+          font-family: couriernew, courier, monospace;
+        }
+
+        small {
+          font-size: 12px;
+        }
+
+        ul, ol {
+          list-style: none;
+        }
+
+        a {
+          outline: 0;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+
+
+        sup {
+          vertical-align: text-top;
+        }
+
+        sub {
+          vertical-align: text-bottom;
+        }
+
+        legend {
+          color: #000;
+        }
+
+        fieldset, img {
+          border: 0;
+        }
+
+        button, input, select, textarea {
+          font-size: 100%;
+        }
+
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+        }
+
