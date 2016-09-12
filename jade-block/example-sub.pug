@@ -1,40 +1,34 @@
 extends ../jade-block/forsubpage
 include ../jade-block/mixin-use
 
+
+block submeta
+    title 回乡记(一)
+    meta(name="keywords", content="博客,xiaobxia,小b侠,随笔，回乡记(一)")
+    meta(name="description", content="xiaobxia的博客文章随笔，题目回乡记(一)。子标题有千佛山，水库和花。")
+
 block headExtend
     //额外需要的head
         //使用代码插件时
-        script(type='text/javascript', src='../codehl/scripts/shCore.js')
-            link(rel='stylesheet', type='text/css', href='../codehl/styles/shCore.css')
-            link(rel='stylesheet', type='text/css', href='../codehl/styles/shCoreDefault.css')
-            script(type='text/javascript', src='../codehl/scripts/shAutoloader.js')
+        include ../jade-block/codehl-h
 block jsExtend
     //额外需要的js
         //使用代码插件时
-        script(type="text/javascript").
-                SyntaxHighlighter.autoloader(
-                        ['js', 'jscript', 'javascript', '../codehl/scripts/shBrushJScript.js'],
-                        ['bash', 'shell', '../codehl/scripts/shBrushBash.js'],
-                        ['css', '../codehl/scripts/shBrushCss.js'],
-                        ['xml', 'html', '../codehl/scripts/shBrushXml.js'],
-                        ['sql', '../codehl/scripts/shBrushSql.js'],
-                        ['php', '../codehl/scripts/shBrushPhp.js']
-                );
-                SyntaxHighlighter.all();
+        include ../jade-block/codehl-b
 block page-id
     //文章的page-id
-    #page-id 0
+    #page-id 3
 block tittle
     //文章的title
-    h4 follow me
+    h4 回乡记(一)
 block publishTime
     //文章的发表日期
-    span 2016/8/20
+    span 2016/9/09
 block lastTime
     //文章的最后修改日期
-    span 2016/8/20
+    span 2016/9/09
 block commentblock
-    .ds-thread(data-thread-key="aid" data-title="atittle" data-url="ahtml")
+    .ds-thread(data-thread-key="3" data-title="回乡记(一)" data-url="http://xiaobxia.win/essay/travel.html")
 
 block content
     //文章的内容

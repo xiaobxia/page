@@ -1,18 +1,28 @@
 extends ../jade-block/forsubpage
+
+block submeta
+    title follow me
+    meta(name="keywords", content="博客,xiaobxia,小b侠,关于我,follow me")
+    meta(name="description", content="xiaobxia的博客文章随笔，题目follow me。子标题")
+
+block page-id
+    //文章的page-id
+    #page-id 0
+block tittle
+    //文章的title
+    h4 follow me
+block publishTime
+    //文章的发表日期
+    span 2016/8/20
+block lastTime
+    //文章的最后修改日期
+    span 2016/8/29
+block commentblock
+    .ds-thread(data-thread-key="0" data-title="follow me" data-url="http://xiaobxia.win/aboutme/follow-me.html")
 block headExtend
 
 block jsExtend
 
-block page-id
-    #page-id 0
-block tittle
-    h4 follow me
-block publishTime
-    span 2016/8/20
-block lastTime
-    span 2016/8/29
-block commentblock
-    .ds-thread(data-thread-key="0" data-title="follow me" data-url="http://xiaobxia.win/aboutme/follow-me.html")
 block content
     .for-a
         span.for-emphasis github:
@@ -23,3 +33,4 @@ block content
     .for-a
         span.for-emphasis weibo:
         a(href='http://weibo.com/5989486288') http://weibo.com/5989486288
+

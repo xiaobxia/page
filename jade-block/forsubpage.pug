@@ -4,9 +4,13 @@
 doctype html
 html
     head
-        include ../jade-block/head-css-js
+        include ../jade-block/meta-head
+        block submeta
+        include ../jade-block/link
         link(rel='stylesheet', type='text/css', href='../stylesheets/article-write.css')
         block headExtend
+        include ../jade-block/analysis
+        include ../jade-block/script
     body
         include ../jade-block/header
         .article-page

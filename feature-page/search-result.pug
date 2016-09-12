@@ -1,8 +1,15 @@
 doctype html
 html
     head
-        include ../jade-block/head-css-js
+        include ../jade-block/meta-head
+        block meta
+            title 搜索结果
+            meta(name="keywords", content="博客,xiaobxia,小b侠,搜索结果")
+            meta(name="description", content="xiaobxia的博客的搜索结果分类。")
+        include ../jade-block/link
         link(rel='stylesheet', type='text/css', href='../stylesheets/search-result.css')
+        include ../jade-block/analysis
+        include ../jade-block/script
     body
         include ../jade-block/header
         .search-page
