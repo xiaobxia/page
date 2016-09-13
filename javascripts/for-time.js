@@ -11,26 +11,14 @@ jQuery.noConflict();
 
         //用来分年份存放对象的数组
         //存放对象artintime[li索引][文章索引]
-        artintime = [[], []];
+        artintime = [[]];
 
         //  var $liYear = $("<li ><span></span><em></em></li>");
         for (var i = 0; i < articleTimeObj.length; i++) {
             //对应的倒过来的对象
             var obj = articleTimeObj[articleTimeObj.length - 1 - i],
-                path = null,
-                title = null,
-                levelOne = null,
-                description = null,
-                writeTime = null,
-                year = null;
+                year = obj.writeTime.substr(0, 4);
 
-            path = obj.path;
-            title = obj.title;
-            levelOne = obj.levelOne;
-            description = obj.description;
-            writeTime = obj.writeTime;
-            //截取年份
-            year = writeTime.substr(0, 4);
             //添加年份和文章数
             if (year != tempYear) {
                 //如果使用变量，我发现这个变量只能用一次，创建左边的年份导航
@@ -46,7 +34,16 @@ jQuery.noConflict();
                 artNum++;
             }
             //存放对象artintime[li索引][文章索引]
-            artintime[liNumT][artNum - 1] = obj;
+
+            if (artintime[liNumT] == undefined) {
+                artintime[liNumT] = [];
+                artintime[liNumT][artNum - 1] = obj;
+            } else {
+                artintime[liNumT][artNum - 1] = obj;
+            }
+
+
+          //  artintime[liNumT][artNum - 1] = obj;
             //给side导航的li添加高亮，文章数，年份
             $(".list-nav ul span:eq(" + liNumT + ")").text(year);
             $(".list-nav ul em:eq(" + liNumT + ")").text(artNum);
@@ -62,12 +59,20 @@ jQuery.noConflict();
         jiawenzhang();
         //在文章框内添加文章的函数
         function jiawenzhang() {
+
             //添加文章
             for (var a = 0; a < $(".list-nav ul li").length; a++) {
                 if ($(".list-nav ul li").eq(a).hasClass("active")) {
-                    var yuansu = "";
+                    var yuansu = "",
+                        tempMonth="";
                     for (var c = 0; c < artintime[a].length; c++) {
-                        yuansu += "<div class='article-inf'> <a href='" +"../"+
+                        var month =artintime[a][c].writeTime.substr(4, 2);
+                        month = transMonth(month);
+                        if (month != tempMonth) {
+                            yuansu +="<div class='art-time'><span>"+month+"</span></div>";
+                            tempMonth = month;
+                        }
+                        yuansu += "<div class='article-inf'> <a href='" + "../" +
                             artintime[a][c].path + "'> <h5>" +
                             artintime[a][c].title + "</h5> <em>" +
                             artintime[a][c].levelOne + "</em> <p>" +

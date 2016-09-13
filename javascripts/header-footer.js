@@ -28,6 +28,13 @@ jQuery.noConflict();
             $("#header-ul").removeClass("is-none");
             $(".header-nav").removeClass("in-search");
         });
+        $("#search-inp").bind('keydown', function (e) {
+            var key = e.which;
+            if (key == 13) {
+                e.preventDefault();
+                window.location.href='https://xiaobxia.github.io/page/feature-page/search-result.html';
+            }
+        });
         $("#search-btn a").bind("click", function () {
             var inpText = $("#search-inp").val().toLowerCase();
             if (inpText != "") {

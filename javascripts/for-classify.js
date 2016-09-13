@@ -10,7 +10,7 @@ jQuery.noConflict();
             //同一levelone的集合的索引
             samelevelonenum = 0,
 
-            artleveltwo = [[], []],
+            artleveltwo = [[]],
             //header中的导航
             $headerNavA = $(".header-nav a");
         //给header中的导航添加高亮
@@ -42,8 +42,15 @@ jQuery.noConflict();
             //遍历同levelone的数组，把相同leveltwo的放数组li，数组artleveltwo既有levelone又有leveltwo
             for (var d = 0; d < samelevelone.length; d++) {
                 if (samelevelone[d].levelTwo == $lilevel.eq(b).text()) {
-                    artleveltwo[b][nub] = samelevelone[d];
-                    nub++;
+                    if(artleveltwo[b]==undefined){
+                        artleveltwo[b]= [];
+                        artleveltwo[b][nub] = samelevelone[d];
+                        nub++;
+                    }else {
+                        artleveltwo[b][nub] = samelevelone[d];
+                        nub++;
+                    }
+
                 }
             }
             //文章数显示在side导航
@@ -54,8 +61,22 @@ jQuery.noConflict();
             //添加文章
             for (var a = 0; a < $(".list-nav ul li").length; a++) {
                 if ($(".list-nav ul li").eq(a).hasClass("active")) {
-                    var yuansu = "";
+                    var yuansu = "",
+                        tempMonth="",
+                        tempYear="";
+
                     for (var c = 0; c < artleveltwo[a].length; c++) {
+                        var year =artleveltwo[a][c].writeTime.substr(0, 4);
+                        if (year != tempYear) {
+                            yuansu +="<div class='art-time'><span>"+year+"年"+"</span></div>";
+                            tempYear = year;
+                        }
+                        var month =artleveltwo[a][c].writeTime.substr(4, 2);
+                        month = transMonth(month);
+                        if (month != tempMonth) {
+                            yuansu +="<div class='art-time'><span>"+month+"</span></div>";
+                            tempMonth = month;
+                        }
                         yuansu += "<div class='article-inf'> <a href='" +
                             "../" + artleveltwo[a][c].path + "'> <h5>" +
                             artleveltwo[a][c].title + "</h5> <em>" +

@@ -40,6 +40,14 @@
   margin: 0 auto;
   min-height: 400px;
   width: 90%; }
+  .article-content .article-content-body .art-time {
+    position: relative;
+    margin: 10px 0; }
+    .article-content .article-content-body .art-time span {
+      color: #325d72;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bolder; }
   .article-content .article-content-body .article-inf {
     position: relative;
     margin: 0 0 10px 0;
