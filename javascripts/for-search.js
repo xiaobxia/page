@@ -32,9 +32,9 @@ jQuery.noConflict();
             obj.xiangguandu=0;
 
             path = obj.path;
-            title = obj.title;
+            title = obj.title.toLowerCase();
             levelOne = obj.levelOne;
-            description = obj.description;
+            description = obj.description.toLowerCase();
             writeTime = obj.writeTime;
             for (var t = 0; t < textArray.length; t++) {
                 if(title.indexOf(textArray[t])!=-1||description.indexOf(textArray[t])!=-1){

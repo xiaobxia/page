@@ -50,7 +50,11 @@ html
                             block lastTime
                     .article-content-body
                         block content
-                    include ../jade-block/share
+
+                    .article-share
+                        p 对文章如有疑问，欢迎联系作者。
+                        p 分享：
+                        include ../jade-block/share
 
                     #no-more.no-more
                         a(href='') 没有更多

@@ -102,6 +102,18 @@
 @mixin color-sep{
   background-color: $grey-230;
 }
+@mixin block-style{
+  margin: 0 0 10px 0;
+  padding: 10px 5%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: $grey-245;
+}
+@mixin main-font-style{
+  @include font-16;
+  line-height: 25px;
+  color: $grey-80;
+}
 $grey-50:rgb(50,50,50);
 $grey-80:rgb(80,80,80);
 $grey-110:rgb(110,110,110);

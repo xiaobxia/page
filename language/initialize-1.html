@@ -1,0 +1,491 @@
+<!--Created by Administrator on 2016/8/24.
+--><!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="none"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="shortcunt icon" href="../images/icon.png"><link rel="stylesheet" type="text/css" href="../stylesheets/main.css" media="screen"><link rel="stylesheet" type="text/css" href="../stylesheets/header-footer.css" media="screen"><link rel="stylesheet" type="text/css" href="../stylesheets/article-write.css"><!--额外需要的head--><script type="text/javascript" src="../codehl/scripts/shCore.js"></script><link rel="stylesheet" type="text/css" href="../codehl/styles/shCore.css"><link rel="stylesheet" type="text/css" href="../codehl/styles/shCoreDefault.css"><script type="text/javascript" src="../codehl/scripts/shAutoloader.js"></script><script>var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?444bbcc0ac65fb97db91e28b91036969";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();</script><script type="text/javascript" src="../javascripts/jquery-1.12.3.min.js"></script><script type="text/javascript" src="../javascripts/jquery.cookie.js"></script><script type="text/javascript" src="../javascripts/main.js"></script></head><body><!--Created by Administrator on 2016/8/24.
+--><div class="header"><div class="header-content"><div class="blog-inf"><div class="blog-name"><a href="http://www.xiaobxia.win"><h3>小b侠的博客</h3></a></div><div class="blog-update"><span></span></div><div class="blog-pic"><img src="../images/mypic.jpg"></div></div><div class="header-sep"></div><div class="header-nav"><div class="search-block"><div class="search-inp-bar"><input type="text" placeholder="搜索博客" id="search-inp"><div class="search-button" id="search-btn"><a href="../feature-page/search-result.html"><img src="../images/searchpic.png"></a></div></div><div class="search-block-close" id="search-close"><img src="../images/closepic.png"></div></div><ul id="header-ul"><!-- li中a的地址需要手动修改，添加../或是删除--><li><a href="../classify/language-nav.html">语言</a></li><li><a href="../classify/library-nav.html">库</a></li><li><a href="../classify/tool-nav.html">工具</a></li><li><a href="../classify/essay-nav.html">随笔</a></li><li><a href="../classify/aboutme-nav.html">关于我</a></li><li><a href="../classify/webApp-nav.html">webApp</a></li><li><a id="header-search" href="javascript:;"><img src="../images/searchpic.png"></a></li></ul></div></div></div><script type="text/javascript" src="../javascripts/header-footer.js"></script><div class="article-page"><!--文章的page-id--><div id="page-id">0</div><!-- 顶部导航块部分--><div class="article-tab"><div class="level-nav"><a class="level-a" id="levelOne"></a><span class="level-pic"> ></span><a class="level-a" id="levelTwo"></a></div><div class="jump-block"><select class="subtitle-sel" id="subtitle-sel"></select><div class="jump-btn" id="jump-btn"></div></div><div class="article-tab-sep"></div></div><div class="article-write"><div class="left-side-nav"><div class="list-nav"><ul></ul></div><div class="article-side-btn"><div class="article-nav-btn" id="article-nav-btn-left"><a href=""> <</a></div><div class="article-nav-btn" id="article-nav-btn-right"><a href=""> ></a></div></div><div class="left-side-nav-sep"></div></div><div class="article-content"><div class="article-content-title"><!--文章的title--><h1>标签样式初始化</h1></div><div class="article-content-editer"><div class="writer"><span>作者：</span><span>xiaobxia</span></div><div class="write-date"><span>发布日期：</span><!--文章的发表日期--><span>2016/8/20</span></div><div class="write-recently"><span>最后编辑：</span><!--文章的最后修改日期--><span>2016/8/20</span></div></div><div class="article-content-body"><!--文章的内容1.专门的用于a标签的写法
+.for-a
+    span.for-emphasis
+    a(href="")
+
+2.段落的写法
+p
+
+3.强调部分的写法，加入class="for-emphasis"
+em.for-emphasis
+
+4.专门显示代码的写法，js可修改
+                pre(class='brush:js;').
+                    代码
+
+
+5.专门显示图片的写法，需在标签里声明宽和高
+.for-img-show
+    img(src='',style='')
+    .img-msg
+        p
+
+6.文章的子标题的写法
++subtitleuse("")
+
+7.文章文字p中如果有需要强调的
+p 一
+    em.strongword 二
+    |三
+
+8.警告和特别提醒部分
++warnuse(leixing,b)
+
+9.表格的使用
+.for-table
+    table(border="1")
+        caption 这里写表单的标题
+        colgroup
+            col(style="width: 20%;")
+            col(style="width: 80%;")
+        thead
+            +tableuse("","")
+        tfoot
+            +tableuse("","")
+        tbody
+            +tableuse("","")
+10.列表的使用
+    dl
+        +dtdduse("","")
+--><div class="for-subtitle"><h4>知名站点的样式初始化</h4><div class="subtitle-sep"></div></div><span class="strongword">淘宝的样式初始化</span><pre class="brush: css;">body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl,
+dt, dd, ul, ol, li, pre, form, fieldset, legend,
+button, input, textarea, th, td {
+    margin:0; padding:0;
+}
+body, button, input, select, textarea {
+    font:12px/1.5tahoma, arial, \5b8b\4f53;
+}
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp {
+    font-family:couriernew, courier, monospace;
+}
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+</pre><span class="strongword">github初始化</span><pre class="brush: css;">/**
+ * 1. 把默认字体设置为无衬线字体。
+ * 2. 防止当方向改变时iOS文本大小自适应，在没有禁用用户变焦的情况下。
+ */
+html {
+  font-family: sans-serif; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+/**
+ * 移除默认的margin。
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display 定义
+   ========================================================================== */
+/**
+ * 改正在IE 8/9中没有为任何HTML5的元素定义display的"block"。
+ * 改正在IE 10/11和Firefox中没有为"details"和"summary"元素定义display的"block"
+ * 改正在IE 11中没有为"main"元素定义display的"block"
+ */
+article,aside,details,figcaption,figure,footer,header,
+hgroup,main,menu,nav,section,summary {
+  display: block;
+}
+/**
+ * 1. 改正在IE 8/9中没有为为元素定义display的"inline-block"
+ * 2. 使Chrome, Firefox, and Opera中的"progress"元素的垂直对齐标准化。
+ */
+audio,canvas,progress,video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+/**
+ * 防止现代浏览器在没有控制的情况下显示"audio"元素。
+ * 移除在iOS 5的设备中多出来的height。
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * 处理hidden样式不呈现，在IE 8/9/10中。
+ * 隐藏"template"元素，在IE 8/9/11, Safari, and Firefox < 22中。
+ */
+[hidden],template {
+  display: none;
+}
+/* Links标签
+   ========================================================================== */
+/**
+ * 移除active links的灰色背景色，在IE 10中。
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 提高在所有浏览器中当被focused和hovered的可读性。
+ */
+a:active,a:hover {
+  outline: 0;
+}
+/* 文本的语意元素(Text-level semantics)
+   ========================================================================== */
+/**
+ * 处理样式不呈现，在IE 8/9/10/11, Safari, and Chrome中。
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * 处理把样式设置成bolder，在Firefox 4+, Safari, and Chrome中。
+ */
+b,strong {
+  font-weight: bold;
+}
+/**
+ * 处理样式不呈现，在Safari and Chrome中。
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * 处理在"section"和"article"元素内"h1"元素的font-size和margin的多变，
+ * 在Firefox 4+, Safari, and Chrome中。
+ */
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+/**
+ * 处理在中样式不存在。
+ */
+mark {
+  color: #000;
+  background: #ff0;
+}
+/**
+ * 处理在所有浏览器中font size的不一致和多变。
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * 防止"sub"和"sup"影响line-height，在所有浏览器中。
+ */
+sub,sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* 嵌入内容
+   ========================================================================== */
+/**
+ * 移除border当嵌a元素中在IE 8/9/10下。
+ */
+img {
+  border: 0;
+}
+/**
+ * 改正在IE 9/10/11中overflow属性不是"hidden"。
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* 群组元素(Grouping content)
+   ========================================================================== */
+/**
+ * 处理margin在IE 8/9 and Safari中不显示。
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 处理Firefox和其他浏览器之间的不同。
+ */
+hr {
+  height: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/**
+ * 在所有浏览器中拥有overflow属性。
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * 处理奇数的"em"单位的font size的渲染，在所有浏览器中。
+ */
+code,kbd,pre,samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* 表单(Forms)
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. 改正color不被继承。
+ *    Known issue: affects color of disabled elements.
+ * 2. 改正font内容不被继承。
+ * 3. 处理margin设置的不同，在Firefox 4+, Safari, and Chrome中。
+ */
+button,input,optgroup,select,textarea {
+  margin: 0; /* 3 */
+  font: inherit; /* 2 */
+  color: inherit; /* 1 */
+}
+/**
+ * 处理在IE 8/9/10/11中overflow被设置为hidden。
+ */
+button {
+  overflow: visible;
+}
+/**
+ * 处理"button"和"select"元素对text-transform的继承的不一致。
+ * 所有其他的form控制元素不继承text-transform的值。
+ * 改正"button"元素的样式的继承，在Firefox, IE 8/9/10/11, and Opera中。
+ * 改正"select"元素的样式的继承，在Firefox中。
+ */
+button,select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+/**
+ * 重设disabled的元素的默认cursor。
+ */
+button[disabled],html input[disabled] {
+  cursor: default;
+}
+/**
+ * 移除里面的内边距和边框，在Firefox 4+中。
+ */
+button::-moz-focus-inner,input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-box-sizing: content-box; /* 2 */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield; /* 1 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 定义始终如一的border, margin, 和 padding。
+ */
+fieldset {
+  padding: 0.35em 0.625em 0.75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
+}
+/**
+ * 1. 改正IE 8/9/10/11在中color属性不被继承。
+ * 2. 移除padding，这样当人们归零字段(fieldsets)时不会大跌眼镜。
+ */
+legend {
+  padding: 0; /* 2 */
+  border: 0; /* 1 */
+}
+/**
+ * 移除在IE 8/9/10/11中默认的垂直滚动条。
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 不要继承"font-weight"(应用的规则)。
+ * 注意：在Chrome and Safari on OS X中默认属性不能被安全地改变。
+ */
+optgroup {
+  font-weight: bold;
+}
+/* 表格元素
+   ========================================================================== */
+/**
+ * 移除表格中单元格之间的大多数的间距
+ */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,th {
+  padding: 0;
+}
+</pre><div class="for-subtitle"><h4>我的样式初始化</h4><div class="subtitle-sep"></div></div><pre class="brush: css;">body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+input, button, select, textarea {
+  outline: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, caption, cite, code, dfn, em, i, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+small {
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}</pre></div><div class="article-share"><p>对文章如有疑问，欢迎联系作者。</p><p>分享：</p><div class="bdsharebuttonbox"><a class="bds_more" href="#" data-cmd="more"></a><a class="bds_tsina" href="#" data-cmd="tsina" title="分享到新浪微博"></a><a class="bds_qzone" href="#" data-cmd="qzone" title="分享到QQ空间"></a><a class="bds_tieba" href="#" data-cmd="tieba" title="分享到百度贴吧"></a><a class="bds_youdao" href="#" data-cmd="youdao" title="分享到有道云笔记"></a><a class="bds_douban" href="#" data-cmd="douban" title="分享到豆瓣网"></a><a class="bds_weixin" href="#" data-cmd="weixin" title="分享到微信"></a><a class="bds_tqq" href="#" data-cmd="tqq" title="分享到腾讯微博"></a><a class="bds_renren" href="#" data-cmd="renren" title="分享到人人网"></a></div><script>window._bd_share_config={
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "1",
+        "bdSize": "24"
+    },
+    "share": {},
+    "image": {
+        "viewList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+    },
+    "selectShare": {
+        "bdContainerClass": null,
+        "bdSelectMiniList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"]
+    }
+};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div><div class="no-more" id="no-more"><a href="">没有更多</a></div></div></div></div><script type="text/javascript" src="../javascripts/article-write.js"></script><script>var duoshuoQuery = {short_name: "xiaobxia"};(function () {var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);     })();</script><!--Created by Administrator on 2016/8/24.
+--><div class="footer"><div class="footer-pic"><div class="footer-pic-sub"><a href="../feed.xml"><img src="../images/rsspic.png"></a></div><div class="footer-pic-sub"><a href="http://weibo.com/p/1005055989486288"><img src="../images/weibopic.png"></a></div><div class="footer-pic-sub"><a href="https://github.com/xiaobxia"><img src="../images/githubpic.png"></a></div></div><div class="footer-wrap"><div class="footer-text"><ul><li><span>blog of xiaobxia 是个人博客</span></li><li><span>分享web学习的总结和生活的随想以及更多</span></li></ul></div></div></div><!--额外需要的js--><script type="text/javascript">SyntaxHighlighter.autoloader(
+        ['js', 'jscript', 'javascript', '../codehl/scripts/shBrushJScript.js'],
+        ['bash', 'shell', '../codehl/scripts/shBrushBash.js'],
+        ['css', '../codehl/scripts/shBrushCss.js'],
+        ['xml', 'html', '../codehl/scripts/shBrushXml.js'],
+        ['sql', '../codehl/scripts/shBrushSql.js'],
+        ['php', '../codehl/scripts/shBrushPhp.js']
+);
+SyntaxHighlighter.all();</script></body></html>

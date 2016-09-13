@@ -29,7 +29,7 @@ jQuery.noConflict();
             $(".header-nav").removeClass("in-search");
         });
         $("#search-btn a").bind("click", function () {
-            var inpText = $("#search-inp").val();
+            var inpText = $("#search-inp").val().toLowerCase();
             if (inpText != "") {
                 $.cookie('searchText', inpText, {
                     expires: 1,
