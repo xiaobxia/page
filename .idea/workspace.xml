@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.3.09&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/blog-1.html" afterPath="$PROJECT_DIR$/aboutme/blog-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="$PROJECT_DIR$/classify/language-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.pug" afterPath="$PROJECT_DIR$/classify/language-nav.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/meta-1.html" afterPath="$PROJECT_DIR$/language/meta-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essay/travel-1.pug" afterPath="$PROJECT_DIR$/essay/travel-1.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.pug" afterPath="$PROJECT_DIR$/jade-block/example-sub.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/meta-1.pug" afterPath="$PROJECT_DIR$/language/meta-1.pug" />
     </list>
     <ignored path="page.iws" />
@@ -37,8 +34,28 @@
       <file leaf-file-name="meta-1.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/language/meta-1.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2499">
-              <caret line="259" column="22" selection-start-line="259" selection-start-column="22" selection-end-line="259" selection-end-column="34" />
+            <state relative-caret-position="462">
+              <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example-sub.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="travel-1.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/essay/travel-1.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -54,21 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="language-nav.pug" pinned="false" current-in-tab="true">
+      <file leaf-file-name="language-nav.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classify/language-nav.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
               <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example-sub.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -119,7 +126,6 @@
         <option value="$PROJECT_DIR$/feature-page/search-result.pug" />
         <option value="$PROJECT_DIR$/feature-page/time-line.pug" />
         <option value="$PROJECT_DIR$/aboutme/follow-me.pug" />
-        <option value="$PROJECT_DIR$/essay/travel-1.pug" />
         <option value="$PROJECT_DIR$/language/class-1.pug" />
         <option value="$PROJECT_DIR$/language/display-1.pug" />
         <option value="$PROJECT_DIR$/language/position-1.pug" />
@@ -136,13 +142,14 @@
         <option value="$PROJECT_DIR$/index.pug" />
         <option value="$PROJECT_DIR$/javascripts/header-footer.js" />
         <option value="$PROJECT_DIR$/language/initialize-1.pug" />
-        <option value="$PROJECT_DIR$/jade-block/example-sub.pug" />
         <option value="$PROJECT_DIR$/jade-block/codehl-h.pug" />
         <option value="$PROJECT_DIR$/language/keyboard-1.pug" />
         <option value="$PROJECT_DIR$/aboutme/blog-1.pug" />
-        <option value="$PROJECT_DIR$/language/meta-1.pug" />
         <option value="$PROJECT_DIR$/javascripts/main.js" />
         <option value="$PROJECT_DIR$/classify/language-nav.pug" />
+        <option value="$PROJECT_DIR$/language/meta-1.pug" />
+        <option value="$PROJECT_DIR$/essay/travel-1.pug" />
+        <option value="$PROJECT_DIR$/jade-block/example-sub.pug" />
       </list>
     </option>
   </component>
@@ -210,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -346,14 +353,7 @@
       <workItem from="1473726628706" duration="14746000" />
       <workItem from="1473746781832" duration="11709000" />
       <workItem from="1473764769888" duration="7013000" />
-      <workItem from="1473828746867" duration="1108000" />
-    </task>
-    <task id="LOCAL-00003" summary="test">
-      <created>1471348404170</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1471348404171</updated>
+      <workItem from="1473828746867" duration="2314000" />
     </task>
     <task id="LOCAL-00004" summary="test">
       <created>1471349247059</created>
@@ -691,11 +691,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473828836555</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="V1.3.09&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1">
+      <created>1473829908159</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1473829908159</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276013000" />
+    <option name="totallyTimeSpent" value="277219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -755,7 +762,8 @@
     <MESSAGE value="V1.3.06&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写" />
     <MESSAGE value="V1.3.06&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索" />
     <MESSAGE value="V1.3.08&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.3.08&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索" />
+    <MESSAGE value="V1.3.09&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.3.09&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -853,13 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/essay/travel-1.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1078,22 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/language/meta-1.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2499">
-          <caret line="259" column="22" selection-start-line="259" selection-start-column="22" selection-end-line="259" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -1106,6 +1091,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/meta-1.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essay/travel-1.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/example-sub.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
           <folding />
         </state>
       </provider>
