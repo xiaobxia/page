@@ -305,10 +305,10 @@ block content
           text-transform: none;
         }
         /**
-         * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
-         *    and `video` controls.
 
+         * 1. 避免Android 4.0.*中WebKit内核破坏"audio"和"video"元素原本控制器的bug。
          * 2. 改正在iOS中无法对"input"元素加clickable。
+        提高可用性和一致性
          * 3. Improve usability and consistency of cursor style between image-type
          *    `input` and others.
          */
@@ -333,53 +333,44 @@ block content
           border: 0;
         }
         /**
-         * Address Firefox 4+ setting `line-height` on `input` using `!important` in
-         * the UA stylesheet.
+         * 处理Firefox 4+设置"input"的line-height使用"!important`"在UA stylesheet中。
          */
         input {
           line-height: normal;
         }
-
         /**
-         * It's recommended that you don't attempt to style these elements.
-         * Firefox's implementation doesn't respect box-sizing, padding, or width.
+         * 你最好不要尝试去修改这些元素的样式。
+         * Firefox在实现过程中不会准守box-sizing, padding, 或 width。
          *
-         * 1. Address box sizing set to `content-box` in IE 8/9/10.
-         * 2. Remove excess padding in IE 8/9/10.
+         * 1. 处理在IE 8/9/10中box-sizing被设置为content-box。
+         * 2. 移除在IE 8/9/10中超出的padding。
          */
-
-        input[type="checkbox"],
-        input[type="radio"] {
+        input[type="checkbox"],input[type="radio"] {
           box-sizing: border-box; /* 1 */
           padding: 0; /* 2 */
         }
-
         /**
-         * Fix the cursor style for Chrome's increment/decrement buttons. For certain
-         * `font-size` values of the `input`, it causes the cursor style of the
-         * decrement button to change from `default` to `text`.
+         * 修理Chrome的增量和减量button的cursor样式。在"input"的"font-size"是确定值时，
+         * 会造成减量按钮的cursor的样式从"default"变为"text"。
          */
-
         input[type="number"]::-webkit-inner-spin-button,
         input[type="number"]::-webkit-outer-spin-button {
           height: auto;
         }
-
         /**
-         * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
-         * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
-         *    (include `-moz` to future-proof).
+         * 1. 处理在Safari and Chrome中appearance被设置为searchfield。
+         * 2. 处理在Safari and Chrome中box-sizing被设置为border-box。
+         *    (包含`-moz`，把它当做不会过时的技术)
          */
-
         input[type="search"] {
           -webkit-box-sizing: content-box; /* 2 */
           -moz-box-sizing: content-box;
           box-sizing: content-box;
           -webkit-appearance: textfield; /* 1 */
         }
-
         /**
-         * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+
+         * 移除OS X系统中Safari 和 Chrome的内padding和搜索取消按键。
          * Safari (but not Chrome) clips the cancel button when the search input has
          * padding (and `textfield` appearance).
          */
@@ -432,12 +423,34 @@ block content
     +subtitleuse("我的样式初始化")
     pre(class='brush: css;').
         body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
-          margin: 0;
-          padding: 0;
+            margin: 0;
+            padding: 0;
         }
-
+        html {
+            font-family: sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
         body, button, input, select, textarea {
           font: 12px/1.5tahoma, arial, \5b8b\4f53;
+        }
+        article,aside,details,figcaption,figure,footer,header,
+        hgroup,main,menu,nav,section,summary {
+            display: block;
+        }
+        audio,canvas,progress,video {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+        audio:not([controls]) {
+            display: none;
+            height: 0;
+        }
+        [hidden],template {
+            display: none;
+        }
+        a {
+            background-color: transparent;
         }
         input, button, select, textarea {
           outline: 0;
@@ -445,54 +458,50 @@ block content
         h1, h2, h3, h4, h5, h6 {
           font-size: 100%;
         }
-
         address, caption, cite, code, dfn, em, i, th, var {
           font-style: normal;
           font-weight: normal;
         }
-
         code, kbd, pre, samp {
           font-family: couriernew, courier, monospace;
         }
-
         small {
           font-size: 12px;
         }
-
         ul, ol {
           list-style: none;
         }
-
         a {
           outline: 0;
           text-decoration: none;
           cursor: pointer;
         }
-
-
-
         sup {
           vertical-align: text-top;
         }
-
         sub {
           vertical-align: text-bottom;
         }
-
         legend {
           color: #000;
         }
-
         fieldset, img {
           border: 0;
         }
-
         button, input, select, textarea {
           font-size: 100%;
         }
-
+        textarea {
+            overflow: auto;
+        }
+        optgroup {
+            font-weight: bold;
+        }
         table {
           border-collapse: collapse;
           border-spacing: 0;
+        }
+        td,th {
+          padding: 0;
         }
 

@@ -3,9 +3,9 @@ include ../jade-block/mixin-use
 
 
 block submeta
-    title 回乡记(一)
-    meta(name="keywords", content="博客,xiaobxia,小b侠,随笔，回乡记(一)")
-    meta(name="description", content="xiaobxia的博客文章随笔，题目回乡记(一)。子标题有千佛山，水库和花。")
+    title 创建博客的想法
+    meta(name="keywords", content="博客,xiaobxia,小b侠,关于我,创建博客的想法")
+    meta(name="description", content="xiaobxia的博客文章随笔，题目创建博客的想法。子标题有千佛山，水库和花。")
 
 block headExtend
     //额外需要的head
@@ -20,7 +20,7 @@ block page-id
     #page-id 3
 block tittle
     //文章的title
-    h1 回乡记(一)
+    h1 创建博客的想法
 block publishTime
     //文章的发表日期
     span 2016/9/09
@@ -28,7 +28,7 @@ block lastTime
     //文章的最后修改日期
     span 2016/9/09
 block commentblock
-    .ds-thread(data-thread-key="3" data-title="回乡记(一)" data-url="http://xiaobxia.win/essay/travel.html")
+    .ds-thread(data-thread-key="3" data-title="创建博客的想法" data-url="http://xiaobxia.win/essay/travel.html")
 
 block content
     //文章的内容
@@ -83,3 +83,16 @@ block content
                         +dtdduse("","")
                 11.小标题
                                 span.strongword
+    p 创建这个博客一方面是为了整理笔记，在学习前端的过程中记录了很多的笔记，
+    |但是一直都是零零散散的，所以希望把笔记整理成文章方便之后自己复习时更加
+    |系统。
+    p 在学习的过程中也阅读了很多的他们的博客，同时也发现很多博的博客中并没
+    |有什么文章，特别是在学习把博客托管在github pages时，很多的博主在
+    |创建博客后只发过个位数的文章。所以我创建我的博客给自己了一个规定，保证
+    |一个星期起码发表一篇关于技术的博客。同时也会不定期更新其他的文章，集中
+    |在随笔当中。
+    p 特别的创建了webApp分类，其实里面的文章主要都是一些有趣的，在我学习
+    |并注释以后就会发表，同时大家也可以下载它的源代码。
+    p 由于博客是托管在github pages但是github pages又屏蔽了百度爬虫
+    |所有网站收录会有问题，基本没有可能在百度搜索引擎中找到我的博客，那么在未来
+    |我也许会购买个人的vps把博客放在上面。

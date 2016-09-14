@@ -51,19 +51,6 @@ var articleTimeObj = [
         levelOne: "随笔",
         levelTwo: "游记",
         description: "千佛山，水库，花"
-    },
-    {
-        pageId: 4,
-        writeDay: "2016年9月9日",
-        writeTime: "20170909",
-        writeWeek: "Fri",
-        title: "回乡记(一)",
-        path: "essay/travel-1.html",
-        levelOnePath: "classify/eassy-nav.html",
-        levelTwoPath: "",
-        levelOne: "随笔",
-        levelTwo: "秋处露秋寒霜降",
-        description: "千佛山，水库，花"
     }
 ];
 

@@ -32,7 +32,7 @@ jQuery.noConflict();
             var key = e.which;
             if (key == 13) {
                 e.preventDefault();
-                window.location.href='https://xiaobxia.github.io/page/feature-page/search-result.html';
+                window.location.href='http://www.xiaobxia.win/feature-page/search-result.html';
             }
         });
         $("#search-btn a").bind("click", function () {
