@@ -51,6 +51,19 @@ var articleTimeObj = [
         levelOne: "随笔",
         levelTwo: "游记",
         description: "千佛山，水库，花"
+    },
+    {
+        pageId: 4,
+        writeDay: "2016年9月14日",
+        writeTime: "20160914",
+        writeWeek: "Tue",
+        title: "Meta标签详解",
+        path: "language/meta-1.html",
+        levelOnePath: "classify/language-nav.html",
+        levelTwoPath: "",
+        levelOne: "语言",
+        levelTwo: "Html",
+        description: "申明编码，name属性，http-equiv属性"
     }
 ];
 

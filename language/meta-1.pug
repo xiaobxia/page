@@ -3,36 +3,22 @@ include ../jade-block/mixin-use
 
 block headExtend
     //额外需要的head
-    script(type='text/javascript', src='../codehl/scripts/shCore.js')
-    link(rel='stylesheet', type='text/css', href='../codehl/styles/shCore.css')
-    link(rel='stylesheet', type='text/css', href='../codehl/styles/shCoreDefault.css')
-    script(type='text/javascript', src='../codehl/scripts/shAutoloader.js')
-
+    include ../jade-block/codehl-h
 block jsExtend
     //额外需要的js
-    script(type="text/javascript").
-        SyntaxHighlighter.autoloader(
-                ['js', 'jscript', 'javascript', '../codehl/scripts/shBrushJScript.js'],
-                ['bash', 'shell', '../codehl/scripts/shBrushBash.js'],
-                ['css', '../codehl/scripts/shBrushCss.js'],
-                ['xml', 'html', '../codehl/scripts/shBrushXml.js'],
-                ['sql', '../codehl/scripts/shBrushSql.js'],
-                ['php', '../codehl/scripts/shBrushPhp.js']
-        );
-        SyntaxHighlighter.all();
+    include ../jade-block/codehl-b
 block page-id
     //文章的page-id
-    #page-id 0
+    #page-id 4
 block tittle
     //文章的title
     h1 Meta标签详解
 block publishTime
     //文章的发表日期
-    span 2016/8/20
+    span 2016/9/14
 block lastTime
     //文章的最后修改日期
-    span 2016/8/20
-
+    span 2016/9/14
 block content
     //文章的内容
             1.专门的用于a标签的写法
