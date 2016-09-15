@@ -1,46 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.3.20&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/language/tag-2.pug" />
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.3.24&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/blog-1.html" afterPath="$PROJECT_DIR$/aboutme/blog-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/follow-me.html" afterPath="$PROJECT_DIR$/aboutme/follow-me.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/aboutme-nav.html" afterPath="$PROJECT_DIR$/classify/aboutme-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/essay-nav.html" afterPath="$PROJECT_DIR$/classify/essay-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="$PROJECT_DIR$/classify/language-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/library-nav.html" afterPath="$PROJECT_DIR$/classify/library-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/tool-nav.html" afterPath="$PROJECT_DIR$/classify/tool-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/webApp-nav.html" afterPath="$PROJECT_DIR$/classify/webApp-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codehl/styles/shCoreDefault.css" afterPath="$PROJECT_DIR$/codehl/styles/shCoreDefault.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essay/travel-1.html" afterPath="$PROJECT_DIR$/essay/travel-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/search-result.html" afterPath="$PROJECT_DIR$/feature-page/search-result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/time-line.html" afterPath="$PROJECT_DIR$/feature-page/time-line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.pug" afterPath="$PROJECT_DIR$/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.html" afterPath="$PROJECT_DIR$/jade-block/codehl-b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-b.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/header.html" afterPath="$PROJECT_DIR$/jade-block/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/header.pug" afterPath="$PROJECT_DIR$/jade-block/header.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.html" afterPath="$PROJECT_DIR$/jade-block/link.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.pug" afterPath="$PROJECT_DIR$/jade-block/link.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/header-footer.js" afterPath="$PROJECT_DIR$/javascripts/header-footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/class-1.html" afterPath="$PROJECT_DIR$/language/class-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/display-1.html" afterPath="$PROJECT_DIR$/language/display-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/initialize-1.html" afterPath="$PROJECT_DIR$/language/initialize-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/keyboard-1.html" afterPath="$PROJECT_DIR$/language/keyboard-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/meta-1.html" afterPath="$PROJECT_DIR$/language/meta-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/meta-1.pug" afterPath="$PROJECT_DIR$/language/meta-1.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/position-1.html" afterPath="$PROJECT_DIR$/language/position-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/tag-1.html" afterPath="$PROJECT_DIR$/language/tag-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/terminology-1.html" afterPath="$PROJECT_DIR$/language/terminology-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css.map" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.scss" afterPath="$PROJECT_DIR$/stylesheets/header-footer.scss" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,8 +72,8 @@
       <file leaf-file-name="header-footer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
+            <state relative-caret-position="315">
+              <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -197,7 +160,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -394,14 +357,7 @@
       <workItem from="1473834054757" duration="17000" />
       <workItem from="1473839858083" duration="1508000" />
       <workItem from="1473902390077" duration="8021000" />
-      <workItem from="1473914261964" duration="17000" />
-    </task>
-    <task id="LOCAL-00005" summary="test">
-      <created>1471349864903</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1471349864903</updated>
+      <workItem from="1473914261964" duration="889000" />
     </task>
     <task id="LOCAL-00006" summary="test">
       <created>1471406243004</created>
@@ -739,17 +695,24 @@
       <option name="project" value="LOCAL" />
       <updated>1473831172679</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="V1.3.24&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库">
+      <created>1473914324803</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1473914324803</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288106000" />
+    <option name="totallyTimeSpent" value="288978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2217262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22372372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -780,7 +743,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="大改动" />
     <MESSAGE value="大改动使用了jade进行了完全的模块化开发" />
     <MESSAGE value="修复css显示问题" />
     <MESSAGE value="test" />
@@ -805,7 +767,8 @@
     <MESSAGE value="V1.3.08&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索" />
     <MESSAGE value="V1.3.09&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1" />
     <MESSAGE value="V1.3.10&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1&#10;                10.修改meta-1的评论不显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.3.10&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1&#10;                10.修改meta-1的评论不显示" />
+    <MESSAGE value="V1.3.24&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.3.24&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1068,6 +1031,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,6 +1040,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,6 +1048,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="93" column="10" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,6 +1063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,6 +1078,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1596">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,6 +1093,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="791">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,8 +1131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
+        <state relative-caret-position="315">
+          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
           <folding />
         </state>
       </provider>
