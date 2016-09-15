@@ -8,6 +8,7 @@ html
         link(rel='shortcunt icon', href='images/icon.png')
         link(rel='stylesheet', type='text/css', href='stylesheets/main.css', media='screen')
         link(rel='stylesheet', type='text/css', href='stylesheets/header-footer.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='stylesheets/animate.css')
 
         link(rel='stylesheet', type='text/css', href='stylesheets/article-recently.css')
         link(rel='stylesheet', type='text/css', href='stylesheets/pic.css')
@@ -38,6 +39,12 @@ html
                                     img(src='images/searchpic.png')
                         .search-block-close#search-close
                             img(src='images/closepic.png')
+                        .search-msg-block(class="animated slideInDown")
+                            .search-warn
+                                p
+                            .search-hint
+                            .search-msg
+                                p 关于搜索的规则：目前搜索逻辑是去除搜索词条中重复的字，然后进行匹配，如果相关度超过一半，就显示文章。在未来，也会引入百度站内搜索。
                     ul#header-ul
                         // li中a的地址需要手动修改，添加../或是删除
                         li

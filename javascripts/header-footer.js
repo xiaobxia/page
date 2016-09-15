@@ -35,6 +35,31 @@ jQuery.noConflict();
                 window.location.href='http://www.xiaobxia.win/feature-page/search-result.html';
             }
         });
+        $("#search-inp").bind('keyup', function (e) {
+            var addtext="";
+            var inptext=$("#search-inp").val().toLowerCase();
+            for(var a=0;a<artKeyWord.length;a++){
+                var keyword=artKeyWord[a].toLowerCase();
+                if (inptext!="" && keyword.indexOf(inptext)!= -1){
+                    addtext += "<p>"+keyword+"</p>";
+                }else {
+                    $(".search-warn p").text("没有相关推荐！");
+                }
+            }
+            if (addtext!=""){
+                $(".search-warn p").text("相关推荐:");
+            }
+            $(".search-hint").empty();
+            $(".search-hint").append(addtext);
+            $(".search-hint p").bind("click", function () {
+                var text=$(this).text();
+                $("#search-inp").val(text);
+                window.location.href='http://www.xiaobxia.win/feature-page/search-result.html';
+            });
+        });
+
+
+
         $("#search-btn a").bind("click", function () {
             var inpText = $("#search-inp").val().toLowerCase();
             if (inpText != "") {

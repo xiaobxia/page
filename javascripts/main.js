@@ -1,4 +1,10 @@
 //文章对象，以time排列
+var artKeyWord=["follow","me","地址","社区","主页", "github","weibo",
+                "Display","属性","见解","元素","表现",
+                "Class","规范","选择器","优先级","顺序","书写","参考","命名",
+                "回乡记","千佛山","水库","花",
+                "Meta","标签","详解","申明编码","name","http-equiv"];
+
 var articleTimeObj = [
     {
         pageId: 0,

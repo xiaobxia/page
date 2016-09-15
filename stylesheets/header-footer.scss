@@ -194,6 +194,40 @@ $search-block-pic-size:16px;
     position: absolute;
     height: $header-nav-height;
     width: 100%;
+    .search-msg-block{
+      position: absolute;
+      top: $header-nav-height;
+      background-color: rgba(0,0,0,.2);
+      border-radius: 10px;
+      .search-warn{
+        position: relative;
+        p{
+          @include font-16;
+          color: #fff;
+          line-height: 24px;
+        }
+      }
+      .search-hint{
+        position: relative;
+        left: 20%;
+        width: 50%;
+        p{
+          &:hover{
+            background-color: rgba(0,0,0,.1);
+          }
+          cursor: pointer;
+          @include font-16;
+          color: #fff;
+          line-height: 24px;
+        }
+      }
+      .search-msg{
+        p{
+          color: #fff;
+          @include font-12;
+        }
+      }
+    }
     .search-inp-bar{
       position: absolute;
       height: 100%;
