@@ -1,25 +1,13 @@
-extends ../jade-block/forsubpage
-include ../jade-block/mixin-use
+extends ../../jade-block/forsubpage
+include ../../jade-block/mixin-use
 
 block headExtend
     //额外需要的head
-    script(type='text/javascript', src='../codehl/scripts/shCore.js')
-    link(rel='stylesheet', type='text/css', href='../codehl/styles/shCore.css')
-    link(rel='stylesheet', type='text/css', href='../codehl/styles/shCoreDefault.css')
-    script(type='text/javascript', src='../codehl/scripts/shAutoloader.js')
+    include ../../jade-block/codehl-h
 
 block jsExtend
     //额外需要的js
-    script(type="text/javascript").
-        SyntaxHighlighter.autoloader(
-                ['js', 'jscript', 'javascript', '../codehl/scripts/shBrushJScript.js'],
-                ['bash', 'shell', '../codehl/scripts/shBrushBash.js'],
-                ['css', '../codehl/scripts/shBrushCss.js'],
-                ['xml', 'html', '../codehl/scripts/shBrushXml.js'],
-                ['sql', '../codehl/scripts/shBrushSql.js'],
-                ['php', '../codehl/scripts/shBrushPhp.js']
-        );
-        SyntaxHighlighter.all();
+    include ../../jade-block/codehl-b
 block page-id
     //文章的page-id
     #page-id 0

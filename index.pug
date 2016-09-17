@@ -5,17 +5,17 @@ html
         title blog of xiaobxia
         meta(name="keywords", content="博客,xiaobxia,小b侠,github,pages,web,分享,前端,blog,html,css,javascript,jQuery,scss,库,预编译")
         meta(name="description", content="blog of xiaobxia 是个人博客，分享web学习的总结和生活的随想以及更多。")
-        link(rel='shortcunt icon', href='images/icon.png')
-        link(rel='stylesheet', type='text/css', href='stylesheets/main.css', media='screen')
-        link(rel='stylesheet', type='text/css', href='stylesheets/header-footer.css', media='screen')
-        link(rel='stylesheet', type='text/css', href='stylesheets/animate.css')
+        link(rel='shortcunt icon', href='source/images/icon.png')
+        link(rel='stylesheet', type='text/css', href='source/stylesheets/main.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='source/stylesheets/header-footer.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='source/stylesheets/animate.css')
 
-        link(rel='stylesheet', type='text/css', href='stylesheets/article-recently.css')
-        link(rel='stylesheet', type='text/css', href='stylesheets/pic.css')
+        link(rel='stylesheet', type='text/css', href='source/stylesheets/article-recently.css')
+        link(rel='stylesheet', type='text/css', href='source/stylesheets/pic.css')
 
-        script(type='text/javascript', src='javascripts/jquery-1.12.3.min.js')
-        script(type='text/javascript', src='javascripts/jquery.cookie.js')
-        script(type='text/javascript', src='javascripts/main.js')
+        script(type='text/javascript', src='source/javascripts/jquery-1.12.3.min.js')
+        script(type='text/javascript', src='source/javascripts/jquery.cookie.js')
+        script(type='text/javascript', src='source/javascripts/main.js')
         include jade-block/analysis
 
     body
@@ -28,7 +28,7 @@ html
                     .blog-update
                         span
                     .blog-pic
-                        img(src='images/mypic.jpg')
+                        img(src='source/images/mypic.jpg')
                 .header-sep
                 .header-nav
                     .search-block
@@ -36,9 +36,9 @@ html
                             input(type="text" placeholder="搜索博客" id="search-inp")
                             .search-button#search-btn
                                 a(href='feature-page/search/search-result.html')
-                                    img(src='images/searchpic.png')
+                                    img(src='source/images/searchpic.png')
                         .search-block-close#search-close
-                            img(src='images/closepic.png')
+                            img(src='source/images/closepic.png')
                         .search-msg-block(class="animated slideInDown")
                             .search-warn
                                 p
@@ -61,12 +61,12 @@ html
                             a(href='classify/nav/webApp-nav.html') webApp
                         li
                             a(id="header-search" href='javascript:;')
-                                img(src='images/searchpic.png')
-        script(type='text/javascript', src='javascripts/header-footer.js')
+                                img(src='source/images/searchpic.png')
+        script(type='text/javascript', src='source/javascripts/header-footer.js')
         .motto
             .motto-content
                 .motto-pic
-                    img(src='images/mottopic.jpg', alt='')
+                    img(src='source/images/mottopic.jpg', alt='')
                 .motto-master
                 .motto-text
                     span web study
@@ -78,13 +78,13 @@ html
             .footer-pic
                 .footer-pic-sub
                     a(href='feed.xml')
-                        img(src='images/rsspic.png')
+                        img(src='source/images/rsspic.png')
                 .footer-pic-sub
                     a(href='http://weibo.com/p/1005055989486288')
-                        img(src='images/weibopic.png')
+                        img(src='source/images/weibopic.png')
                 .footer-pic-sub
                     a(href='https://github.com/xiaobxia')
-                        img(src='images/githubpic.png')
+                        img(src='source/images/githubpic.png')
             .footer-wrap
                 .footer-text
                     ul
