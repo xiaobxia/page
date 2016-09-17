@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.5.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构">
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/address/follow-me.html" afterPath="$PROJECT_DIR$/aboutme/address/follow-me.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/blog-1.html" afterPath="$PROJECT_DIR$/aboutme/blog-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/aboutme-nav.html" afterPath="$PROJECT_DIR$/classify/nav/aboutme-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/essay-nav.html" afterPath="$PROJECT_DIR$/classify/nav/essay-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/language-nav.html" afterPath="$PROJECT_DIR$/classify/nav/language-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/library-nav.html" afterPath="$PROJECT_DIR$/classify/nav/library-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/tool-nav.html" afterPath="$PROJECT_DIR$/classify/nav/tool-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/webApp-nav.html" afterPath="$PROJECT_DIR$/classify/nav/webApp-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essay/travel/travel-1.html" afterPath="$PROJECT_DIR$/essay/travel/travel-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/search/search-result.html" afterPath="$PROJECT_DIR$/feature-page/search/search-result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/time/time-line.html" afterPath="$PROJECT_DIR$/feature-page/time/time-line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.pug" afterPath="$PROJECT_DIR$/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.html" afterPath="$PROJECT_DIR$/jade-block/link.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.pug" afterPath="$PROJECT_DIR$/jade-block/link.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/script.html" afterPath="$PROJECT_DIR$/jade-block/script.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/script.pug" afterPath="$PROJECT_DIR$/jade-block/script.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/Css/class-1.html" afterPath="$PROJECT_DIR$/language/Css/class-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/Css/display-1.html" afterPath="$PROJECT_DIR$/language/Css/display-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.html" afterPath="$PROJECT_DIR$/jade-block/codehl-b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-b.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-h.html" afterPath="$PROJECT_DIR$/jade-block/codehl-h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-h.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-h.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/Html/meta-1.html" afterPath="$PROJECT_DIR$/language/Html/meta-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/animation-1.html" afterPath="$PROJECT_DIR$/language/no/animation-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/initialize-1.html" afterPath="$PROJECT_DIR$/language/no/initialize-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/keyboard-1.html" afterPath="$PROJECT_DIR$/language/no/keyboard-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/position-1.html" afterPath="$PROJECT_DIR$/language/no/position-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/tag-1.html" afterPath="$PROJECT_DIR$/language/no/tag-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/tag-2.html" afterPath="$PROJECT_DIR$/language/no/tag-2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/terminology-1.html" afterPath="$PROJECT_DIR$/language/no/terminology-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/webTool/escape-1.html" afterPath="$PROJECT_DIR$/webapp/webTool/escape-1.html" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +36,28 @@
     <favorites_list name="page" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="codehl-h.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codehl-b.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,8 +109,6 @@
         <option value="$PROJECT_DIR$/jade-block/fornavpage.pug" />
         <option value="$PROJECT_DIR$/jade-block/for-time.pug" />
         <option value="$PROJECT_DIR$/jade-block/footer.pug" />
-        <option value="$PROJECT_DIR$/jade-block/codehl-h.pug" />
-        <option value="$PROJECT_DIR$/jade-block/codehl-b.pug" />
         <option value="$PROJECT_DIR$/jade-block/article-recently.pug" />
         <option value="$PROJECT_DIR$/feature-page/search/search-result.pug" />
         <option value="$PROJECT_DIR$/feature-page/time/time-line.pug" />
@@ -127,6 +124,8 @@
         <option value="$PROJECT_DIR$/jade-block/link.pug" />
         <option value="$PROJECT_DIR$/jade-block/script.pug" />
         <option value="$PROJECT_DIR$/index.pug" />
+        <option value="$PROJECT_DIR$/jade-block/codehl-h.pug" />
+        <option value="$PROJECT_DIR$/jade-block/codehl-b.pug" />
       </list>
     </option>
   </component>
@@ -341,14 +340,7 @@
       <workItem from="1474075815468" duration="5034000" />
       <workItem from="1474081017635" duration="2782000" />
       <workItem from="1474101271129" duration="6361000" />
-      <workItem from="1474114521845" duration="1602000" />
-    </task>
-    <task id="LOCAL-00017" summary="test">
-      <created>1472043504622</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1472043504622</updated>
+      <workItem from="1474114521845" duration="3432000" />
     </task>
     <task id="LOCAL-00018" summary="test">
       <created>1472045553948</created>
@@ -686,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474106060689</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件">
+      <created>1474116286807</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1474116286808</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322618000" />
+    <option name="totallyTimeSpent" value="324448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
@@ -727,7 +726,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="V1.22&#10;1.添加统计和分享" />
     <MESSAGE value="V1.23&#10;1.seo初步优化" />
     <MESSAGE value="V1.23&#10;1.seo优化&#10;2.域名" />
     <MESSAGE value="V1.23&#10;    1.加入了多说&#10;    2.加入了百度分享" />
@@ -752,7 +750,8 @@
     <MESSAGE value="V1.4.4.1_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;" />
     <MESSAGE value="V1.4.5.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引" />
     <MESSAGE value="V1.4.5.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.4.5.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构" />
+    <MESSAGE value="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -770,6 +769,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="281" column="6" selection-start-line="281" selection-start-column="6" selection-end-line="281" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,20 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/article-recently.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -955,6 +941,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,14 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/script.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1058,6 +1037,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
           <folding />
         </state>
       </provider>
