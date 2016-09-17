@@ -1,0 +1,12 @@
+#output-block, #input-block{
+    display: block;
+    height: 300px;
+    width: 600px;
+    font-weight: bold;
+}
+
+#transBtn, #transBtn2{
+    display: block;
+    height: 30px;
+    width: 60px;
+}

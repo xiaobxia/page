@@ -32,7 +32,7 @@ jQuery.noConflict();
             var key = e.which;
             if (key == 13) {
                 e.preventDefault();
-                window.location.href = 'http://www.xiaobxia.win/feature-page/search-result.html';
+                window.location.href = 'http://www.xiaobxia.win/feature-page/search/search-result.html';
             }
         });
         $("#search-inp").bind('keyup', function (e) {
@@ -60,7 +60,7 @@ jQuery.noConflict();
                     path: "/"
                 });
 
-                window.location.href = 'http://www.xiaobxia.win/feature-page/search-result.html';
+                window.location.href = 'http://www.xiaobxia.win/feature-page/search/search-result.html';
             });
         });
 

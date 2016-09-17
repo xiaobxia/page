@@ -1,0 +1,158 @@
+<!--Created by Administrator on 2016/8/24.
+--><!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="none"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Meta标签详解</title><meta name="keywords" content="博客,xiaobxia,小b侠,语言,Meta标签详解"><meta name="description" content="xiaobxia的博客文章随笔，题目Meta标签详解。子标题申明编码,name属性,http-equiv属性。"><link rel="shortcunt icon" href="../../images/icon.png"><link rel="stylesheet" type="text/css" href="../../stylesheets/main.css" media="screen"><link rel="stylesheet" type="text/css" href="../../stylesheets/header-footer.css" media="screen"><link rel="stylesheet" type="text/css" href="../../stylesheets/animate.css"><link rel="stylesheet" type="text/css" href="../../stylesheets/article-write.css"><!--额外需要的head--><script type="text/javascript" src="../../codehl/scripts/shCore.js"></script><link rel="stylesheet" type="text/css" href="../../codehl/styles/shCore.css"><link rel="stylesheet" type="text/css" href="../../codehl/styles/shCoreDefault.css"><script type="text/javascript" src="../../codehl/scripts/shAutoloader.js"></script><script>var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?444bbcc0ac65fb97db91e28b91036969";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();</script><script type="text/javascript" src="../../javascripts/jquery-1.12.3.min.js"></script><script type="text/javascript" src="../../javascripts/jquery.cookie.js"></script><script type="text/javascript" src="../../javascripts/main.js"></script></head><body><!--Created by Administrator on 2016/8/24.
+--><div class="header"><div class="header-content"><div class="blog-inf"><div class="blog-name"><a href="http://www.xiaobxia.win"><h3>小b侠的博客</h3></a></div><div class="blog-update"><span></span></div><div class="blog-pic"><img src="../../images/mypic.jpg"></div></div><div class="header-sep"></div><div class="header-nav"><div class="search-block"><div class="search-inp-bar"><input type="text" placeholder="搜索博客" id="search-inp"><div class="search-button" id="search-btn"><a href="../../feature-page/searvh/search-result.html"><img src="../../images/searchpic.png"></a></div></div><div class="search-block-close" id="search-close"><img src="../../images/closepic.png"></div><div class="search-msg-block animated slideInDown"><div class="search-warn"><p></p></div><div class="search-hint"></div><div class="search-msg"><p>关于搜索的规则：目前搜索逻辑是去除搜索词条中重复的字，然后进行匹配，如果相关度超过一半，就显示文章。在未来，也会引入百度站内搜索。</p></div></div></div><ul id="header-ul"><!-- li中a的地址需要手动修改，添加../或是删除--><li><a href="../../classify/nav/language-nav.html">语言</a></li><li><a href="../../classify/nav/library-nav.html">库</a></li><li><a href="../../classify/nav/tool-nav.html">工具</a></li><li><a href="../../classify/nav/essay-nav.html">随笔</a></li><li><a href="../../classify/nav/aboutme-nav.html">关于我</a></li><li><a href="../../classify/nav/webApp-nav.html">webApp</a></li><li><a id="header-search" href="javascript:;"><img src="../../images/searchpic.png"></a></li></ul></div></div></div><script type="text/javascript" src="../../javascripts/header-footer.js"></script><div class="article-page"><!--文章的page-id--><div id="page-id">4</div><!-- 顶部导航块部分--><div class="article-tab"><div class="level-nav"><a class="level-a" id="levelOne"></a><span class="level-pic"> ></span><a class="level-a" id="levelTwo"></a></div><div class="jump-block"><select class="subtitle-sel" id="subtitle-sel"></select><div class="jump-btn" id="jump-btn"></div></div><div class="article-tab-sep"></div></div><div class="article-write"><div class="left-side-nav"><div class="list-nav"><ul></ul></div><div class="article-side-btn"><div class="article-nav-btn" id="article-nav-btn-left"><a href=""> <</a></div><div class="article-nav-btn" id="article-nav-btn-right"><a href=""> ></a></div></div><div class="left-side-nav-sep"></div></div><div class="article-content"><div class="article-content-title"><!--文章的title--><h1>Meta标签详解</h1></div><div class="article-content-editer"><div class="writer"><span>作者：</span><span>xiaobxia</span></div><div class="write-date"><span>发布日期：</span><!--文章的发表日期--><span>2016/9/14</span></div><div class="write-recently"><span>最后编辑：</span><!--文章的最后修改日期--><span>2016/9/14</span></div></div><div class="article-content-body"><!--文章的内容1.专门的用于a标签的写法
+.for-a
+    span.for-emphasis
+    a(href="")
+
+2.段落的写法
+p
+
+3.强调部分的写法，加入class="for-emphasis"
+em.for-emphasis
+
+4.专门显示代码的写法，js可修改
+                pre(class='brush:js;').
+                    代码
+
+
+5.专门显示图片的写法，需在标签里声明宽和高
+.for-img-show
+    img(src='',style='')
+    .img-msg
+        p
+
+6.文章的子标题的写法
++subtitleuse("")
+
+7.文章文字p中如果有需要强调的
+p 一
+    em.strongword 二
+    |三
+
+8.警告和特别提醒部分
++warnuse(leixing,b)
+
+9.表格的使用
+.for-table
+    table(border="1")
+        caption 这里写表单的标题
+        colgroup
+            col(style="width: 20%;")
+            col(style="width: 80%;")
+        thead
+            +tableuse("","")
+        tfoot
+            +tableuse("","")
+        tbody
+            +tableuse("","")
+10.列表的使用
+    dl
+        +dtdduse("","")
+--><p>meta标签描述了一些基本的元数据。&lt;meta&gt; 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。META元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者，和其他元数据。元数据可以使用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他Web服务。&lt;meta&gt;一般放置于 &lt;head&gt;区域。</p><p>meta标签的组成：meta标签共有两个属性，它们分别是http-equiv属性和name属性，不同的属性又有不同的参数值，这些不同的参数值就实现了不同的网页功能。</p><div class="for-subtitle"><h4>申明编码</h4><div class="subtitle-sep"></div></div><pre class="brush:xml;">&lt;meta charset='utf-8'&gt; </pre><div class="for-subtitle"><h4>(一).name属性</h4><div class="subtitle-sep"></div></div><p>name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。</p><p>meta标签的name属性语法格式是：</p><pre class="brush:xml;">&lt;meta name=&quot;参数&quot; content=&quot;具体的参数值&quot;&gt;</pre><p>其中name属性主要有以下几种参数：</p><span class="strongword">author<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>作者:标注网页的作者</p></td></tr></tfoot></table></div></span><span class="strongword">copyright<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>meta标签的copyright的信息参数，代表说明网站版权信息。</p></td></tr></tfoot></table></div></span><span class="strongword">description<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>网站内容描述:description用来告诉搜索引擎你的网站主要内容。。</p></td></tr></tfoot></table></div></span><span class="strongword">generator<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>meta标签的generator的信息参数，代表说明网站的采用的什么软件制作。</p></td></tr></tfoot></table></div></span><span class="strongword">Keywords</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>关键字:keywords用来告诉搜索引擎你网页的关键字是什么。</p></td></tr></tfoot></table></div><span class="strongword">renderer<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>添加meta标签的网站可以控制浏览器选择何种内核渲染</p></td></tr></tfoot></table></div></span><span class="strongword">revisit-after<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>revisit-after代表网站重访,7days代表7天，依此类推。</p></td></tr></tfoot></table></div></span><span class="strongword">robots</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>机器人向导:robots用来告诉搜索机器人哪些页面需要索引，哪些页面不需要索引。content的参数有all,none,index,noindex,follow,nofollow。默认是all。</p></td></tr></tfoot></table></div><dl>具体参数<dt>all：</dt><dd>文件将被检索，且页面上的链接可以被查询；</dd><dt>none：</dt><dd>文件将不被检索，且页面上的链接不可以被查询；</dd><dt>index：</dt><dd>文件将被检索；</dd><dt>follow：:,:页面上的链接可以被查询；</dt><dt>noindex：</dt><dd>文件将不被检索，但页面上的链接可以被查询；</dd><dt>nofollow：</dt><dd>文件将被检索，但页面上的链接不可以被查询；</dd></dl><span class="strongword">viewport</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>能优化移动浏览器的显示。如果不是响应式网站，不要使用initial-scale或者禁用缩放。大部分4.7-5寸设备的viewport宽设为360px；5.5寸设备设为400px；iphone6设为375px；ipone6 plus设为414px。</p></td></tr></tfoot></table></div><dl>参数说明<dt>1.width</dt><dd>宽度（数值 / device-width）（范围从200 到10,000，默认为980 像素）</dd><dt>2.height</dt><dd>高度（数值 / device-height）（范围从223 到10,000）</dd><dt>3.initial-scale</dt><dd>初始的缩放比例 （范围从&gt;0 到10）</dd><dt>4.minimum-scale</dt><dd>允许用户缩放到的最小比例</dd><dt>5.maximum-scale</dt><dd>允许用户缩放到的最大比例</dd><dt>6.user-scalable</dt><dd>用户是否可以手动缩 (no,yes)</dd></dl><div class="for-warn"><span>注意:</span><p>很多人使用initial-scale=1到非响应式网站上，这会让网站以100%宽度渲染，用户需要手动移动页面或者缩放。如果和initial-scale=1同时使用user-scalable=no或maximum-scale=1，则用户将不能放大/缩小网页来看到全部的内容。</p></div><span class="strongword">name属性的举例汇总</span><pre class="brush:xml;">&lt;meta name="author" content="root,root@xxxx.com"&gt;
+
+&lt;meta name="copyright" content="信息参数"&gt;
+
+&lt;meta name="description" content="haorooms博客,html的meta总结，meta是html语言head区的一个辅助性标签。"&gt;
+
+&lt;meta name="generator" content="信息参数"&gt;
+
+&lt;meta name="keywords" content="meta总结,html meta,meta属性,meta跳转"&gt;
+
+&lt;meta name="renderer" content="webkit|ie-comp|ie-stand"&gt;
+
+&lt;meta name="revisit-after" content="7days"&gt;
+
+&lt;meta name="robots" content="none"&gt;
+
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"&gt;
+
+</pre><span class="strongword">其他值</span><pre class="brush:xml;">&lt;!-- WebApp全屏模式：伪装app，离线应用。 --&gt;
+&lt;!-- 启用 WebApp 全屏模式。 --&gt;
+&lt;meta name="apple-mobile-web-app-capable" content="yes" &gt;
+&lt;!-- 隐藏状态栏/设置状态栏颜色：只有在开启WebApp全屏模式时才生效。content的值为default | black | black-translucent 。 --&gt;
+&lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" &gt;
+&lt;!-- 添加到主屏后的标题。 --&gt;
+&lt;meta name="apple-mobile-web-app-title" content="标题"&gt;
+&lt;!-- 忽略数字自动识别为电话号码。 --&gt;
+&lt;meta content="telephone=no" name="format-detection" &gt;
+&lt;!-- 忽略识别邮箱。 --&gt;
+&lt;meta content="email=no" name="format-detection" &gt;
+&lt;!-- 添加智能 App 广告条 Smart App Banner：告诉浏览器这个网站对应的app，并在页面上显示下载banner。 --&gt;
+&lt;meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"&gt;
+&lt;!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 --&gt;
+&lt;meta name="HandheldFriendly" content="true"&gt;
+&lt;!-- 微软的老式浏览器 --&gt;
+&lt;meta name="MobileOptimized" content="320"&gt;
+&lt;!-- uc强制竖屏 --&gt;
+&lt;meta name="screen-orientation" content="portrait"&gt;
+&lt;!-- QQ强制竖屏 --&gt;
+&lt;meta name="x5-orientation" content="portrait"&gt;
+&lt;!-- UC强制全屏 --&gt;
+&lt;meta name="full-screen" content="yes"&gt;
+&lt;!-- QQ强制全屏 --&gt;
+&lt;meta name="x5-fullscreen" content="true"&gt;
+&lt;!-- UC应用模式 --&gt;
+&lt;meta name="browsermode" content="application"&gt;
+&lt;!-- QQ应用模式 --&gt;
+&lt;meta name="x5-page-mode" content="app"&gt;
+&lt;!-- windows phone 点击无高光 --&gt;
+&lt;meta name="msapplication-tap-highlight" content="no"&gt;
+
+
+</pre><div class="for-subtitle"><h4>(二).http-equiv属性</h4><div class="subtitle-sep"></div></div><p>http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容，与之对应的属性值为content，content中的内容其实就是各个参数的变量值。</p><p>meta标签的http-equiv属性语法格式是：</p><pre class="brush:xml;">&lt;meta http-equiv="参数" content="参数变量值"&gt;
+</pre><p>其中http-equiv属性主要有以下几种参数：</p><span class="strongword">Cache-Control<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>转码申明：用百度打开网页可能会对其进行转码（比如贴广告），避免转码可添加如下meta。</p></td></tr></tfoot></table></div></span><span class="strongword">Content-Script-Type<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>W3C网页规范，指明页面中脚本的类型。</p></td></tr></tfoot></table></div></span><span class="strongword">content-Language（显示语言的设定）<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>使用content属性表示页面的语言以及国家代码</p></td></tr></tfoot></table></div></span><span class="strongword">Expires(期限)</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。</p></td></tr></tfoot></table></div><span class="strongword">imagetoolbar<div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>指定是否显示图片工具栏，当为false代表不显示，当为true代表显示。</p></td></tr></tfoot></table></div></span><span class="strongword">Pragma</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>cache模式:禁止浏览器从本地计算机的缓存中访问页面内容。</p></td></tr></tfoot></table></div><span class="strongword">Refresh()</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>刷新:自动刷新并指向新页面。</p></td></tr></tfoot></table></div><span class="strongword">Set-Cookie</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>cookie设定:如果网页过期，那么存盘的cookie将被删除。</p></td></tr></tfoot></table></div><span class="strongword">Window-target</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>显示窗口的设定:强制页面在当前窗口以独立页面显示。</p></td></tr></tfoot></table></div><span class="strongword">X-UA-Compatible</span><div class="for-table"><table border="1"><caption></caption><colgroup><col style="width: 20%"><col style="width: 80%"></colgroup><tfoot><tr><td><p>说明：</p></td><td><p>X-UA-Compatible是IE8的一个专有&lt;meta&gt;属性，它告诉IE8采用何种IE版本去渲染网页，在html的&lt;head&gt;标签中使用。</p></td></tr></tfoot></table></div><span class="strongword">http-equiv属性的举例</span><pre class="brush:xml;">&lt;meta http-equiv="Cache-Control" content="no-siteapp"&gt;
+
+&lt;meta http-equiv="Content-Language" content="zh-cn"&gt;
+
+&lt;meta http-equiv="Content-Script-Type" Content="text/javascript"&gt;
+
+&lt;meta http-equiv="expires" content="Fri,12Jan200118:18:18GMT"&gt;
+
+&lt;meta http-equiv="imagetoolbar" content="false"&gt;
+
+&lt;meta http-equiv="Pragma" content="no-cache"&gt;
+
+&lt;meta http-equiv="Refresh" content="2;URL=http://www.haorooms.com"&gt; //(注意后面的引号，分别在秒数的前面和网址的后面)
+
+&lt;meta http-equiv="Set-Cookie" content="cookie value=xxx;expires=Friday,12-Jan-200118:18:18GMT；path=/"&gt;
+
+&lt;meta http-equiv="Window-target" content="_top"&gt;
+
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</pre></div><div class="article-share"><p>对文章如有疑问，欢迎联系作者。</p><p>分享：</p><div class="bdsharebuttonbox"><a class="bds_more" href="#" data-cmd="more"></a><a class="bds_tsina" href="#" data-cmd="tsina" title="分享到新浪微博"></a><a class="bds_qzone" href="#" data-cmd="qzone" title="分享到QQ空间"></a><a class="bds_tieba" href="#" data-cmd="tieba" title="分享到百度贴吧"></a><a class="bds_youdao" href="#" data-cmd="youdao" title="分享到有道云笔记"></a><a class="bds_douban" href="#" data-cmd="douban" title="分享到豆瓣网"></a><a class="bds_weixin" href="#" data-cmd="weixin" title="分享到微信"></a><a class="bds_tqq" href="#" data-cmd="tqq" title="分享到腾讯微博"></a><a class="bds_renren" href="#" data-cmd="renren" title="分享到人人网"></a></div><script>window._bd_share_config={
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "1",
+        "bdSize": "24"
+    },
+    "share": {},
+    "image": {
+        "viewList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+    },
+    "selectShare": {
+        "bdContainerClass": null,
+        "bdSelectMiniList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"]
+    }
+};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div><div class="no-more" id="no-more"><a href="">没有更多</a></div></div></div></div><script type="text/javascript" src="../../javascripts/article-write.js"></script><div class="ds-thread" data-thread-key="4" data-title="Meta标签详解" data-url="http://xiaobxia.win/language/Html/meta-1.html"></div><script>var duoshuoQuery = {short_name: "xiaobxia"};(function () {var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);     })();</script><!--Created by Administrator on 2016/8/24.
+--><div class="footer"><div class="footer-pic"><div class="footer-pic-sub"><a href="../feed.xml"><img src="../../images/rsspic.png"></a></div><div class="footer-pic-sub"><a href="http://weibo.com/p/1005055989486288"><img src="../../images/weibopic.png"></a></div><div class="footer-pic-sub"><a href="https://github.com/xiaobxia"><img src="../../images/githubpic.png"></a></div></div><div class="footer-wrap"><div class="footer-text"><ul><li><span>blog of xiaobxia 是个人博客</span></li><li><span>分享web学习的总结和生活的随想以及更多</span></li></ul></div></div></div><!--额外需要的js--><script type="text/javascript">SyntaxHighlighter.autoloader(
+        ['js', 'jscript', 'javascript', '../../codehl/scripts/shBrushJScript.js'],
+        ['bash', 'shell', '../../codehl/scripts/shBrushBash.js'],
+        ['css', '../../codehl/scripts/shBrushCss.js'],
+        ['xml', 'html', '../../codehl/scripts/shBrushXml.js'],
+        ['sql', '../../codehl/scripts/shBrushSql.js'],
+        ['php', '../../codehl/scripts/shBrushPhp.js']
+);
+SyntaxHighlighter.defaults['toolbar'] = false;
+SyntaxHighlighter.all();</script></body></html>

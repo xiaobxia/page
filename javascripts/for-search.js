@@ -47,7 +47,7 @@ jQuery.noConflict();
         var minlength = Math.floor(textArray.length / 2);
         for (var x = 0; x < youguanart.length; x++) {
             if (youguanart[x].xiangguandu > minlength) {
-                yuansu += "<div class='article-inf'> <a href='" + "../" +
+                yuansu += "<div class='article-inf'> <a href='" + "../../" +
                     youguanart[x].path + "'> <h5>" +
                     youguanart[x].title + "</h5> <em>" +
                     youguanart[x].levelOne + "</em> <p>" +

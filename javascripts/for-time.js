@@ -72,7 +72,7 @@ jQuery.noConflict();
                             yuansu +="<div class='art-time'><span>"+month+"</span></div>";
                             tempMonth = month;
                         }
-                        yuansu += "<div class='article-inf'> <a href='" + "../" +
+                        yuansu += "<div class='article-inf'> <a href='" + "../../" +
                             artintime[a][c].path + "'> <h5>" +
                             artintime[a][c].title + "</h5> <em>" +
                             artintime[a][c].levelOne + "</em> <p>" +

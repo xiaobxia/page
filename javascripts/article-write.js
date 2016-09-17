@@ -68,7 +68,7 @@ jQuery.noConflict();
         }
 
         //article-tab部分
-        $("#levelOne").text(levelOne).attr("href", "../" + levelOnePath);
+        $("#levelOne").text(levelOne).attr("href", "../../" + levelOnePath);
         //目前还没实现leveltwo的链接
         //  $("#levelTwo").text(levelTwo);
         $("#levelTwo").text(levelTwo).attr("href", "../" + levelTwoPath);
@@ -103,7 +103,7 @@ jQuery.noConflict();
             var $navA = $(".list-nav a:eq(" + c + ")"),
                 $navL = $(".list-nav li:eq(" + c + ")");
             //给side导航的项设置路径
-            $navA.text(title).attr("href", "../" + path);
+            $navA.text(title).attr("href", "../../" + path);
             //如果pageid对上了，就是说是当前的文章
             if (navId == id) {
                 $navL.addClass("active");

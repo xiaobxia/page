@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        include ../../jade-block/meta-head
+        block meta
+            title 搜索结果
+            meta(name="keywords", content="博客,xiaobxia,小b侠,搜索结果")
+            meta(name="description", content="xiaobxia的博客的搜索结果分类。")
+        include ../../jade-block/link
+        link(rel='stylesheet', type='text/css', href='../stylesheets/search-result.css')
+        include ../../jade-block/analysis
+        include ../../jade-block/script
+    body
+        include ../../jade-block/header
+        .search-page
+            .search-page-msg
+                h4 关于
+                    span
+                    |的结果
+            .search-page-content
+                .no-result#no-result
+                    .no-result-img
+                        img(src='../images/crypic.png')
+                    .no-result-msg
+                        p 没有搜索结果...
+                        p 1.请更改关键字，再次尝试。
+                        P 2.如无相关内容，可联系我增加相关内容。
+            #no-more.no-more
+                a(href='') 没有更多
+        script(type='text/javascript', src='../javascripts/for-search.js')
+        include ../../jade-block/footer

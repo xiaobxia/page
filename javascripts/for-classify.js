@@ -78,7 +78,7 @@ jQuery.noConflict();
                             tempMonth = month;
                         }
                         yuansu += "<div class='article-inf'> <a href='" +
-                            "../" + artleveltwo[a][c].path + "'> <h5>" +
+                            "../../" + artleveltwo[a][c].path + "'> <h5>" +
                             artleveltwo[a][c].title + "</h5> <em>" +
                             artleveltwo[a][c].levelOne + "</em> <p>" +
                             artleveltwo[a][c].description + "</p> <span>" +
