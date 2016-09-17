@@ -128,6 +128,7 @@ $search-block-pic-size:16px;
 
 .header {
   position: relative;
+  z-index: 1000;
   width: 100%;
   line-height: 20px;
   background-color: $grey-245;

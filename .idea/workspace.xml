@@ -1,79 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.3.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classify/nav/aboutme-nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classify/nav/essay-nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classify/nav/language-nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classify/nav/library-nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classify/nav/tool-nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classify/nav/webApp-nav.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feature-page/search/search-result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feature-page/time/time-line.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/escape-1.pug" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/aboutme-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/essay-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/language-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/library-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/tool-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/webApp-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-page/search-result.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feature-page/time-line.html" afterPath="" />
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.2.0_beta&#10;1.修复子页面搜索显示不正确&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/blog-1.html" afterPath="$PROJECT_DIR$/aboutme/blog-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.pug" afterPath="$PROJECT_DIR$/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/article-recently.html" afterPath="$PROJECT_DIR$/jade-block/article-recently.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/article-recently.pug" afterPath="$PROJECT_DIR$/jade-block/article-recently.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.html" afterPath="$PROJECT_DIR$/jade-block/codehl-b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-b.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-h.html" afterPath="$PROJECT_DIR$/jade-block/codehl-h.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-h.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-h.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/example-sub.html" afterPath="$PROJECT_DIR$/jade-block/example-sub.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/footer.html" afterPath="$PROJECT_DIR$/jade-block/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/footer.pug" afterPath="$PROJECT_DIR$/jade-block/footer.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/for-time.html" afterPath="$PROJECT_DIR$/jade-block/for-time.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/for-time.pug" afterPath="$PROJECT_DIR$/jade-block/for-time.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.html" afterPath="$PROJECT_DIR$/jade-block/fornavpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/fornavpage.pug" afterPath="$PROJECT_DIR$/jade-block/fornavpage.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.html" afterPath="$PROJECT_DIR$/jade-block/forsubpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/forsubpage.pug" afterPath="$PROJECT_DIR$/jade-block/forsubpage.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/header.html" afterPath="$PROJECT_DIR$/jade-block/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/header.pug" afterPath="$PROJECT_DIR$/jade-block/header.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.html" afterPath="$PROJECT_DIR$/jade-block/link.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.pug" afterPath="$PROJECT_DIR$/jade-block/link.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/script.html" afterPath="$PROJECT_DIR$/jade-block/script.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/script.pug" afterPath="$PROJECT_DIR$/jade-block/script.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/article-write.js" afterPath="$PROJECT_DIR$/javascripts/article-write.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/for-classify.js" afterPath="$PROJECT_DIR$/javascripts/for-classify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/for-search.js" afterPath="$PROJECT_DIR$/javascripts/for-search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/for-time.js" afterPath="$PROJECT_DIR$/javascripts/for-time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/header-footer.js" afterPath="$PROJECT_DIR$/javascripts/header-footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/initialize-1.html" afterPath="$PROJECT_DIR$/language/initialize-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/keyboard-1.html" afterPath="$PROJECT_DIR$/language/keyboard-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/position-1.html" afterPath="$PROJECT_DIR$/language/position-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/tag-1.html" afterPath="$PROJECT_DIR$/language/tag-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/tag-2.html" afterPath="$PROJECT_DIR$/language/tag-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/terminology-1.html" afterPath="$PROJECT_DIR$/language/terminology-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/aboutme/follow-me.html" afterPath="$PROJECT_DIR$/aboutme/address/follow-me.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/aboutme/follow-me.pug" afterPath="$PROJECT_DIR$/aboutme/address/follow-me.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classify/aboutme-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/aboutme-nav.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classify/essay-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/essay-nav.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classify/language-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/language-nav.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classify/library-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/library-nav.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classify/tool-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/tool-nav.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classify/webApp-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/webApp-nav.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/essay/travel-1.html" afterPath="$PROJECT_DIR$/essay/travel/travel-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/essay/travel-1.pug" afterPath="$PROJECT_DIR$/essay/travel/travel-1.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/feature-page/search-result.pug" afterPath="$PROJECT_DIR$/feature-page/search/search-result.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/feature-page/time-line.pug" afterPath="$PROJECT_DIR$/feature-page/time/time-line.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/language/class-1.html" afterPath="$PROJECT_DIR$/language/Css/class-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/language/class-1.pug" afterPath="$PROJECT_DIR$/language/Css/class-1.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/language/display-1.html" afterPath="$PROJECT_DIR$/language/Css/display-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/language/display-1.pug" afterPath="$PROJECT_DIR$/language/Css/display-1.pug" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/language/meta-1.html" afterPath="$PROJECT_DIR$/language/Html/meta-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/language/meta-1.pug" afterPath="$PROJECT_DIR$/language/Html/meta-1.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css" afterPath="$PROJECT_DIR$/stylesheets/article-write.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css.map" afterPath="$PROJECT_DIR$/stylesheets/article-write.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.scss" afterPath="$PROJECT_DIR$/stylesheets/article-write.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css.map" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.scss" afterPath="$PROJECT_DIR$/stylesheets/header-footer.scss" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,58 +37,28 @@
       <file leaf-file-name="header-footer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="0">
               <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codehl-b.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
+      <file leaf-file-name="article-write.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="504">
+              <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codehl-h.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+      <file leaf-file-name="header-footer.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stylesheets/header-footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="for-time.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jade-block/for-time.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="time-line.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature-page/time/time-line.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article-write.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javascripts/article-write.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+            <state relative-caret-position="434">
+              <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -164,26 +69,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1456">
               <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="for-classify.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/for-classify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="for-search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/for-search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -226,7 +111,6 @@
         <option value="$PROJECT_DIR$/language/tag-1.pug" />
         <option value="$PROJECT_DIR$/language/terminology-1.pug" />
         <option value="$PROJECT_DIR$/javascripts/article-recently.js" />
-        <option value="$PROJECT_DIR$/stylesheets/article-write.scss" />
         <option value="$PROJECT_DIR$/stylesheets/cssTemplate.scss" />
         <option value="$PROJECT_DIR$/stylesheets/for-time-and-nav.scss" />
         <option value="$PROJECT_DIR$/language/initialize-1.pug" />
@@ -236,7 +120,6 @@
         <option value="$PROJECT_DIR$/jade-block/example-sub.pug" />
         <option value="$PROJECT_DIR$/language/tag-2.pug" />
         <option value="$PROJECT_DIR$/codehl/styles/shCoreDefault.css" />
-        <option value="$PROJECT_DIR$/stylesheets/header-footer.scss" />
         <option value="$PROJECT_DIR$/webapp/escape-1.html" />
         <option value="$PROJECT_DIR$/for-write/muban.html" />
         <option value="$PROJECT_DIR$/for-write/muban.js" />
@@ -268,6 +151,8 @@
         <option value="$PROJECT_DIR$/feature-page/time/time-line.pug" />
         <option value="$PROJECT_DIR$/javascripts/main.js" />
         <option value="$PROJECT_DIR$/javascripts/article-write.js" />
+        <option value="$PROJECT_DIR$/stylesheets/header-footer.scss" />
+        <option value="$PROJECT_DIR$/stylesheets/article-write.scss" />
       </list>
     </option>
   </component>
@@ -335,7 +220,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -480,14 +365,7 @@
       <workItem from="1473914261964" duration="1903000" />
       <workItem from="1473939609965" duration="206000" />
       <workItem from="1474017503750" duration="16641000" />
-      <workItem from="1474075815468" duration="281000" />
-    </task>
-    <task id="LOCAL-00007" summary="test">
-      <created>1471406975187</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1471406975187</updated>
+      <workItem from="1474075815468" duration="2131000" />
     </task>
     <task id="LOCAL-00008" summary="test">
       <created>1471408269904</created>
@@ -825,11 +703,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473915213929</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="V1.4.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;">
+      <created>1474076161249</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1474076161250</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307120000" />
+    <option name="totallyTimeSpent" value="308970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -839,19 +724,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -866,7 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修复css显示问题" />
     <MESSAGE value="test" />
     <MESSAGE value="从blog来的，在这改进，编译完以后再放入blog，减少blog的空间使用" />
     <MESSAGE value="大修改" />
@@ -891,20 +775,14 @@
     <MESSAGE value="V1.3.10&#10;                1.加入了代码高亮&#10;                2.加入评论系统&#10;                3.更换统计，改到xiaobxia.win&#10;                4.对每个网页进行了SEO优化&#10;                5.添加欢迎指正&#10;                6.搜索不区分大小写&#10;                7.nav和time的li的产生更加自动&#10;                8.可使用键盘回车搜索&#10;                9.添加文章meta-1&#10;                10.修改meta-1的评论不显示" />
     <MESSAGE value="V1.3.24&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库" />
     <MESSAGE value="V1.3.31&#10;1.修复搜索提示的cookie&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.3.31&#10;1.修复搜索提示的cookie&#10;" />
+    <MESSAGE value="V1.4.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.4.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aboutme/blog-1.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2037">
-          <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classify/nav/tool-nav.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -948,17 +826,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/header-footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/escape-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -983,13 +855,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="64" column="75" selection-start-line="64" selection-start-column="75" selection-end-line="64" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-976">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -997,6 +863,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,6 +871,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="294" selection-start-line="8" selection-start-column="264" selection-end-line="8" selection-end-column="294" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,6 +886,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,6 +894,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,6 +910,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,13 +918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aboutme/address/follow-me.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,6 +926,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2331">
           <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,13 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/language/Css/display-1.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,6 +942,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,6 +964,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,6 +972,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,6 +1001,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,6 +1009,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,6 +1017,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,6 +1025,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,6 +1033,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,6 +1041,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,26 +1077,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
+    <entry file="file://$PROJECT_DIR$/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
+        <state relative-caret-position="-1456">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
+    <entry file="file://$PROJECT_DIR$/aboutme/blog-1.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="539">
+          <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+    <entry file="file://$PROJECT_DIR$/javascripts/article-write.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="1533">
+          <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1240,14 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1456">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/for-time.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1256,10 +1117,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/article-write.js">
+    <entry file="file://$PROJECT_DIR$/language/Css/display-1.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+        <state relative-caret-position="539">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutme/address/follow-me.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/header-footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/header-footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/article-write.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
           <folding />
         </state>
       </provider>
