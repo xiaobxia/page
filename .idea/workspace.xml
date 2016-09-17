@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.2.1_beta&#10;1.修复子页面搜索显示不正确&#10;">
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.2.2_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/search/search-result.html" afterPath="$PROJECT_DIR$/feature-page/search/search-result.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature-page/search/search-result.pug" afterPath="$PROJECT_DIR$/feature-page/search/search-result.pug" />
@@ -60,8 +60,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search-result.pug" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search-result.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature-page/search/search-result.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="time-line.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feature-page/time/time-line.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
@@ -229,6 +239,14 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="feature-page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-line.pug" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -407,14 +425,7 @@
       <workItem from="1473914261964" duration="1903000" />
       <workItem from="1473939609965" duration="206000" />
       <workItem from="1474017503750" duration="16641000" />
-      <workItem from="1474075815468" duration="2530000" />
-    </task>
-    <task id="LOCAL-00010" summary="大改动使用了jade进行了完全的模块化开发">
-      <created>1472025988552</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1472025988552</updated>
+      <workItem from="1474075815468" duration="2838000" />
     </task>
     <task id="LOCAL-00011" summary="大改动使用了jade进行了完全的模块化开发">
       <created>1472026470520</created>
@@ -752,11 +763,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474077981283</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="V1.4.2.2_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;">
+      <created>1474078382661</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1474078382661</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309369000" />
+    <option name="totallyTimeSpent" value="309677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -793,7 +811,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="大修改" />
     <MESSAGE value="小错误" />
     <MESSAGE value="小修改" />
     <MESSAGE value="优化了模块的结构，更加模块化了" />
@@ -818,7 +835,8 @@
     <MESSAGE value="V1.4.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;" />
     <MESSAGE value="V1.4.2.0_beta&#10;1.修复子页面搜索显示不正确&#10;" />
     <MESSAGE value="V1.4.2.1_beta&#10;1.修复子页面搜索显示不正确&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.4.2.1_beta&#10;1.修复子页面搜索显示不正确&#10;" />
+    <MESSAGE value="V1.4.2.2_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.4.2.2_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1137,14 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature-page/time/time-line.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/for-time.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1210,6 +1220,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature-page/search/search-result.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature-page/time/time-line.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
