@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.2.0_beta&#10;1.修复子页面搜索显示不正确&#10;">
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css" afterPath="$PROJECT_DIR$/stylesheets/article-write.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.css.map" afterPath="$PROJECT_DIR$/stylesheets/article-write.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/article-write.scss" afterPath="$PROJECT_DIR$/stylesheets/article-write.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.css.map" afterPath="$PROJECT_DIR$/stylesheets/header-footer.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/header-footer.scss" afterPath="$PROJECT_DIR$/stylesheets/header-footer.scss" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -365,14 +359,7 @@
       <workItem from="1473914261964" duration="1903000" />
       <workItem from="1473939609965" duration="206000" />
       <workItem from="1474017503750" duration="16641000" />
-      <workItem from="1474075815468" duration="2131000" />
-    </task>
-    <task id="LOCAL-00008" summary="test">
-      <created>1471408269904</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1471408269904</updated>
+      <workItem from="1474075815468" duration="2155000" />
     </task>
     <task id="LOCAL-00009" summary="大改动">
       <created>1471784057797</created>
@@ -710,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474076161250</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="V1.4.2.0_beta&#10;1.修复子页面搜索显示不正确&#10;">
+      <created>1474077962684</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1474077962684</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308970000" />
+    <option name="totallyTimeSpent" value="308994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -751,7 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
     <MESSAGE value="从blog来的，在这改进，编译完以后再放入blog，减少blog的空间使用" />
     <MESSAGE value="大修改" />
     <MESSAGE value="小错误" />
@@ -776,7 +769,8 @@
     <MESSAGE value="V1.3.24&#10;                1.meta-1加seo优化&#10;                2.代码高亮去除滚动条和版权信息&#10;                3.添加搜索推荐&#10;                4.使用了动画库" />
     <MESSAGE value="V1.3.31&#10;1.修复搜索提示的cookie&#10;" />
     <MESSAGE value="V1.4.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.4.2.0_beta&#10;1.修复搜索提示的cookie&#10;2.修改目录结构&#10;" />
+    <MESSAGE value="V1.4.2.0_beta&#10;1.修复子页面搜索显示不正确&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.4.2.0_beta&#10;1.修复子页面搜索显示不正确&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -879,6 +873,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="281" column="6" selection-start-line="281" selection-start-column="6" selection-end-line="281" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
