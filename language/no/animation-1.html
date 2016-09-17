@@ -1,0 +1,132 @@
+<!--Created by Administrator on 2016/8/24.
+--><!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="none"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>animation详解</title><meta name="keywords" content="博客,xiaobxia,小b侠,随笔，回乡记(一)"><meta name="description" content="xiaobxia的博客文章随笔，题目animation详解。子标题有千佛山，水库和花。"><link rel="shortcunt icon" href="../../images/icon.png"><link rel="stylesheet" type="text/css" href="../../stylesheets/main.css" media="screen"><link rel="stylesheet" type="text/css" href="../../stylesheets/header-footer.css" media="screen"><link rel="stylesheet" type="text/css" href="../../stylesheets/animate.css"><link rel="stylesheet" type="text/css" href="../../stylesheets/article-write.css"><!--额外需要的head//使用代码插件时--><script type="text/javascript" src="../../codehl/scripts/shCore.js"></script><link rel="stylesheet" type="text/css" href="../../codehl/styles/shCore.css"><link rel="stylesheet" type="text/css" href="../../codehl/styles/shCoreDefault.css"><script type="text/javascript" src="../../codehl/scripts/shAutoloader.js"></script><script>var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?444bbcc0ac65fb97db91e28b91036969";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();</script><script type="text/javascript" src="../../javascripts/jquery-1.12.3.min.js"></script><script type="text/javascript" src="../../javascripts/jquery.cookie.js"></script><script type="text/javascript" src="../../javascripts/main.js"></script></head><body><!--Created by Administrator on 2016/8/24.
+--><div class="header"><div class="header-content"><div class="blog-inf"><div class="blog-name"><a href="http://www.xiaobxia.win"><h3>小b侠的博客</h3></a></div><div class="blog-update"><span></span></div><div class="blog-pic"><img src="../../images/mypic.jpg"></div></div><div class="header-sep"></div><div class="header-nav"><div class="search-block"><div class="search-inp-bar"><input type="text" placeholder="搜索博客" id="search-inp"><div class="search-button" id="search-btn"><a href="../../feature-page/search/search-result.html"><img src="../../images/searchpic.png"></a></div></div><div class="search-block-close" id="search-close"><img src="../../images/closepic.png"></div><div class="search-msg-block animated slideInDown"><div class="search-warn"><p></p></div><div class="search-hint"></div><div class="search-msg"><p>关于搜索的规则：目前搜索逻辑是去除搜索词条中重复的字，然后进行匹配，如果相关度超过一半，就显示文章。在未来，也会引入百度站内搜索。</p></div></div></div><ul id="header-ul"><!-- li中a的地址需要手动修改，添加../或是删除--><li><a href="../../classify/nav/language-nav.html">语言</a></li><li><a href="../../classify/nav/library-nav.html">库</a></li><li><a href="../../classify/nav/tool-nav.html">工具</a></li><li><a href="../../classify/nav/essay-nav.html">随笔</a></li><li><a href="../../classify/nav/aboutme-nav.html">关于我</a></li><li><a href="../../classify/nav/webApp-nav.html">webApp</a></li><li><a id="header-search" href="javascript:;"><img src="../../images/searchpic.png"></a></li></ul></div></div></div><script type="text/javascript" src="../../javascripts/header-footer.js"></script><div class="article-page"><!--文章的page-id--><div id="page-id">3</div><!-- 顶部导航块部分--><div class="article-tab"><div class="level-nav"><a class="level-a" id="levelOne"></a><span class="level-pic"> ></span><a class="level-a" id="levelTwo"></a></div><div class="jump-block"><select class="subtitle-sel" id="subtitle-sel"></select><div class="jump-btn" id="jump-btn"></div></div><div class="article-tab-sep"></div></div><div class="article-write"><div class="left-side-nav"><div class="list-nav"><ul></ul></div><div class="article-side-btn"><div class="article-nav-btn" id="article-nav-btn-left"><a href=""> <</a></div><div class="article-nav-btn" id="article-nav-btn-right"><a href=""> ></a></div></div><div class="left-side-nav-sep"></div></div><div class="article-content"><div class="article-content-title"><!--文章的title--><h1>animation详解</h1></div><div class="article-content-editer"><div class="writer"><span>作者：</span><span>xiaobxia</span></div><div class="write-date"><span>发布日期：</span><!--文章的发表日期--><span>2016/9/09</span></div><div class="write-recently"><span>最后编辑：</span><!--文章的最后修改日期--><span>2016/9/09</span></div></div><div class="article-content-body"><!--文章的内容1.专门的用于a标签的写法
+.for-a
+    span.for-emphasis
+    a(href="")
+
+2.段落的写法
+p
+
+3.强调部分的写法，加入class="for-emphasis"
+em.for-emphasis
+
+4.专门显示代码的写法，js可修改
+pre(class='brush:js;').
+    代码
+
+
+5.专门显示图片的写法，需在标签里声明宽和高
+.for-img-show
+    img(src='',style='height: 224px; width: 137px;')
+    .img-msg
+        p
+
+6.文章的子标题的写法
++subtitleuse("")
+
+7.文章文字p中如果有需要强调的
+p 一
+    em.strongword 二
+    |三
+
+8.警告和特别提醒部分
++warnuse(leixing,b)
+
+9.表格的使用
+.for-table
+    table(border="1")
+        caption 这里写表单的标题
+        colgroup
+            col(style="width: 20%;")
+            col(style="width: 80%;")
+        thead
+            +tableuse("","")
+        tbody
+            +tableuse("","")
+        tfoot
+            +tableuse("","")
+10.列表的使用
+    dl
+        +dtdduse("","")
+11.小标题
+                span.strongword--><p>CSS3，我们可以创建动画，它可以取代许多网页动画图像，Flash动画，和JAVAScripts。</p><div class="for-subtitle"><h4>@keyframes</h4><div class="subtitle-sep"></div></div><p>要创建CSS3动画，你将不得不了解@keyframes规则。
+@keyframes规则是创建动画。 @keyframes规则内指定一个CSS样式和动画将逐步从目前的样式更改为新的样式。</p><span class="strongword">@keyframes例子</span><pre class="brush: css;">@-webkit-keyframes flash {/* Safari and Chrome */
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}</pre><div class="for-subtitle"><h4>animate属性</h4><div class="subtitle-sep"></div></div><span class="strongword">animate属性表</span><div class="for-table"><table border="1"><caption>animate属性表</caption><colgroup><col style="width: 30%"><col style="width: 70%"></colgroup><thead><tr><td><p>属性</p></td><td><p>描述</p></td></tr></thead><tbody><tr><td><p>animation</p></td><td><p>所有动画属性的简写属性，除了 animation-play-state 属性。</p></td></tr><tr><td><p>animation-name</p></td><td><p>规定 @keyframes 动画的名称。</p></td></tr><tr><td><p>animation-duration</p></td><td><p>规定动画完成一个周期所花费的秒或毫秒。默认是 0。</p></td></tr><tr><td><p>animation-timing-function</p></td><td><p>规定动画的速度曲线。默认是 'ease'。</p></td></tr><tr><td><p>animation-delay</p></td><td><p>规定动画何时开始。默认是 0。</p></td></tr><tr><td><p>animation-iteration-count</p></td><td><p>规定动画被播放的次数。默认是 1。</p></td></tr><tr><td><p>animation-direction</p></td><td><p>规定动画是否在下一周期逆向地播放。默认是 'normal'。</p></td></tr><tr><td><p>animation-play-state</p></td><td><p>规定动画是否正在运行或暂停。默认是 'running'。</p></td></tr></tbody></table></div><div class="for-a"><span class="for-emphasis">参数请参考</span><a href="http://www.runoob.com/css3/css3-animations.html">http://www.runoob.com/css3/css3-animations.html</a></div><span class="strongword">animate属性例子</span><pre class="brush: css;">.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+//简写
+div{
+    animation: myfirst 5s linear 2s infinite alternate;
+    /* Safari and Chrome: */
+    -webkit-animation: myfirst 5s linear 2s infinite alternate;
+}</pre><div class="for-subtitle"><h4>animate.css</h4><div class="subtitle-sep"></div></div><span class="strongword">简介</span><p>animate.css 是一个来自国外的 CSS3 动画库，它预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果，几乎包含了所有常见的动画效果。
+虽然借助 animate.css 能够很方便、快速的制作 CSS3 动画效果，但还是建议看看 animate.css 的代码，也许你能从中学到一些东西。</p><span class="strongword">兼容</span><p>浏览器兼容：当然是只兼容支持 CSS3 animate 属性的浏览器，他们分别是：IE10+、Firefox、Chrome、Opera、Safari。</p><span class="strongword">使用方法</span><p>1、引入文件</p><pre class="brush: xml;">&lt;link rel=&quot;stylesheet&quot; href=&quot;animate.css&quot;&gt;</pre><p>2、HTML 及使用</p><pre class="brush: xml;">&lt;div class=&quot;animated bounce&quot; id=&quot;dowebok&quot;&gt;&lt;/div&gt;</pre><p>给元素加上 class 后，刷新页面，就能看到动画效果了。animated 类似于全局变量，它定义了动画的持续时间；bounce 是动画具体的动画效果的名称，你可以选择任意的效果。如果动画是无限播放的，可以添加 class infinite。</p><p>animate.css 的默认设置也许有些时候并不是我们想要的，所以你可以重新设置，比如：</p><pre class="brush: css;">#dowebok {
+    animate-duration: 2s;    //动画持续时间
+    animate-delay: 1s;    //动画延迟时间
+    animate-iteration-count: 2;    //动画执行次数
+    -webkit-animate-duration: 2s;
+    -webkit-animate-delay: 1s;
+    -webkit-animate-iteration-count: 2;
+}</pre><div class="for-a"><span class="for-emphasis">animate.css官网</span><a href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a></div></div><div class="article-share"><p>对文章如有疑问，欢迎联系作者。</p><p>分享：</p><div class="bdsharebuttonbox"><a class="bds_more" href="#" data-cmd="more"></a><a class="bds_tsina" href="#" data-cmd="tsina" title="分享到新浪微博"></a><a class="bds_qzone" href="#" data-cmd="qzone" title="分享到QQ空间"></a><a class="bds_tieba" href="#" data-cmd="tieba" title="分享到百度贴吧"></a><a class="bds_youdao" href="#" data-cmd="youdao" title="分享到有道云笔记"></a><a class="bds_douban" href="#" data-cmd="douban" title="分享到豆瓣网"></a><a class="bds_weixin" href="#" data-cmd="weixin" title="分享到微信"></a><a class="bds_tqq" href="#" data-cmd="tqq" title="分享到腾讯微博"></a><a class="bds_renren" href="#" data-cmd="renren" title="分享到人人网"></a></div><script>window._bd_share_config={
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "1",
+        "bdSize": "24"
+    },
+    "share": {},
+    "image": {
+        "viewList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+    },
+    "selectShare": {
+        "bdContainerClass": null,
+        "bdSelectMiniList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"]
+    }
+};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div><div class="no-more" id="no-more"><a href="">没有更多</a></div></div></div></div><script type="text/javascript" src="../../javascripts/article-write.js"></script><div class="ds-thread" data-thread-key="3" data-title="animation详解" data-url="http://xiaobxia.win/essay/travel-1.html"></div><script>var duoshuoQuery = {short_name: "xiaobxia"};(function () {var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);     })();</script><!--Created by Administrator on 2016/8/24.
+--><div class="footer"><div class="footer-pic"><div class="footer-pic-sub"><a href="../feed.xml"><img src="../../images/rsspic.png"></a></div><div class="footer-pic-sub"><a href="http://weibo.com/p/1005055989486288"><img src="../../images/weibopic.png"></a></div><div class="footer-pic-sub"><a href="https://github.com/xiaobxia"><img src="../../images/githubpic.png"></a></div></div><div class="footer-wrap"><div class="footer-text"><ul><li><span>blog of xiaobxia 是个人博客</span></li><li><span>分享web学习的总结和生活的随想以及更多</span></li></ul></div></div></div><!--额外需要的js//使用代码插件时--><script type="text/javascript">SyntaxHighlighter.autoloader(
+        ['js', 'jscript', 'javascript', '../../codehl/scripts/shBrushJScript.js'],
+        ['bash', 'shell', '../../codehl/scripts/shBrushBash.js'],
+        ['css', '../../codehl/scripts/shBrushCss.js'],
+        ['xml', 'html', '../../codehl/scripts/shBrushXml.js'],
+        ['sql', '../../codehl/scripts/shBrushSql.js'],
+        ['php', '../../codehl/scripts/shBrushPhp.js']
+);
+SyntaxHighlighter.defaults['toolbar'] = false;
+SyntaxHighlighter.all();</script></body></html>

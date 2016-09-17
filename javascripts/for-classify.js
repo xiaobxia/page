@@ -89,6 +89,51 @@ jQuery.noConflict();
             }
         }
 
+
+        function getQueryStringArgs(){
+            //get query string without the initial ?
+            var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
+                //object to hold data
+                args = {},
+                //get individual items
+                items = qs.length ? qs.split("&") : [],
+                item = null,
+                name = null,
+                value = null,
+
+                //used in for loop
+                i = 0,
+                len = items.length;
+
+            //assign each item onto the args object
+            for (i=0; i < len; i++){
+                item = items[i].split("=");
+                name = decodeURIComponent(item[0]);
+                value = decodeURIComponent(item[1]);
+
+                if (name.length){
+                    args[name] = value;
+                }
+            }
+            return args;
+        }
+
+        //assume query string of ?q=javascript&num=10
+
+        var args = getQueryStringArgs();
+
+        if(args["levelTwo"]!=""){
+            for(var o=0;o<$(".list-nav ul li").length;o++){
+                if(args["levelTwo"]==$(".list-nav ul li span").eq(o).text()){
+                    $(".article-content-body").empty();
+                    $(".list-nav ul li").eq(o).addClass("active").siblings().removeClass("active");
+                    jiawenzhang();
+                }
+            }
+        }
+
+
+
         //点击side导航的li项，添加高亮并显示内容
         $(".list-nav ul li").bind("click", function () {
             $(".article-content-body").empty();

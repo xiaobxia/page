@@ -54,6 +54,8 @@ jQuery.noConflict();
             //对象的levelone和leveltwo以及对应的路径
             levelOne = obj.levelOne,
             levelTwo = obj.levelTwo,
+            twoc= encodeURIComponent(levelTwo),
+            twot= encodeURIComponent("levelTwo"),
             levelOnePath = obj.levelOnePath,
             levelTwoPath = obj.levelTwoPath;
 
@@ -71,7 +73,7 @@ jQuery.noConflict();
         $("#levelOne").text(levelOne).attr("href", "../../" + levelOnePath);
         //目前还没实现leveltwo的链接
         //  $("#levelTwo").text(levelTwo);
-        $("#levelTwo").text(levelTwo).attr("href", "../" + levelTwoPath);
+        $("#levelTwo").text(levelTwo).attr("href", "../../" + levelOnePath+"?"+twot+"="+twoc);
 
         //article-side-nav部分
         //找到levelone相同的，保存在数组中
