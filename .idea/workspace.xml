@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.4.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/editor-nav.html" afterPath="" />
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/webApp-nav.pug" afterPath="$PROJECT_DIR$/classify/nav/webApp-nav.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essay/travel/travel-1.pug" afterPath="$PROJECT_DIR$/essay/travel/travel-1.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="$PROJECT_DIR$/javascripts/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/escape-1.html" afterPath="$PROJECT_DIR$/webapp/webTool/escape-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webapp/escape-1.pug" afterPath="$PROJECT_DIR$/webapp/webTool/escape-1.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/nav/webApp-nav.html" afterPath="$PROJECT_DIR$/classify/nav/webApp-nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essay/travel/travel-1.html" afterPath="$PROJECT_DIR$/essay/travel/travel-1.html" />
     </list>
     <ignored path="page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -381,14 +377,7 @@
       <workItem from="1473914261964" duration="1903000" />
       <workItem from="1473939609965" duration="206000" />
       <workItem from="1474017503750" duration="16641000" />
-      <workItem from="1474075815468" duration="4493000" />
-    </task>
-    <task id="LOCAL-00013" summary="修复css显示问题">
-      <created>1472027099479</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1472027099479</updated>
+      <workItem from="1474075815468" duration="4592000" />
     </task>
     <task id="LOCAL-00014" summary="test">
       <created>1472035422160</created>
@@ -726,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474079113755</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="V1.4.4.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;">
+      <created>1474080320158</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1474080320158</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311332000" />
+    <option name="totallyTimeSpent" value="311431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
