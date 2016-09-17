@@ -1,11 +1,11 @@
-extends ../jade-block/forsubpage
-include ../jade-block/mixin-use
+extends ../../jade-block/forsubpage
+include ../../jade-block/mixin-use
 
 
 block submeta
     title 转义html
-    meta(name="keywords", content="博客,xiaobxia,小b侠,webapp,转义html")
-    meta(name="description", content="xiaobxia的博客文章随笔，题目转义html。。")
+    meta(name="keywords", content="博客,xiaobxia,小b侠,webApp,转义html")
+    meta(name="description", content="xiaobxia的博客文章随笔，题目转义html。转义和反转义html。")
 
 block headExtend
     //额外需要的head
@@ -76,18 +76,18 @@ block jsExtend
         include ../jade-block/codehl-b
 block page-id
     //文章的page-id
-    #page-id 3
+    #page-id 5
 block tittle
     //文章的title
     h1 转义html
 block publishTime
     //文章的发表日期
-    span 2016/9/09
+    span 2016/9/17
 block lastTime
     //文章的最后修改日期
-    span 2016/9/09
+    span 2016/9/17
 block commentblock
-    .ds-thread(data-thread-key="3" data-title="转义html" data-url="http://xiaobxia.win/essay/travel-1.html")
+    .ds-thread(data-thread-key="5" data-title="转义html" data-url="http://xiaobxia.win/webapp/webTool/escape-1.html")
 
 block content
     //文章的内容
