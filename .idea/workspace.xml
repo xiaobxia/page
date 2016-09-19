@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件">
+    <list default="true" id="f9a1b948-9ba4-47ed-b4a1-48734e5423e6" name="Default" comment="V1.4.8.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件&#10;8.修改代码高亮的滚动条">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jade-block/header2.pug" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shAutoloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushAS3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushAppleScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushBash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushCSharp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushColdFusion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushCpp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushCss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushDelphi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushDiff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushErlang.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushGroovy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushJava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushJavaFX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushPerl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushPhp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushPlain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushPowerShell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushPython.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushRuby.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushSass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushScala.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushSql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushVb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shBrushXml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/scripts/shLegacy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreMDUltra.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shCoreRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeMDUltra.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/codehl/styles/shThemeRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/javascripts/jquery-1.12.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/javascripts/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/stylesheets/animate.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.html" afterPath="$PROJECT_DIR$/jade-block/codehl-b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-b.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-b.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-h.html" afterPath="$PROJECT_DIR$/jade-block/codehl-h.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/codehl-h.pug" afterPath="$PROJECT_DIR$/jade-block/codehl-h.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/link.pug" afterPath="$PROJECT_DIR$/jade-block/link.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade-block/meta-head.pug" afterPath="$PROJECT_DIR$/jade-block/meta-head.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/Html/meta-1.html" afterPath="$PROJECT_DIR$/language/Html/meta-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/animation-1.html" afterPath="$PROJECT_DIR$/language/no/animation-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/language/no/initialize-1.html" afterPath="$PROJECT_DIR$/language/no/initialize-1.html" />
@@ -40,18 +89,28 @@
       <file leaf-file-name="codehl-h.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
+            <state relative-caret-position="357">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codehl-b.pug" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
+      <file leaf-file-name="link.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jade-block/link.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
+            <state relative-caret-position="105">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta-head.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jade-block/meta-head.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,9 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/language/keyboard-1.pug" />
-        <option value="$PROJECT_DIR$/aboutme/blog-1.pug" />
-        <option value="$PROJECT_DIR$/classify/language-nav.pug" />
         <option value="$PROJECT_DIR$/language/tag-2.pug" />
         <option value="$PROJECT_DIR$/codehl/styles/shCoreDefault.css" />
         <option value="$PROJECT_DIR$/webapp/escape-1.html" />
@@ -121,11 +177,14 @@
         <option value="$PROJECT_DIR$/language/no/terminology-1.pug" />
         <option value="$PROJECT_DIR$/language/no/tag-2.pug" />
         <option value="$PROJECT_DIR$/essay/travel/travel-1.pug" />
-        <option value="$PROJECT_DIR$/jade-block/link.pug" />
         <option value="$PROJECT_DIR$/jade-block/script.pug" />
         <option value="$PROJECT_DIR$/index.pug" />
-        <option value="$PROJECT_DIR$/jade-block/codehl-h.pug" />
         <option value="$PROJECT_DIR$/jade-block/codehl-b.pug" />
+        <option value="$PROJECT_DIR$/jade-block/codehl-h.pug" />
+        <option value="$PROJECT_DIR$/jade-block/link.pug" />
+        <option value="$PROJECT_DIR$/jade-block/hearder2.pug" />
+        <option value="$PROJECT_DIR$/jade-block/header2.pug" />
+        <option value="$PROJECT_DIR$/jade-block/meta-head.pug" />
       </list>
     </option>
   </component>
@@ -183,10 +242,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jade-block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,14 +413,10 @@
       <workItem from="1474075815468" duration="5034000" />
       <workItem from="1474081017635" duration="2782000" />
       <workItem from="1474101271129" duration="6361000" />
-      <workItem from="1474114521845" duration="3432000" />
-    </task>
-    <task id="LOCAL-00018" summary="test">
-      <created>1472045553948</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1472045553948</updated>
+      <workItem from="1474114521845" duration="4434000" />
+      <workItem from="1474184404478" duration="816000" />
+      <workItem from="1474186092946" duration="1274000" />
+      <workItem from="1474281628906" duration="1731000" />
     </task>
     <task id="LOCAL-00019" summary="test">
       <created>1472046110360</created>
@@ -685,17 +754,24 @@
       <option name="project" value="LOCAL" />
       <updated>1474116286808</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="V1.4.7.1_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件">
+      <created>1474118081933</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1474118081933</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324448000" />
+    <option name="totallyTimeSpent" value="329271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22372372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22372372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -726,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="V1.23&#10;1.seo初步优化" />
     <MESSAGE value="V1.23&#10;1.seo优化&#10;2.域名" />
     <MESSAGE value="V1.23&#10;    1.加入了多说&#10;    2.加入了百度分享" />
     <MESSAGE value="V1.3.00&#10;    1.加入了代码高亮&#10;    2.加入评论系统" />
@@ -751,25 +826,18 @@
     <MESSAGE value="V1.4.5.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引" />
     <MESSAGE value="V1.4.5.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构" />
     <MESSAGE value="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.4.7.0_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件" />
+    <MESSAGE value="V1.4.7.1_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.4.7.1_beta&#10;1.修复子页面搜索显示不正确&#10;2.修复搜索也显示不正确&#10;3.更新回乡记的文件链接&#10;4.添加转义webapp&#10;5.添加leveltwo索引&#10;6.修改目录结构&#10;7.使用cdn文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aboutme/address/follow-me.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="294" selection-start-line="8" selection-start-column="264" selection-end-line="8" selection-end-column="294" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/stylesheets/article-write.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="281" column="6" selection-start-line="281" selection-start-column="6" selection-end-line="281" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,13 +869,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylesheets/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylesheets/animate.css" />
     <entry file="file://$PROJECT_DIR$/javascripts/for-classify.js" />
     <entry file="file://$PROJECT_DIR$/javascripts/article-write.js" />
     <entry file="file://$PROJECT_DIR$/javascripts/main.js" />
@@ -815,20 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/mixin-use.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/meta-head.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -916,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/webTool/escape-1.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2499">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aboutme/blog-1.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1638">
@@ -941,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,13 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1005,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2457">
           <caret line="117" column="81" selection-start-line="117" selection-start-column="81" selection-end-line="117" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,15 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/link.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,22 +1066,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+    <entry file="file://$PROJECT_DIR$/webapp/webTool/escape-1.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
+        <state relative-caret-position="21">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jade-block/codehl-b.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="119" selection-start-line="2" selection-start-column="119" selection-end-line="2" selection-end-column="119" />
+        <state relative-caret-position="210">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/mixin-use.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/header2.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/codehl-h.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/link.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jade-block/meta-head.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
