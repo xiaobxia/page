@@ -4,7 +4,8 @@ var artKeyWord=["follow","me","地址","社区","主页", "github","weibo",
                 "Class","规范","选择器","优先级","顺序","书写","参考","命名",
                 "回乡记","千佛山","水库","花",
                 "Meta","标签","详解","申明编码","name","http-equiv",
-                "转义","反转义"];
+                "转义","反转义",
+                "@keyframes","animate属性","animate.css"];
 
 var articleTimeObj = [
     {
@@ -84,6 +85,19 @@ var articleTimeObj = [
         levelOne: "webApp",
         levelTwo: "webTool",
         description: "转义和反转义html"
+    },
+    {
+        pageId: 6,
+        writeDay: "2016年9月24日",
+        writeTime: "20160924",
+        writeWeek: "Sat",
+        title: "animation详解",
+        path: "language/Css/animation-1.html",
+        levelOnePath: "classify/nav/language-nav.html",
+        levelTwoPath: "",
+        levelOne: "语言",
+        levelTwo: "Css",
+        description: "@keyframes,animate属性,animate.css"
     }
 ];
 

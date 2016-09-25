@@ -126,8 +126,9 @@ jQuery.noConflict();
             for(var o=0;o<$(".list-nav ul li").length;o++){
                 if(args["levelTwo"]==$(".list-nav ul li span").eq(o).text()){
                     $(".article-content-body").empty();
-                    $(".list-nav ul li").eq(o).addClass("active").siblings().removeClass("active");
-                    jiawenzhang();
+                    $(".list-nav ul li").eq(o).addClass("active")
+                        //.siblings().removeClass("active");
+                 //   jiawenzhang();
                 }
             }
         }
