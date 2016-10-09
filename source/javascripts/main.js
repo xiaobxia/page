@@ -98,6 +98,19 @@ var articleTimeObj = [
         levelOne: "语言",
         levelTwo: "Css",
         description: "@keyframes,animate属性,animate.css"
+    },
+    {
+        pageId: 7,
+        writeDay: "2016年10月9日",
+        writeTime: "20161009",
+        writeWeek: "Sun",
+        title: "javascript的键盘操作",
+        path: "language/Js/keyboard-1.html",
+        levelOnePath: "classify/nav/language-nav.html",
+        levelTwoPath: "",
+        levelOne: "语言",
+        levelTwo: "Js",
+        description: "键值表，原生键盘事件，jQuery键盘事件"
     }
 ];
 
