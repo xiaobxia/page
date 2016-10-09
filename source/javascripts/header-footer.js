@@ -38,6 +38,9 @@ jQuery.noConflict();
         $("#search-inp").bind('keyup', function (e) {
             var addtext = "";
             var inptext = $("#search-inp").val().toLowerCase();
+            if (inptext == null) {
+                return;
+            }
             for (var a = 0; a < artKeyWord.length; a++) {
                 var keyword = artKeyWord[a].toLowerCase();
                 if (inptext != "" && keyword.indexOf(inptext) != -1) {
