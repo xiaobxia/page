@@ -37,34 +37,34 @@ jQuery.noConflict();
         });
         $("#search-inp").bind('keyup', function (e) {
             var addtext = "";
-            var inptext = $("#search-inp").val().toLowerCase();
-            if (inptext == null) {
-                return;
-            }
-            for (var a = 0; a < artKeyWord.length; a++) {
-                var keyword = artKeyWord[a].toLowerCase();
-                if (inptext != "" && keyword.indexOf(inptext) != -1) {
-                    addtext += "<p>" + keyword + "</p>";
-                } else {
-                    $(".search-warn p").text("没有相关推荐！");
+            var inptext = $("#search-inp").val().trim().toLowerCase();
+            if (inptext != "") {
+                for (var a = 0; a < artKeyWord.length; a++) {
+                    var keyword = artKeyWord[a].toLowerCase();
+                    if (inptext != "" && keyword.indexOf(inptext) != -1) {
+                        addtext += "<p>" + keyword + "</p>";
+                    } else {
+                        $(".search-warn p").text("没有相关推荐！");
+                    }
                 }
-            }
-            if (addtext != "") {
-                $(".search-warn p").text("相关推荐:");
-            }
-            $(".search-hint").empty();
-            $(".search-hint").append(addtext);
-            $(".search-hint p").bind("click", function () {
-                var text = $(this).text();
-                $("#search-inp").val(text);
+                if (addtext != "") {
+                    $(".search-warn p").text("相关推荐:");
+                }
+                $(".search-hint").empty();
+                $(".search-hint").append(addtext);
+                $(".search-hint p").bind("click", function () {
+                    var text = $(this).text();
+                    $("#search-inp").val(text);
 
-                $.cookie('searchText', text, {
-                    expires: 1,
-                    path: "/"
+                    $.cookie('searchText', text, {
+                        expires: 1,
+                        path: "/"
+                    });
+
+                    window.location.href = 'http://www.xiaobxia.win/feature-page/search/search-result.html';
                 });
+            }
 
-                window.location.href = 'http://www.xiaobxia.win/feature-page/search/search-result.html';
-            });
         });
 
 

@@ -5,7 +5,8 @@ var artKeyWord=["follow","me","地址","社区","主页", "github","weibo",
                 "回乡记","千佛山","水库","花",
                 "Meta","标签","详解","申明编码","name","http-equiv",
                 "转义","反转义",
-                "@keyframes","animate属性","animate.css"];
+                "@keyframes","animate属性","animate.css",
+"样式初始化","淘宝的样式初始化","github初始化"];
 
 var articleTimeObj = [
     {
@@ -111,6 +112,19 @@ var articleTimeObj = [
         levelOne: "语言",
         levelTwo: "Js",
         description: "键值表，原生键盘事件，jQuery键盘事件"
+    },
+    {
+        pageId: 8,
+        writeDay: "2016年10月17日",
+        writeTime: "20161017",
+        writeWeek: "Mon",
+        title: "标签样式初始化",
+        path: "language/Css/initialize-1.html",
+        levelOnePath: "classify/nav/language-nav.html",
+        levelTwoPath: "",
+        levelOne: "语言",
+        levelTwo: "Css",
+        description: "样式初始化,淘宝的样式初始化,github初始化"
     }
 ];
 
