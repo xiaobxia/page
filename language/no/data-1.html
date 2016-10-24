@@ -1,0 +1,99 @@
+<!--Created by Administrator on 2016/8/24.
+--><!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="robots" content="all"><meta name="renderer" content="webkit|ie-comp|ie-stand"><title>数据类型与检测</title><meta name="keywords" content="博客,xiaobxia,小b侠,语言,数据类型与检测"><meta name="description" content="xiaobxia的博客文章随笔，题目数据类型与检测。子标题有千佛山，水库和花。"><link rel="shortcunt icon" href="../../source/images/icon.png"><link rel="stylesheet" type="text/css" href="../../source/stylesheets/main.css"><link rel="stylesheet" type="text/css" href="../../source/stylesheets/header-footer.css"><link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css"><link rel="stylesheet" type="text/css" href="../../source/stylesheets/article-write.css"><!--额外需要的head//使用代码插件时
+include ../jade-block/codehl-h--><script>var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?444bbcc0ac65fb97db91e28b91036969";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();</script><script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script><script type="text/javascript" src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script><script type="text/javascript" src="../../source/javascripts/main.js"></script></head><body><!--Created by Administrator on 2016/8/24.
+--><div class="header"><div class="header-content"><div class="blog-inf"><div class="blog-name"><a href="http://www.xiaobxia.win"><h3>小b侠的博客</h3></a></div><div class="blog-update"><span></span></div><div class="blog-pic"><img src="../../source/images/mypic.jpg"></div></div><div class="header-sep"></div><div class="header-nav"><div class="search-block"><div class="search-inp-bar"><input type="text" placeholder="搜索博客" id="search-inp"><div class="search-button" id="search-btn"><a href="../../feature-page/search/search-result.html"><img src="../../source/images/searchpic.png"></a></div></div><div class="search-block-close" id="search-close"><img src="../../source/images/closepic.png"></div><div class="search-msg-block animated slideInDown"><div class="search-warn"><p></p></div><div class="search-hint"></div><div class="search-msg"><p>关于搜索的规则：目前搜索逻辑是去除搜索词条中重复的字，然后进行匹配，如果相关度超过一半，就显示文章。在未来，也会引入百度站内搜索。</p></div></div></div><ul id="header-ul"><!-- li中a的地址需要手动修改，添加../或是删除--><li><a href="../../classify/nav/language-nav.html">语言</a></li><li><a href="../../classify/nav/library-nav.html">库</a></li><li><a href="../../classify/nav/tool-nav.html">工具</a></li><li><a href="../../classify/nav/essay-nav.html">随笔</a></li><li><a href="../../classify/nav/aboutme-nav.html">关于我</a></li><li><a href="../../classify/nav/webApp-nav.html">webApp</a></li><li><a id="header-search" href="javascript:;"><img src="../../source/images/searchpic.png"></a></li></ul></div></div></div><script type="text/javascript" src="../../source/javascripts/header-footer.js"></script><div class="article-page"><!--文章的page-id--><div id="page-id">3</div><!-- 顶部导航块部分--><div class="article-tab"><div class="level-nav"><a class="level-a" id="levelOne"></a><span class="level-pic"> ></span><a class="level-a" id="levelTwo"></a></div><div class="jump-block"><select class="subtitle-sel" id="subtitle-sel"></select><div class="jump-btn" id="jump-btn"></div></div><div class="article-tab-sep"></div></div><div class="article-write"><div class="left-side-nav"><div class="list-nav"><ul></ul></div><div class="article-side-btn"><div class="article-nav-btn" id="article-nav-btn-left"><a href=""> <</a></div><div class="article-nav-btn" id="article-nav-btn-right"><a href=""> ></a></div></div><div class="left-side-nav-sep"></div></div><div class="article-content"><div class="article-content-title"><!--文章的title--><h1>数据类型与检测</h1></div><div class="article-content-editer"><div class="writer"><span>作者：</span><span>xiaobxia</span></div><div class="write-date"><span>发布日期：</span><!--文章的发表日期--><span>2016/9/09</span></div><div class="write-recently"><span>最后编辑：</span><!--文章的最后修改日期--><span>2016/9/09</span></div></div><div class="article-content-body"><!--文章的内容1.专门的用于a标签的写法
+.for-a
+    span.for-emphasis
+    a(href="")
+
+2.段落的写法
+p
+
+3.强调部分的写法，加入class="for-emphasis"
+em.for-emphasis
+
+4.专门显示代码的写法，js可修改
+pre(class='brush:js;').
+    代码
+
+
+5.专门显示图片的写法，需在标签里声明宽和高
+.for-img-show
+    img(src='',style='height: 224px; width: 137px;')
+    .img-msg
+        p
+
+6.文章的子标题的写法
++subtitleuse("")
+
+7.文章文字p中如果有需要强调的
+p 一
+    em.strongword 二
+    |三
+
+8.警告和特别提醒部分
++warnuse(leixing,b)
+
+9.表格的使用
+.for-table
+    table(border="1")
+        caption 这里写表单的标题
+        colgroup
+            col(style="width: 20%;")
+            col(style="width: 80%;")
+        thead
+            +tableuse("","")
+        tbody
+            +tableuse("","")
+        tfoot
+            +tableuse("","")
+10.列表的使用
+    dl
+        +dtdduse("","")
+11.小标题
+                span.strongword--><div class="for-subtitle"><h4>数据类型</h4><div class="subtitle-sep"></div></div><p>1。string
+2。function
+3。object
+4。boolean
+5。undefined
+6。number
+array，date属于object
+</p><div class="for-subtitle"><h4>typeof</h4><div class="subtitle-sep"></div></div><p>1.typeof：可以用来确定一个变量的数据类型</p><p>typeof用以获取一个变量的类型，typeof一般只能返回如下几个结 果：number,boolean,string,function,object,undefined。我们可以使用typeof来获取一个变量是否存 在，如if(typeof a!="undefined"){}，而不要去使用if(a)因为如果a不存在（未声明）则会出错，对于Array,Null等特殊对象使用typeof 一律返回object，这正是typeof的局限性。</p><div class="for-subtitle"><h4>instanceof</h4><div class="subtitle-sep"></div></div><p>2.instanceof：可以用来确定一个引用类型值的是什么类型的对象</p><p> 如果我们希望获取一个对象是否是数组，或判断某个变量是否是某个对象的实例则要选择使用instanceof。instanceof用于 判断一个变量是否某个对象的实例，如var a=new Array();alert(a instanceof Array);会返回true，同时alert(a instanceof Object)也会返回true;这是因为Array是object的子类。再如：function test(){};var a=new test();alert(a instanceof test)会返回true。谈到instanceof我们要多插入一个问题，就是function的arguments，我们大家也许都认为arguments是一个Array，但如果使用instaceof去测试会发现arguments不是一个Array对象，尽管看起来很像。</p><div class="for-subtitle"><h4>另外</h4><div class="subtitle-sep"></div></div><p>测试 var a=new Array();if (a instanceof Object) alert('Y');else alert('N');
+得到'Y’
+
+但 if (window instanceof Object) alert('Y');else alert('N');
+
+得到'N'
+
+所以，这里的instanceof测试的object是指js语法中的object，不是指dom模型对象。
+
+使用typeof会有些区别
+    alert(typeof(window) 会得到 object</p></div><div class="article-share"><p>对文章如有疑问，欢迎联系作者。</p><p>分享：</p><div class="bdsharebuttonbox"><a class="bds_more" href="#" data-cmd="more"></a><a class="bds_tsina" href="#" data-cmd="tsina" title="分享到新浪微博"></a><a class="bds_qzone" href="#" data-cmd="qzone" title="分享到QQ空间"></a><a class="bds_tieba" href="#" data-cmd="tieba" title="分享到百度贴吧"></a><a class="bds_youdao" href="#" data-cmd="youdao" title="分享到有道云笔记"></a><a class="bds_douban" href="#" data-cmd="douban" title="分享到豆瓣网"></a><a class="bds_weixin" href="#" data-cmd="weixin" title="分享到微信"></a><a class="bds_tqq" href="#" data-cmd="tqq" title="分享到腾讯微博"></a><a class="bds_renren" href="#" data-cmd="renren" title="分享到人人网"></a></div><script>window._bd_share_config={
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "1",
+        "bdSize": "24"
+    },
+    "share": {},
+    "image": {
+        "viewList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+    },
+    "selectShare": {
+        "bdContainerClass": null,
+        "bdSelectMiniList": ["tsina", "qzone", "tieba", "youdao", "douban", "weixin", "tqq", "renren"]
+    }
+};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div><div class="no-more" id="no-more"><a href="">没有更多</a></div></div></div></div><script type="text/javascript" src="../../source/javascripts/article-write.js"></script><div class="ds-thread" data-thread-key="3" data-title="数据类型与检测" data-url="http://xiaobxia.win/essay/travel-1.html"></div><script>var duoshuoQuery = {short_name: "xiaobxia"};(function () {var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';ds.charset = 'UTF-8';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);     })();</script><!--Created by Administrator on 2016/8/24.
+--><div class="footer"><div class="footer-pic"><div class="footer-pic-sub"><a href="http://weibo.com/p/1005055989486288"><img src="../../source/images/weibopic.png"></a></div><div class="footer-pic-sub"><a href="https://github.com/xiaobxia"><img src="../../source/images/githubpic.png"></a></div></div><div class="footer-wrap"><div class="footer-text"><ul><li><span>blog of xiaobxia 是个人博客</span></li><li><span>分享web学习的总结和生活的随想以及更多</span></li></ul></div></div></div><!--额外需要的js//使用代码插件时
+include ../jade-block/codehl-b--></body></html>

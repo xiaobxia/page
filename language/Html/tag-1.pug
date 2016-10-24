@@ -1,24 +1,30 @@
 extends ../../jade-block/forsubpage
 include ../../jade-block/mixin-use
+block submeta
+    title 标签分类
+    meta(name="keywords", content="博客,xiaobxia,小b侠,语言,标签分类")
+    meta(name="description", content="xiaobxia的博客文章随笔，题目标签分类。")
 
 block headExtend
     //额外需要的head
+    include ../../jade-block/codehl-h
 block jsExtend
     //额外需要的js
+    include ../../jade-block/codehl-b
 block page-id
     //文章的page-id
-    #page-id 0
+    #page-id 9
 block tittle
     //文章的title
-    h1 follow me
+    h1 标签分类
 block publishTime
     //文章的发表日期
-    span 2016/8/20
+    span 2016/10/24
 block lastTime
     //文章的最后修改日期
-    span 2016/8/20
+    span 2016/10/24
 block commentblock
-    .ds-thread(data-thread-key="1" data-title="Display属性的一些见解" data-url="http://xiaobxia.win/language/display-1.html")
+    .ds-thread(data-thread-key="9" data-title="标签分类" data-url="http://xiaobxia.win/language/Html/tag-1.html")
 
 block content
     //文章的内容

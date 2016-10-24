@@ -125,6 +125,19 @@ var articleTimeObj = [
         levelOne: "语言",
         levelTwo: "Css",
         description: "样式初始化,淘宝的样式初始化,github初始化"
+    },
+    {
+        pageId: 9,
+        writeDay: "2016年10月24日",
+        writeTime: "20161024",
+        writeWeek: "Mon",
+        title: "标签分类",
+        path: "language/Html/tag-1.html",
+        levelOnePath: "classify/nav/language-nav.html",
+        levelTwoPath: "",
+        levelOne: "语言",
+        levelTwo: "Html",
+        description: "样式初始化,淘宝的样式初始化,github初始化"
     }
 ];
 
