@@ -9,15 +9,24 @@ const del = require('del');
 const path = {
   dist: './dist',
   pug: './src/pug/*.pug',
+  pugWatch: './src/pug',
   scss: './src/scss/*.scss',
-  js: './src/js/*.js'
+  scssWatch: './src/scss',
+  js: './src/js/*.js',
+  jsWatch: './src/js',
+  ico: './src/favicon.ico'
 };
+
+gulp.task('ico', function () {
+  return gulp.src(path.ico)
+    .pipe(gulp.dest(path.dist));
+});
 
 gulp.task('clean', function () {
   return del(path.dist);
 });
 
-gulp.task('pug', function buildHTML() {
+gulp.task('pug', function () {
   return gulp.src(path.pug)
     .pipe(pug({
       doctype: 'html'
@@ -60,9 +69,9 @@ gulp.task('watch', function () {
     cb();
   }
   //watch的时候不clean
-  gulp.watch(path.pug, gulp.series('pug', serverReload));
-  gulp.watch(path.scss, gulp.series('scss', serverReload));
-  gulp.watch(path.js, gulp.series('js', serverReload));
+  gulp.watch(path.pugWatch, gulp.series('pug', serverReload));
+  gulp.watch(path.scssWatch, gulp.series('scss', serverReload));
+  gulp.watch(path.jsWatch, gulp.series('js', serverReload));
 });
 
-gulp.task('default', gulp.series('clean', 'build', 'server', 'watch'));
+gulp.task('default', gulp.series('clean', 'ico', 'build', 'server', 'watch'));

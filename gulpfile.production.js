@@ -10,8 +10,14 @@ const path = {
   dist: './dist',
   pug: './src/pug/*.pug',
   scss: './src/scss/*.scss',
-  js: './src/js/*.js'
+  js: './src/js/*.js',
+  ico: './src/favicon.ico'
 };
+
+gulp.task('ico', function () {
+  return gulp.src(path.ico)
+    .pipe(gulp.dest(path.dist));
+});
 
 gulp.task('clean', function () {
   return del(path.dist);
@@ -41,4 +47,4 @@ gulp.task('js', function () {
 
 gulp.task('build', gulp.parallel('pug', 'scss', 'js'));
 
-gulp.task('default', gulp.series('clean', 'build'));
+gulp.task('default', gulp.series('clean', 'ico', 'build'));

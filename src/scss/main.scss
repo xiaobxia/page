@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  font-family: Inconsolata,Consolas,Monaco;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.main-wrap{
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top:20%;
+  width: 100%;
+  text-align: center;
+}
+.back{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff none no-repeat center center;
+  background-size: cover;
+  background-image: url("http://oqrmjnor1.bkt.clouddn.com/background1.jpg");
+}
+.my-name{
+  display: inline-block;
+  margin: 0;
+  font-size: 200px;
+  line-height: 200px;
+  font-family:'JennaSueceb14e97e1a3eb';
+}
+.main-nav{
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  .nav-item{
+    display: inline-block;
+  }
+}
+.main-footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
