@@ -1,50 +1,100 @@
 const gulp = require('gulp');
-const pug = require('gulp-pug');
-const sass = require('gulp-sass');
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const pxtorem = require('postcss-pxtorem');
+const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const rev = require('gulp-rev');
+const revCollector = require('gulp-rev-collector');
 const del = require('del');
 
-const path = {
-  dist: './dist',
-  pug: './src/pug/*.pug',
-  scss: './src/scss/*.scss',
-  js: './src/js/*.js',
-  ico: './src/favicon.ico'
-};
-
-gulp.task('ico', function () {
-  return gulp.src(path.ico)
-    .pipe(gulp.dest(path.dist));
-});
+const config = require('./config');
+const path = config.base.path;
+const assetsSubDirectory = config.prod.assetsSubDirectory;
+const assetsPublicPath = config.prod.assetsPublicPath;
 
 gulp.task('clean', function () {
   return del(path.dist);
 });
 
-gulp.task('pug', function buildHTML() {
+gulp.task('lib', function () {
+  return gulp.src(path.lib)
+    .pipe(rev())
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/lib'))
+    .pipe(rev.manifest())
+    //json
+    .pipe(gulp.dest('rev/lib'));
+});
+
+gulp.task('asset', function () {
+  return gulp.src(path.asset)
+    .pipe(rev())
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/asset'))
+    .pipe(rev.manifest())
+    //json
+    .pipe(gulp.dest('rev/asset'));
+});
+
+
+gulp.task('pug', function () {
   return gulp.src(path.pug)
-    .pipe(pug({
-      doctype: 'html'
-    })).pipe(gulp.dest(path.dist));
+    .pipe(gulp.dest(path.dist));
 });
 
 gulp.task('scss', function () {
   return gulp.src(path.scss)
     .pipe(sass())
+    .pipe(postcss([pxtorem(config.base.pxtorem), autoprefixer(config.base.autoprefixer)]))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest(path.dist+'/css'));
+    .pipe(rev())
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/css'))
+    .pipe(rev.manifest())
+    //json
+    .pipe(gulp.dest('rev/css'));
 });
 
 gulp.task('js', function () {
   return gulp.src(path.js)
     .pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest(path.dist+'/js'));
+    .pipe(rev())
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/js'))
+    .pipe(rev.manifest())
+    //json
+    .pipe(gulp.dest('rev/js'));
+});
+
+gulp.task('rev', function () {
+  //json文件和接收注入的pug文件
+  return gulp.src(['rev/**/*.json', path.dist + '/**/*.pug'])
+    .pipe(revCollector({
+      replaceReved: true,
+      dirReplacements: {
+        //替换
+        '/css/': assetsPublicPath + '/css/',
+        '/js/': assetsPublicPath + '/js/',
+        '/lib/': assetsPublicPath + '/lib/',
+        '/asset/': assetsPublicPath + '/asset/'
+      }
+    }))
+    .pipe(gulp.dest(path.dist));
 });
 
 
-gulp.task('build', gulp.parallel('pug', 'scss', 'js'));
+gulp.task('revCss', function () {
+  return gulp.src(['rev/**/*.json', path.dist + assetsSubDirectory + '/css/*.css'])
+    .pipe(revCollector({
+      replaceReved: true,
+      dirReplacements: {
+        '/asset/': '/asset/'
+      }
+    }))
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/css'));
+});
 
-gulp.task('default', gulp.series('clean', 'ico', 'build'));
+
+gulp.task('build', gulp.parallel('lib', 'asset', 'pug', 'scss', 'js'));
+
+gulp.task('default', gulp.series('clean', 'build', 'rev', 'revCss'));

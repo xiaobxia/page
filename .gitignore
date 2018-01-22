@@ -1,5 +1,10 @@
 .idea/
 node_modules/
 dist/
+dest/
 npm-debug.log
 *.tar.gz
+rev/
+browserDir/
+mock/
+logs/

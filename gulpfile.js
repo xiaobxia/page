@@ -1,81 +1,63 @@
 const gulp = require('gulp');
-const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const babel = require("gulp-babel");
-const debug = require('gulp-debug');
 const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const pxtorem = require('postcss-pxtorem');
 const del = require('del');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 
-const path = {
-  dist: './dist',
-  pug: './src/pug/*.pug',
-  pugWatch: './src/pug',
-  scss: './src/scss/*.scss',
-  scssWatch: './src/scss',
-  js: './src/js/*.js',
-  jsWatch: './src/js',
-  ico: './src/favicon.ico'
-};
-
-gulp.task('ico', function () {
-  return gulp.src(path.ico)
-    .pipe(gulp.dest(path.dist));
-});
+const config = require('./config');
+const path = config.base.path;
+const assetsSubDirectory = config.prod.assetsSubDirectory;
 
 gulp.task('clean', function () {
   return del(path.dist);
 });
 
+gulp.task('lib', function () {
+  return gulp.src(path.lib)
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/lib'));
+});
+
+gulp.task('asset', function () {
+  return gulp.src(path.asset)
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/asset'));
+});
+
 gulp.task('pug', function () {
   return gulp.src(path.pug)
-    .pipe(debug({title: 'unicorn:'}))
-    .pipe(pug({
-      doctype: 'html'
-    })).pipe(gulp.dest(path.dist));
+    .pipe(gulp.dest(path.dist));
 });
 
 gulp.task('scss', function () {
   return gulp.src(path.scss)
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([pxtorem(config.base.pxtorem), autoprefixer(config.base.autoprefixer)]))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(path.dist+'/css'))
-    //局部更新，不会导致页面重刷（重刷意味着产生ajax请求，也意味着页面的状态变了）
-    .pipe(browserSync.reload({stream:true}));
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/css'));
 });
 
 gulp.task('js', function () {
   return gulp.src(path.js)
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init())
     .pipe(babel())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(path.dist+'/js'));
+    .pipe(gulp.dest(path.dist + assetsSubDirectory + '/js'));
 });
 
-gulp.task('server', function (cb) {
-  browserSync({
-    server: {
-      baseDir: path.dist
-    },
-    port: 8080,
-    notify: false,
-    ghostMode: false,
-    open: true
-  }, cb);
-});
-
-gulp.task('build', gulp.parallel('pug', 'scss', 'js'));
+gulp.task('build', gulp.parallel('lib', 'asset', 'pug', 'scss', 'js'));
 
 gulp.task('watch', function () {
-  function serverReload(cb) {
-    browserSync.reload();
-    cb();
-  }
-  //watch的时候不clean
-  gulp.watch(path.pugWatch, gulp.series('pug', serverReload));
+  gulp.watch(path.assetWatch, gulp.series('asset'));
+  gulp.watch(path.libWatch, gulp.series('lib'));
+  gulp.watch(path.pug, gulp.series('pug'));
   gulp.watch(path.scssWatch, gulp.series('scss'));
-  gulp.watch(path.jsWatch, gulp.series('js', serverReload));
+  gulp.watch(path.jsWatch, gulp.series('js'));
 });
 
-gulp.task('default', gulp.series('clean', 'ico', 'build', 'server', 'watch'));
+gulp.task('default', gulp.series('clean', 'build', 'watch'));
