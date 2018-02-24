@@ -33,6 +33,11 @@ gulp.task('clean', function () {
   return del(path.dist);
 });
 
+gulp.task('other', function () {
+  return gulp.src(path.other)
+    .pipe(gulp.dest(path.dist));
+});
+
 gulp.task('lib', function () {
   return gulp.src(path.lib)
     .pipe(rev())
@@ -101,7 +106,7 @@ gulp.task('rev', function () {
 
 
 gulp.task('revCss', function () {
-  return gulp.src(['rev/**/*.json', cssDestPath +'/*.css'])
+  return gulp.src(['rev/**/*.json', cssDestPath + '/*.css'])
     .pipe(revCollector({
       replaceReved: true,
       dirReplacements: {
@@ -112,6 +117,6 @@ gulp.task('revCss', function () {
 });
 
 
-gulp.task('build', gulp.parallel('lib', 'asset', 'pug', 'scss', 'js'));
+gulp.task('build', gulp.parallel('other', 'lib', 'asset', 'pug', 'scss', 'js'));
 
 gulp.task('default', gulp.series('clean', 'build', 'rev', 'revCss'));

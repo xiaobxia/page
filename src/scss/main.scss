@@ -40,16 +40,23 @@ a{
 .my-name{
   display: inline-block;
   margin: 0;
-  font-size: 200px;
-  line-height: 200px;
-  font-family:'JennaSueceb14e97e1a3eb';
+  font-size: 120px;
+  line-height: 160px;
+  font-family:'HelveticaNeue';
 }
 .main-nav{
-  margin: 0;
+  margin: 80px 0 0 0;
   padding: 0;
-  font-size: 32px;
+  font-size: 24px;
   .nav-item{
     display: inline-block;
+    a{
+      border-radius: 3px;
+      padding: 5px 10px;
+      &:hover{
+        background-color: rgba(0,0,0,.45);
+      }
+    }
   }
 }
 .main-footer{

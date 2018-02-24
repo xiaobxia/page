@@ -22,7 +22,8 @@ module.exports = {
       asset: './src/asset/*',
       assetWatch: './src/asset/*',
       pug: './src/pug/*.pug',
-      pugWatch: './src/pug'
+      pugWatch: './src/pug',
+      other: './src/other/*'
     },
     autoprefixer: {
       "browsers": [
