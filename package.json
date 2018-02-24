@@ -45,7 +45,6 @@
     "gulp-uglify": "^3.0.0",
     "merge": "^1.2.0",
     "opn": "^5.2.0",
-    "proxy-middleware": "^0.15.0",
-    "qs": "^6.5.1"
+    "proxy-middleware": "^0.15.0"
   }
 }
