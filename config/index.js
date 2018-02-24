@@ -37,7 +37,7 @@ module.exports = {
     baseDir: resolveRoot('dist'),
     proxyTable: {
       "/user": {
-        "target": "http://192.168.2.50:8080/",
+        "target": "http://localhost:8080/",
         logs: true
       }
     }
