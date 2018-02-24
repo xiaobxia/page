@@ -1,7 +1,0 @@
-{
-  "watch": [
-    "./app",
-    "./config",
-    "createData.js"
-  ]
-}

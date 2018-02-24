@@ -21,17 +21,8 @@ module.exports = {
       libWatch: './src/lib/*',
       asset: './src/asset/*',
       assetWatch: './src/asset/*',
-      pug: './src/pug/**'
-    },
-    pxtorem: {
-      rootValue: 20,
-      unitPrecision: 5,
-      propList: ['*'],
-      selectorBlackList: [],
-      replace: true,
-      mediaQuery: false,
-      //太小的不转换
-      minPixelValue: 3
+      pug: './src/pug/*.pug',
+      pugWatch: './src/pug'
     },
     autoprefixer: {
       "browsers": [
@@ -40,35 +31,19 @@ module.exports = {
       ]
     }
   },
-  dev: {
-    useRedis: false,
-    assetsSubDirectory: '/static',
-    server: {
-      port: 4000,
-      baseDir: resolveRoot('dist'),
-      proxyTable: {
-        "/user": {
-          "target": "http://192.168.2.50:8080/",
-          logs: true
-        }
+  server: {
+    port: 4000,
+    baseDir: resolveRoot('dist'),
+    proxyTable: {
+      "/user": {
+        "target": "http://192.168.2.50:8080/",
+        logs: true
       }
-    },
-    phpAddress: 'http://apidev.cd121.com/index',
+    }
   },
   prod: {
-    useRedis: false,
     assetsSubDirectory: '/static',
-    assetsPublicPath: '',
-    server: {
-      port: 4000,
-      baseDir: resolveRoot('dist')
-    },
-    phpAddress: 'http://apidev.cd121.com/index'
-  },
-  logger: {
-    dir: resolveRoot('logs'),
-    fileName: 'cheese.log',
-    debugLogLevel: 'ALL',
-    productLogLevel: 'ERROR'
+    assetsPublicPath: 'http://p4mu6wunc.bkt.clouddn.com/',
+    ifCdn: true
   }
 };
